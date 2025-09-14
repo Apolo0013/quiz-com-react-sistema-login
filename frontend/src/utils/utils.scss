@@ -1,0 +1,43 @@
+//paletas
+$color-base: #4CAF50;   // Verde principal (fundo / header)
+$color-text: #FFFFFF;   // Texto em branco
+$color-highlight: #FFC107; // Amarelo para botões / destaques
+$color-error: #F44336;  // Vermelho (erros)
+$color-success: #2196F3; // Azul (acertos / info)
+//cor fundo
+$cor-fundo-main: linear-gradient(to top left, #4CAF50, transparent),
+    linear-gradient(to top right, #306d9e, transparent),
+    linear-gradient(to bottom left, #2196F3, transparent),
+    linear-gradient(to bottom right, #4CAF50, transparent);
+//Cor botao logar ou cadastrar
+$cor-fundo-botao-logar-cadastrar: #28a5e3;
+$cor-fundo-hover-botao-logar-cadastrar: #2f586c;
+$cor-text-botao-logar-cadastrar: white;
+//Cor cadastro e login pae.
+$cor-entrar-h1: #181d17;
+$cor-entrar-fundo: white;
+$cor-entrar-label: #585a5d; 
+$cor-entrar-border-entrada: #c7c8ca;
+$cor-entrar-entrar-placeholder: rgb(67, 67, 67);
+$cor-entrar-botao-entrar: #2d88f4;
+$cor-entrar-botao-entrar-text: #fffffc;
+$cor-entrar-trocao-opcao-text-normal: #606261;
+$cor-entrar-troca-opcao-destaque: #0074f1;
+//home
+$cor-h1-text-home: white;
+$cor-subtiulo-text-home: white;
+$cor-home-fundo-botao-iniciar: #FFC107; 
+$cor-home-text-botao-iniciar: white;
+//Info Conectado
+$cor-fundo-infoConecte: #42ea7d;
+$cor-color-infoConecte: #231a2b;
+$cor-infoConecte-fundo-pontos: #ffffff79; 
+$cor-infoConecte-fundo-pontos-hover: rgba(255, 255, 255, 0.672); 
+
+
+//funcao que transoforme px em rem paizao
+@function rem($px, $base: 16) {
+  @return ($px / $base) * 1rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Numans&display=swap');

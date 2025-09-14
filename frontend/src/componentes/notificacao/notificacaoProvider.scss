@@ -1,0 +1,58 @@
+@use "../../utils/utils.scss" as *;
+
+//cores
+//Sucesso
+$cor-aviso-sucesso-back: #40c540; 
+$cor-aviso-sucesso-color: rgb(219, 219, 219);
+//Error
+$cor-aviso-error-back: rgb(249, 63, 63);
+$cor-aviso-error-color: black;
+
+.conteiner-notificacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: white;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: rem(-30);
+    height: rem(30);
+
+    p {
+        font-weight: bold;
+    }
+}
+
+//styles de erro e sucesso
+.style-aviso-sucesso {
+    background: $cor-aviso-sucesso-back;
+    color: $cor-aviso-sucesso-color;
+}   
+
+.style-aviso-error {
+    background: $cor-aviso-error-back;
+    color: $cor-aviso-error-color;
+}   
+
+// class que vai aguardar essa animacao
+// vai a mostrar o aviso
+.class-anime-aviso-show {
+    animation: show-aviso 1s ease-in-out 1 forwards;
+}
+
+// vai retira o aviso
+.class-anine-aviso-desshow {
+    animation: desshow-aviso 1s ease-in-out 1 forwards;
+}
+
+@keyframes show-aviso {
+    to {top: 0;}
+}
+
+//nao sei ingles nao fdp
+@keyframes desshow-aviso {
+    from {top: 0;}
+    to {top: rem(-30);}
+}

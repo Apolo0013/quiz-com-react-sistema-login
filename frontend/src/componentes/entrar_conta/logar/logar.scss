@@ -1,0 +1,25 @@
+@use "../../../utils/utils.scss" as *;
+
+.wraper-conteiner-login {
+    position: relative;
+    width: 30%;
+    min-height: 72%;
+}
+
+.Salva-Auto-Login {
+    width: 90%;        
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: rem(5);
+
+    input {
+        aspect-ratio: 1 / 1;
+        height: rem(15);
+    }
+
+    p {
+        font-size: rem(15);
+        font-weight: bold;
+    }
+} 
