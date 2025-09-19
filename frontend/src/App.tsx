@@ -11,13 +11,15 @@ import Cadastrar from "./componentes/entrar_conta/cadastrar/cadastrar"
 import Logar from "./componentes/entrar_conta/logar/logar"
 import Home from "./componentes/home"
 import Info_Entrar_Main from "./componentes/entrar_conta/info_entrar_main/info_entrar_main"
+import Quiz_Main from "./componentes/quiz-componentes/quiz-main"
+
 //Notificacao
 import Notificacao from "./componentes/notificacao/notificacaoProvider"
 //Context
 import { InfoContext } from "./context"
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 //type
-import { type typeInfoEntrar, type typeContextGlobal } from "./types/ContextLogin"
+import { type typeInfoEntrar } from "./types/ContextLogin"
 
 
 function AppMain() {
@@ -37,23 +39,28 @@ function AppMain() {
             const resposta: typeReturnUserLogadoCookie = await request.json()
             console.log(resposta)
             if (!resposta.error) {
-                SetInfoLogin({
+                SetInfoEntrar({
                     Logado: true,
-                    nome: resposta.userName
+                    Nome: resposta.userName
                 })
                 console.log('valor add')
             }
             else {
                 // Por padrao ele sera assim, mas vamos garanti que ele estara quando o usuario nao estive o login automatico.  
-                SetInfoLogin({
+                SetInfoEntrar({
                     Logado: false,
-                    nome: ''
+                    Nome: ''
                 })
             }
         }
         catch (error) {
             console.log('Erro funcao User')
             console.log(error)
+            //se deu algo errado manteremos o valor padrao
+            SetInfoEntrar({
+                Logado: false,
+                Nome: ''
+            })
         }
     }
 
@@ -75,12 +82,12 @@ function AppMain() {
     }
 
     const [StateInfoEntrar, SetInfoEntrar] = useState<typeInfoEntrar>({
-            Logado: false,
-            Nome: ''
+            Logado: true,
+            Nome: 'Bucetinha.com.br.chupa.cu'
         }) 
 
     useEffect(() => {
-        UserLogadoCookie()
+        //UserLogadoCookie()
     }, [])
 
     useEffect(() => {
@@ -100,6 +107,7 @@ function AppMain() {
                     <Route path='/home' element={<Home />}></Route>
                     <Route path='/home/entrar/login' element={<Logar />}></Route>
                     <Route path='/home/entrar/cadastrar' element={<Cadastrar />}></Route>
+                    <Route path='/quiz/jogar' element={<Quiz_Main/>}></Route>
                 </Routes>
             </div>
         </InfoContext.Provider>

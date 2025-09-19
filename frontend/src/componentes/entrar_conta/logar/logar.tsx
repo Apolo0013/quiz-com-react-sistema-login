@@ -97,10 +97,7 @@ function Login() {
     //Estamos chamando um effect com valor "Logado", ele quando trocamos de rota, esse valor sera atualizando para o valor.
     // EX: chamar o context denovo, por padrao InfoLogin temo "Logado" false, mas ele vai atualizando depois de um tempo. 
     useEffect(() => {
-        console.log(Logado)
-        if (Logado) {
-            nv('/home')
-        }
+        if (Logado?.info_entrar.Logado) {nv('/home')}
     }, [Logado])
     
     useEffect(() => {
