@@ -37,3 +37,4 @@ C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\o
 C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\obj\Debug\net8.0\backend.pdb
 C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\obj\Debug\net8.0\ref\backend.dll
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\obj\Debug\net8.0\backend.sourcelink.json

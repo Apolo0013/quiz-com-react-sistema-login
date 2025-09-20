@@ -33,7 +33,21 @@ $cor-fundo-infoConecte: #42ea7d;
 $cor-color-infoConecte: #231a2b;
 $cor-infoConecte-fundo-pontos: #ffffff79; 
 $cor-infoConecte-fundo-pontos-hover: rgba(255, 255, 255, 0.672); 
+//quiz main
+//--head
+$cor-head-quiz-main: #2051314d; 
+$cor-head-text: white; 
+//Seleciona Tema
+$cor-opcao-tema-quiz-main: #30f47562;
+$cor-opcao-tema-border-quiz-main: rgba(19, 29, 21, 0.517);
+$cor-opcao-tema-text-quiz-main: white;
 
+//--Card
+$cor-opcao-tema-conteiner-back: #30f4752e;
+//
+$cor-opcao-tema-show-nome-back: rgb(33, 91, 55);
+$cor-opcao-tema-show-nome-border: rgba(23, 203, 68, 0.733);
+$cor-opcao-tema-show-nome-color: white;
 
 //funcao que transoforme px em rem paizao
 @function rem($px, $base: 16) {

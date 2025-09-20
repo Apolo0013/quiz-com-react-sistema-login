@@ -46,13 +46,13 @@ function Main_Info_Entrar() {
     //Ref variavels
     // False, ele esta escondido
     // True ele esta a mostrar.
-    const RefClickShowEHide = useRef<boolean>(true)
+    const RefClickShowEHide = useRef<boolean>(false)
     //
     const [StateComInfo, SetComInfo] = useState<JSX.Element>()
     //context
     const info = useContext(InfoContext)
     useEffect(() => {
-        //ClickShowOrHide()
+        ClickShowOrHide()
         //
         const info_entrar: typeInfoEntrar = info!.info_entrar
         console.log(info)

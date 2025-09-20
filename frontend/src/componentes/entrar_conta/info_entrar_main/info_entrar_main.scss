@@ -2,6 +2,7 @@
 
 .wraper-conteiner-info-main {
     position: absolute;
+    z-index: 1000;
     left: 0;
     top: rem(5);
     min-width: rem(200);

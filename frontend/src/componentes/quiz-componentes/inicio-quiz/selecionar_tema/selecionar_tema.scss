@@ -1,0 +1,31 @@
+@use '../../../../utils/utils.scss' as *;
+
+.opcao-tema-quiz-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(20);
+    margin-top: rem(140);
+    background: $cor-opcao-tema-quiz-main;
+    border-bottom: rem(5) solid $cor-opcao-tema-border-quiz-main;
+    border-top: rem(5) solid $cor-opcao-tema-border-quiz-main;
+    width: 100%;
+    color: $cor-opcao-tema-text-quiz-main;
+
+    h1 {
+        margin-top: rem(20);
+    }
+
+    .opcao-tema { 
+        background: $cor-opcao-tema-conteiner-back;
+        border: 1px solid $cor-opcao-tema-border-quiz-main;
+        border-radius: rem(1);
+        padding: rem(10);
+        width: 80%; 
+        display: grid;
+        grid-template-columns: repeat(5, minmax(rem(80), 1fr));
+        grid-template-rows: repeat(2, minmax(rem(80), 1fr));
+        gap: rem(10);
+    }
+}

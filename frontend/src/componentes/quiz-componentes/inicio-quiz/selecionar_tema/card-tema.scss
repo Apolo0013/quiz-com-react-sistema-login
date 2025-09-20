@@ -1,0 +1,65 @@
+@use '../../../../utils/utils.scss' as *;
+
+.conteiner-card-tema {
+    aspect-ratio: 1 / 1;
+    width: 90%;
+    height: 90%;
+    justify-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $cor-opcao-tema-quiz-main;
+    border-radius: rem(2);
+    position: relative;
+
+    .show-name-card-tema {
+        transition: 0.2s ease;
+        transition-delay: 0.2s;
+        position: absolute;
+        top: 0;
+        font-size: rem(25);
+        font-weight: bold;
+        font-style: oblique;
+        padding: rem(5);
+        background: $cor-opcao-tema-show-nome-back;
+        color: $cor-opcao-tema-show-nome-color;
+        border: rem(3) solid $cor-opcao-tema-show-nome-border;        
+        border-radius: rem(5);
+        //
+        z-index: -100;
+    }
+
+    //animacao de aparece ele
+    &:hover {
+        .show-name-card-tema {
+            transform: translateY(-50%);
+            opacity: 1;
+            z-index: 100;
+        }
+    }
+
+    .tema-show-name {
+        animation: tema-show-name 2s ease 2s 1 forwards;
+    }
+
+    @keyframes tema-show-name {
+        from {
+            z-index: 100;
+        }
+        to {
+            opacity: 1;
+            top: -20%;
+        }
+    }
+
+    .tema-deshow-name {
+
+    }
+
+    img {
+        aspect-ratio: 1 / 1;
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+}

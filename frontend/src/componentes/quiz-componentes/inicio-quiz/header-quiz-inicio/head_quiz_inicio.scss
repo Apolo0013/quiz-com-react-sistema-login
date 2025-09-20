@@ -1,0 +1,48 @@
+@use '../../../../utils/utils.scss' as *;
+
+.head-quiz-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: rem(5);
+    background: $cor-head-quiz-main;
+    color: $cor-head-text;
+
+    &::after , &::before {
+        position: absolute;
+        display: inline;
+        content: '';
+        width: rem(50);
+        height: rem(40);
+        background: $cor-head-quiz-main;
+        top: 100%;  
+    }
+    &::after {
+        right: 0;
+        clip-path: polygon(
+            100% 0%,
+            0% 0%,
+            100% 100%
+        );
+    }
+
+    &::before {
+        left: 0;
+        clip-path: polygon(
+            0% 0%,
+            100% 0%,
+            0% 100%
+        );
+    }
+
+    h1 {
+        font-size: rem(70);
+    }
+
+    p {
+        font-size: rem(20);
+    }
+}
