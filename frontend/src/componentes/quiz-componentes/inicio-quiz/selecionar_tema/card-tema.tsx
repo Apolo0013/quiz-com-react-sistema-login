@@ -1,17 +1,23 @@
 import './card-tema.scss'
-//imagem
-import Fds from '../../../../assets/imagens/info_entrar/fds.svg'
-import { useRef, type MouseEvent } from 'react'
+import { type Dispatch, type SetStateAction, type MouseEvent } from 'react'
 //types
+import { type InfoOpcaoTypeTema } from '../../../../types/RefTypes'
+
 type propsCardTema = {
-    Nome_Tema: string
+    Nome_Tema: InfoOpcaoTypeTema,
+    img_path: string,
+    SetTema: Dispatch<SetStateAction<InfoOpcaoTypeTema>>
+    EventClick: (e: MouseEvent<Element>) => void
 }
 
-function Card_Tema({ Nome_Tema }: propsCardTema) {
+function Card_Tema({ Nome_Tema, img_path, SetTema, EventClick}: propsCardTema) {
     return (
-        <div className="conteiner-card-tema">
+        <div className="conteiner-card-tema" onClick={(e) => {
+            SetTema(Nome_Tema) //pegando o tema e salvando no ref que vai manda isso pro backend
+            EventClick(e)
+        }}>
             <div className='show-name-card-tema'>{Nome_Tema}</div>
-            <img src={Fds} alt="" />
+            <img src={img_path} alt="" />
         </div>
     )
 }

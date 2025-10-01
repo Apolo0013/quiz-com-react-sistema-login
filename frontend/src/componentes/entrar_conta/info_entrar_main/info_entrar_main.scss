@@ -23,6 +23,7 @@
     }
 
     .show-conteiner-info-main {
+        transition: 1s;
         background: $cor-fundo-infoConecte;
         height: 50%;
         width: rem(20);

@@ -1,6 +1,7 @@
 @use '../../../../utils/utils.scss' as *;
 
 .conteiner-card-tema {
+    transition: 0.3s ease;
     aspect-ratio: 1 / 1;
     width: 90%;
     height: 90%;
@@ -11,6 +12,8 @@
     background: $cor-opcao-tema-quiz-main;
     border-radius: rem(2);
     position: relative;
+    z-index: 10;
+    cursor: pointer;
 
     .show-name-card-tema {
         transition: 0.2s ease;
@@ -26,11 +29,13 @@
         border: rem(3) solid $cor-opcao-tema-show-nome-border;        
         border-radius: rem(5);
         //
+        opacity: 0;
         z-index: -100;
     }
 
     //animacao de aparece ele
     &:hover {
+        transform: translateY(rem(10));
         .show-name-card-tema {
             transform: translateY(-50%);
             opacity: 1;

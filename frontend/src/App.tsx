@@ -103,7 +103,7 @@ function AppMain() {
                 <Notificacao/>
                 {/*Rotas*/}
                 <Routes>
-                    <Route path='/' element={<Navigate to='/home' replace />}></Route>
+                    <Route path='*' element={<Navigate to='/home' replace />}></Route>
                     <Route path='/home' element={<Home />}></Route>
                     <Route path='/home/entrar/login' element={<Logar />}></Route>
                     <Route path='/home/entrar/cadastrar' element={<Cadastrar />}></Route>

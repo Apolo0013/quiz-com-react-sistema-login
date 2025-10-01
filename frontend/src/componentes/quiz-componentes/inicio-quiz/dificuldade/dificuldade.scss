@@ -1,0 +1,86 @@
+@use "../../../../utils/utils.scss" as *;
+
+.conteiner-dificuldade-quiz-main {
+    margin-top: rem(50);
+    margin-bottom: rem(50);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(25);
+    * { transition: 0.2s ease-in-out; }
+
+    h1 {
+        text-align: center;
+        width: 100%;
+        padding: rem(10);
+        background: $cor-dificuldade-quiz-back-h1;
+        color: $cor-dificuldade-quiz-h1;
+
+        &:hover {
+            background: lighten($cor-dificuldade-quiz-back-h1, 5%);
+        }
+    }
+
+    .conteiner-dificuldade-botao {
+        background: $cor-dificuldade-botao-back;
+        padding: rem(5);
+        width: 100%;
+        height: rem(120);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: rem(25);
+        clip-path: polygon(
+            0% 25%,
+            10% 25%,
+            20% 0%,
+            80% 0%,
+            90% 25%,
+            100% 25%,
+
+            100% 75%,
+            90% 75%,
+            80% 100%,
+            20% 100%,
+            10% 75%,
+            0% 75%
+
+        );
+
+        button {
+            width: 15%;
+            height: rem(60);
+            outline: 0;
+            border: 0;
+            border-radius: rem(1);
+            background: black;
+            font-size: rem(40);
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+
+        button:nth-of-type(1) {
+            background: $cor-dificuldade-botao-facil;
+            color: white;
+        }
+
+        button:nth-of-type(2) {
+            background: $cor-dificuldade-botao-medio;
+            color: black;
+        }
+
+        button:nth-of-type(3) {
+            background: $cor-dificuldade-botao-dificil;
+            color: white;
+        }
+    }
+    
+}

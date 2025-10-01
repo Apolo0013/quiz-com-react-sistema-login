@@ -18,7 +18,7 @@ function Main_Info_Entrar() {
         //
         if (RefClickShowEHide.current) {
             //
-            RefImgShowWraper.current!.style.transform = 'scaleX(-1)'
+            RefImgShowWraper.current!.style.transform = 'rotate(0deg)'
             //rect, pegamos a largura do elemento wraper
             const { width } = RefConteinerWraperInfo.current!.getBoundingClientRect()
             //Add o transform nele pra ele se esconder pae.
@@ -29,7 +29,7 @@ function Main_Info_Entrar() {
         }
         else {
             //
-            RefImgShowWraper.current!.style.transform = 'scaleX(1)'
+            RefImgShowWraper.current!.style.transform = 'rotate(180deg)'
             //Add o transform que faz o mesmo fica a mostrar.
             RefConteinerWraperInfo.current.style.transform = 'translateX(0px)'
             //Mudando o valor ref que indedntifca o estado atual do conteiner.

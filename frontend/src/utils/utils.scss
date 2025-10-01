@@ -48,6 +48,16 @@ $cor-opcao-tema-conteiner-back: #30f4752e;
 $cor-opcao-tema-show-nome-back: rgb(33, 91, 55);
 $cor-opcao-tema-show-nome-border: rgba(23, 203, 68, 0.733);
 $cor-opcao-tema-show-nome-color: white;
+//Escolhe dificuldade
+$cor-dificuldade-quiz-back-h1: rgba(28, 47, 35, 0.696); 
+$cor-dificuldade-quiz-h1: white;
+//--Cores botao dificuldade
+$cor-dificuldade-botao-back: #2121219f;
+$cor-dificuldade-botao-facil: #4CAF50;
+$cor-dificuldade-botao-medio: #FFC107;
+$cor-dificuldade-botao-dificil: #F44336;
+//botao comeca
+$cor-quiz-main-botao-comeca: #4CAF50;
 
 //funcao que transoforme px em rem paizao
 @function rem($px, $base: 16) {
