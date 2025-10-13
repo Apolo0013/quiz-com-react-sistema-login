@@ -1,3 +1,4 @@
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
@@ -8,14 +9,18 @@ using System.Security.Claims;
 using System.Text;
 //manipulacao arquivo
 using BackEnd.Date.Manipular;
+using BackEnd.Utils;
+using BackEnd.Date.Quiz;
 //type
 using BackEnd.Type.BackInFront;
 using BackEnd.Type.FrontInBack;
+using System.Text.Json;
+using BackEnd.Type.DateQuiz;
 
 
 
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(opcao =>
     {
         opcao.AddPolicy("AllowAll",
@@ -130,6 +135,94 @@ app.MapPost("/Entrar/RegistrarUser", (ParamDadosEntrar dados) =>
             return Results.Json(new RespostaResultado { Sucesso = sucessoRegistrarUser, Error = "error_ao_registrar" });
         }
     }
-}); 
+});
+
+//Rotas do quiz gld.
+app.MapPost("Quiz/Pegar", (ParamGetTemaAndDificuldade dados) =>
+{
+    //Por Algum motivo, Dificuldade e Tema for igual "" vamos return tentativas falha ou null
+    if (dados.Tema == "" || dados.Dificuldade == "") return Results.Problem();
+
+    //Nomes dos arquivo json de cada tema?
+    //Porque disso?: por que no front end, os nomes do tema nao sao iguais aos nomes do arquivo json.
+    const string Geografia = "Geografia.json";
+    const string Historia = "História.json";
+    const string Ciencia = "Ciências.json";
+    const string Matematica = "Matemática.json";
+    const string Cinema = "Cinema.json";
+    const string Fisica = "Fisica.json";
+    const string Quimica = "Quimica.json";
+    const string Literatura = "Literatura.json";
+    const string Tecnologia = "Tecnologia.json";
+    const string Logica = "Logica.json";
+    //dados vai receber:
+    //string Tema,
+    //string Dificuldade
+    //    
+    string? Dificuldade = default;
+    string?Tema = default;
+    //Pegando Dificuldade
+    switch (dados.Dificuldade)
+    {
+        case "facil":
+            Dificuldade = FuncUtils.FACIL;
+            break;
+        case "medio":
+            Dificuldade = FuncUtils.MEDIO;
+            break;
+        case "dificil":
+            Dificuldade = FuncUtils.DIFICIL;
+            break;
+    }
+
+    //Pegando Tema pae.
+    switch (dados.Tema)
+    {
+        case "Geografia":
+            Tema = Geografia;
+            break;
+        case "História":
+            Tema = Historia;
+            break;
+        case "Ciências":
+            Tema = Ciencia;
+            break;
+        case "Matemática":
+            Tema = Matematica;
+            break;
+        case "Cinema":
+            Tema = Cinema;
+            break;
+        case "Fisica":
+            Tema = Fisica;
+            break;
+        case "Quimica":
+            Tema = Quimica;
+            break;
+        case "Literatura":
+            Tema = Literatura;
+            break;
+        case "Tecnologia":
+            Tema = Tecnologia;
+            break;
+        case "Logica":
+            Tema = Logica;
+            break;
+    }
+
+    Console.WriteLine(Dificuldade);
+
+    if (Tema == Fisica || Tema == Matematica || Tema == Quimica)
+    {
+        QuizTypeMath DateQuizMath = Date_Quiz.GetQuizMath(Tema, Dificuldade);
+        return Results.Json(DateQuizMath);
+    }
+    else
+    {
+        QuizType DateQuiz = Date_Quiz.GetQuiz(Tema, Dificuldade);
+        return Results.Json(DateQuiz);
+    }
+});
 
 app.Run();
+

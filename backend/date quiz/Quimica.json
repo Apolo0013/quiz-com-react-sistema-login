@@ -1,0 +1,433 @@
+{
+    "facil": {
+        "objetiva": [
+            {
+                "tipo": "Massa Molar",
+                "pergunta": "Qual é a massa molar de uma substância sabendo sua massa {m}g e a quantidade de mols {n}mol?",
+                "formula": "{m} / {n}",
+                "assunto": "Mol e Massa Molar"
+            },
+            {
+                "tipo": "Quantidade de Mols",
+                "pergunta": "Qual é a quantidade de mols em uma amostra de massa {m}g e massa molar {M}g/mol?",
+                "formula": "{m} / {M}",
+                "assunto": "Mol e Massa Molar"
+            },
+            {
+                "tipo": "Lei de Lavoisier",
+                "pergunta": "Segundo a Lei de Lavoisier, a diferença entre a massa dos reagentes {m_reagentes}g e a dos produtos {m_produtos}g é:",
+                "formula": "{m_reagentes} - {m_produtos}",
+                "assunto": "Leis Ponderais"
+            },
+            {
+                "tipo": "Volume Molar",
+                "pergunta": "Qual é o volume ocupado por {n}mol de gás em CNTP, considerando que 1 mol ocupa 22,4 L?",
+                "formula": "{n} * 22.4",
+                "assunto": "Gases"
+            },
+            {
+                "tipo": "Concentracao Comum",
+                "pergunta": "Qual é a concentração comum (C) de uma solução com massa de soluto {m}g e volume da solução {V}L?",
+                "formula": "{m} / {V}",
+                "assunto": "Soluções"
+            },
+            {
+                "tipo": "Densidade",
+                "pergunta": "Qual é a densidade de uma substância sabendo sua massa {m}g e volume {V}cm³?",
+                "formula": "{m} / {V}",
+                "assunto": "Propriedades da Matéria"
+            },
+            {
+                "tipo": "Numero de Atomos",
+                "pergunta": "Quantos átomos há em uma amostra com {n}mol de átomos?",
+                "formula": "{n} * (6.02 * 10^23)",
+                "assunto": "Constante de Avogadro"
+            },
+            {
+                "tipo": "Pressao de um Gas",
+                "pergunta": "Qual é a pressão de um gás com número de mols {n}mol, constante dos gases {R}, temperatura {T}K e volume {V}L?",
+                "formula": "({n} * {R} * {T}) / {V}",
+                "assunto": "Gases"
+            },
+            {
+                "tipo": "Energia Cinética Molecular",
+                "pergunta": "Qual é a energia cinética média de uma molécula a uma temperatura {T}K, considerando a constante de Boltzmann {k}?",
+                "formula": "(3/2) * {k} * {T}",
+                "assunto": "Físico-Química"
+            },
+            {
+                "tipo": "Diluição de Solução",
+                "pergunta": "Uma solução sofre diluição de modo que {C1} * {V1} = C2 * {V2}. Calcule a nova concentração final C2.",
+                "formula": "({C1} * {V1}) / {V2}",
+                "assunto": "Soluções"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "ATOMO",
+                "dica": "Menor parte da matéria"
+            },
+            {
+                "palavra": "MOLECULA",
+                "dica": "Conjunto de átomos ligados entre si"
+            },
+            {
+                "palavra": "ELEMENTO",
+                "dica": "Substância formada por um único tipo de átomo"
+            },
+            {
+                "palavra": "COMPOSTO",
+                "dica": "Substância formada por dois ou mais elementos"
+            },
+            {
+                "palavra": "MASSA",
+                "dica": "Quantidade de matéria em um corpo"
+            },
+            {
+                "palavra": "VOLUME",
+                "dica": "Espaço ocupado por uma substância"
+            },
+            {
+                "palavra": "DENSIDADE",
+                "dica": "Relação entre massa e volume"
+            },
+            {
+                "palavra": "MOL",
+                "dica": "Unidade que representa 6,02 × 10²³ entidades"
+            },
+            {
+                "palavra": "AVOGADRO",
+                "dica": "Cientista que relacionou mol e número de partículas"
+            },
+            {
+                "palavra": "GAS",
+                "dica": "Estado físico com alta agitação molecular"
+            },
+            {
+                "palavra": "LIQUIDO",
+                "dica": "Estado físico com forma variável e volume constante"
+            },
+            {
+                "palavra": "SOLIDO",
+                "dica": "Estado físico com forma e volume definidos"
+            },
+            {
+                "palavra": "SOLUCAO",
+                "dica": "Mistura homogênea de duas ou mais substâncias"
+            },
+            {
+                "palavra": "CONCENTRACAO",
+                "dica": "Quantidade de soluto em certo volume de solução"
+            },
+            {
+                "palavra": "SUBLIMACAO",
+                "dica": "Passagem direta do estado sólido para gasoso"
+            },
+            {
+                "palavra": "FUSAO",
+                "dica": "Passagem do estado sólido para líquido"
+            },
+            {
+                "palavra": "EBULICAO",
+                "dica": "Passagem do estado líquido para gasoso"
+            },
+            {
+                "palavra": "CONDENSACAO",
+                "dica": "Passagem do estado gasoso para líquido"
+            },
+            {
+                "palavra": "OXIGENIO",
+                "dica": "Elemento essencial para a respiração"
+            },
+            {
+                "palavra": "HIDROGENIO",
+                "dica": "Elemento mais leve e abundante do universo"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [
+            {
+                "tipo": "Massa Molar Composta",
+                "pergunta": "Qual é a massa molar total de um composto formado pelos elementos A e B, com massas molares {MA} e {MB}, e índices {a} e {b}?",
+                "formula": "({a} * {MA}) + ({b} * {MB})",
+                "assunto": "Mol e Massa Molar"
+            },
+            {
+                "tipo": "Numero de Mols (Gases)",
+                "pergunta": "Qual é o número de mols de um gás de volume {V}L, nas CNTP?",
+                "formula": "{V} / 22.4",
+                "assunto": "Leis dos Gases"
+            },
+            {
+                "tipo": "Pressao Parcial",
+                "pergunta": "Qual é a pressão parcial de um gás sabendo sua fração molar {X} e a pressão total {Pt}?",
+                "formula": "{X} * {Pt}",
+                "assunto": "Misturas Gasosas"
+            },
+            {
+                "tipo": "Lei dos Gases Ideais",
+                "pergunta": "Qual é a relação entre pressão {P}, volume {V}, número de mols {n} e temperatura {T}?",
+                "formula": "{P} * {V} = {n} * {R} * {T}",
+                "assunto": "Gases Ideais"
+            },
+            {
+                "tipo": "Densidade de um Gas",
+                "pergunta": "Qual é a densidade de um gás sabendo sua massa molar {M}, pressão {P} e temperatura {T}?",
+                "formula": "({P} * {M}) / ({R} * {T})",
+                "assunto": "Gases"
+            },
+            {
+                "tipo": "Concentracao Molar",
+                "pergunta": "Qual é a concentração molar (M) de uma solução sabendo o número de mols {n} e o volume {V}?",
+                "formula": "{n} / {V}",
+                "assunto": "Soluções"
+            },
+            {
+                "tipo": "Diluição",
+                "pergunta": "Ao diluir uma solução, qual é a relação entre concentração e volume inicial ({C1}, {V1}) e final ({C2}, {V2})?",
+                "formula": "{C1} * {V1} = {C2} * {V2}",
+                "assunto": "Soluções"
+            },
+            {
+                "tipo": "Porcentagem em Massa",
+                "pergunta": "Qual é a porcentagem em massa de um soluto em uma solução sabendo a massa do soluto {massa_soluto} e a massa total {massa_total}?",
+                "formula": "({massa_soluto} / {massa_total}) * 100",
+                "assunto": "Soluções"
+            },
+            {
+                "tipo": "Rendimento da Reacao",
+                "pergunta": "Qual é o rendimento percentual de uma reação sabendo o valor obtido {real} e o esperado {teorico}?",
+                "formula": "({real} / {teorico}) * 100",
+                "assunto": "Estequiometria"
+            },
+            {
+                "tipo": "Pureza de Reagente",
+                "pergunta": "Qual é a porcentagem de pureza de um reagente sabendo a massa pura {massa_pura} e a massa total {massa_total}?",
+                "formula": "({massa_pura} / {massa_total}) * 100",
+                "assunto": "Estequiometria"
+            }
+        ]
+,
+        "descobrir_palavra": [{
+                "palavra": "ESTEQUIOMETRIA",
+                "dica": "Parte da química que estuda as proporções nas reações"
+            },
+            {
+                "palavra": "GAS",
+                "dica": "Estado físico com alta agitação molecular"
+            },
+            {
+                "palavra": "PRESSAO",
+                "dica": "Força exercida por um gás sobre as paredes do recipiente"
+            },
+            {
+                "palavra": "VOLUME",
+                "dica": "Espaço ocupado por um corpo ou substância"
+            },
+            {
+                "palavra": "TEMPERATURA",
+                "dica": "Medida do grau de agitação das partículas"
+            },
+            {
+                "palavra": "REAÇÃO",
+                "dica": "Processo em que substâncias se transformam em outras"
+            },
+            {
+                "palavra": "CONCENTRACAO",
+                "dica": "Quantidade de soluto presente em certa quantidade de solução"
+            },
+            {
+                "palavra": "SOLUTO",
+                "dica": "Substância dissolvida em uma solução"
+            },
+            {
+                "palavra": "SOLVENTE",
+                "dica": "Substância que dissolve o soluto"
+            },
+            {
+                "palavra": "MOLARIDADE",
+                "dica": "Número de mols de soluto por litro de solução"
+            },
+            {
+                "palavra": "DILUICAO",
+                "dica": "Processo de diminuir a concentração de uma solução"
+            },
+            {
+                "palavra": "PUREZA",
+                "dica": "Relação entre a massa pura e a massa total de uma substância"
+            },
+            {
+                "palavra": "RENDIMENTO",
+                "dica": "Relação entre o produto obtido e o esperado em uma reação"
+            },
+            {
+                "palavra": "BALANCEAMENTO",
+                "dica": "Ajuste de equações químicas para conservar massa"
+            },
+            {
+                "palavra": "ATOMO",
+                "dica": "Unidade básica da matéria"
+            },
+            {
+                "palavra": "MOLECULA",
+                "dica": "Conjunto de átomos ligados entre si"
+            },
+            {
+                "palavra": "ELEMENTO",
+                "dica": "Substância formada por um único tipo de átomo"
+            },
+            {
+                "palavra": "COMPOSTO",
+                "dica": "Substância formada por diferentes tipos de átomos"
+            },
+            {
+                "palavra": "CATALISADOR",
+                "dica": "Substância que acelera uma reação química sem ser consumida"
+            },
+            {
+                "palavra": "EQUILIBRIO",
+                "dica": "Estado em que as velocidades direta e inversa de uma reação são iguais"
+            }
+        ]
+    },
+    "dificil": {
+        "objetiva":[
+                {
+                    "tipo": "pH de Solução Ácida",
+                    "pergunta": "Qual é o pH de uma solução sabendo a concentração de íons {H}⁺?",
+                    "formula": "-log({H}) / log(10)",
+                    "assunto": "Equilíbrio Ácido-Base"
+                },
+                {
+                    "tipo": "pOH de Solução Básica",
+                    "pergunta": "Qual é o pOH de uma solução sabendo a concentração de íons {OH}⁻?",
+                    "formula": "-log({OH}) / log(10)",
+                    "assunto": "Equilíbrio Ácido-Base"
+                },
+                {
+                    "tipo": "Constante de Equilíbrio (Kc)",
+                    "pergunta": "Qual é a expressão da constante de equilíbrio para uma reação genérica {C}C + {D}D ⇌ {A}A + {B}B?",
+                    "formula": "({C}^{c} * {D}^{d}) / ({A}^{a} * {B}^{b})",
+                    "assunto": "Equilíbrio Químico"
+                },
+                {
+                    "tipo": "Energia de Reação",
+                    "pergunta": "Qual é a variação de entalpia (ΔH) de uma reação sabendo {H_produtos} e {H_reagentes}?",
+                    "formula": "{H_produtos} - {H_reagentes}",
+                    "assunto": "Termoquímica"
+                },
+                {
+                    "tipo": "Velocidade da Reação",
+                    "pergunta": "Qual é a velocidade média de uma reação em função da variação de concentração {Δ_produto} e tempo {Δt}?",
+                    "formula": "{Δ_produto} / {Δt}",
+                    "assunto": "Cinética Química"
+                },
+                {
+                    "tipo": "Lei da Velocidade",
+                    "pergunta": "Qual é a forma geral da lei da velocidade para uma reação aA + bB → produtos, sabendo {A} e {B}?",
+                    "formula": "{k} * {A}^x * {B}^y",
+                    "assunto": "Cinética Química"
+                },
+                {
+                    "tipo": "Energia de Ativação",
+                    "pergunta": "Qual é a relação entre a constante de velocidade {k}, fator pré-exponencial {A}, energia de ativação {Ea}, temperatura {T} e constante R?",
+                    "formula": "{k} = {A} * Exp(-{Ea} / ({R} * {T}))",
+                    "assunto": "Equação de Arrhenius"
+                },
+                {
+                    "tipo": "Lei de Faraday",
+                    "pergunta": "Como determinar a massa depositada {m} em uma eletrólise sabendo corrente {i}, tempo {t}, massa molar {M}, número de elétrons {n} e constante de Faraday {F}?",
+                    "formula": "{m} = ({i} * {t} * {M}) / ({n} * {F})",
+                    "assunto": "Eletroquímica"
+                },
+                {
+                    "tipo": "Calor Específico",
+                    "pergunta": "Como calcular a quantidade de calor {Q} trocado por uma substância com massa {m}, calor específico {c} e variação de temperatura {ΔT}?",
+                    "formula": "{Q} = {m} * {c} * {ΔT}",
+                    "assunto": "Calorimetria"
+                }
+            ]
+            ,
+        "descobrir_palavra": [{
+                "palavra": "ENTALPIA",
+                "dica": "Grandeza que mede o calor envolvido em uma reação"
+            },
+            {
+                "palavra": "EQUILIBRIO",
+                "dica": "Estado em que as reações direta e inversa têm mesma velocidade"
+            },
+            {
+                "palavra": "CATALISADOR",
+                "dica": "Aumenta a velocidade de uma reação sem ser consumido"
+            },
+            {
+                "palavra": "REDOX",
+                "dica": "Tipo de reação que envolve transferência de elétrons"
+            },
+            {
+                "palavra": "ELETROLITO",
+                "dica": "Substância que conduz eletricidade em solução"
+            },
+            {
+                "palavra": "POTENCIAL",
+                "dica": "Diferença de energia elétrica entre dois pontos"
+            },
+            {
+                "palavra": "SOLUBILIDADE",
+                "dica": "Capacidade de uma substância se dissolver em outra"
+            },
+            {
+                "palavra": "GIBBS",
+                "dica": "Energia que indica a espontaneidade de uma reação"
+            },
+            {
+                "palavra": "ARRHENIUS",
+                "dica": "Cientista que relacionou temperatura e velocidade de reação"
+            },
+            {
+                "palavra": "FARADAY",
+                "dica": "Cientista que formulou leis da eletrólise"
+            },
+            {
+                "palavra": "ION",
+                "dica": "Átomo que perdeu ou ganhou elétrons"
+            },
+            {
+                "palavra": "ANODO",
+                "dica": "Eletrodo onde ocorre oxidação"
+            },
+            {
+                "palavra": "CATODO",
+                "dica": "Eletrodo onde ocorre redução"
+            },
+            {
+                "palavra": "TERMODINAMICA",
+                "dica": "Estudo das transformações de energia"
+            },
+            {
+                "palavra": "CINETICA",
+                "dica": "Estudo da velocidade das reações químicas"
+            },
+            {
+                "palavra": "OXIDACAO",
+                "dica": "Perda de elétrons"
+            },
+            {
+                "palavra": "REDUCAO",
+                "dica": "Ganho de elétrons"
+            },
+            {
+                "palavra": "IONIZACAO",
+                "dica": "Processo de formação de íons"
+            },
+            {
+                "palavra": "HIDROGENIO",
+                "dica": "Elemento mais leve da tabela periódica"
+            },
+            {
+                "palavra": "OXIGENIO",
+                "dica": "Elemento essencial para combustão e respiração"
+            }
+        ]
+    }
+}

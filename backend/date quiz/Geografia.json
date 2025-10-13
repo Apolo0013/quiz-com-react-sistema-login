@@ -1,0 +1,856 @@
+{
+    "facil": {
+        "objetiva": [{
+                "pergunta": "Qual é o maior país da América do Sul?",
+                "alternativas": {
+                    "A": "Argentina",
+                    "B": "Brasil",
+                    "C": "Peru",
+                    "D": "Colômbia"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a capital do Brasil?",
+                "alternativas": {
+                    "A": "Rio de Janeiro",
+                    "B": "São Paulo",
+                    "C": "Brasília",
+                    "D": "Salvador"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o maior oceano do mundo?",
+                "alternativas": {
+                    "A": "Atlântico",
+                    "B": "Índico",
+                    "C": "Pacífico",
+                    "D": "Ártico"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual continente tem o maior número de países?",
+                "alternativas": {
+                    "A": "África",
+                    "B": "Ásia",
+                    "C": "Europa",
+                    "D": "América"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a capital da França?",
+                "alternativas": {
+                    "A": "Paris",
+                    "B": "Londres",
+                    "C": "Roma",
+                    "D": "Berlim"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual rio é o mais longo do mundo?",
+                "alternativas": {
+                    "A": "Nilo",
+                    "B": "Amazonas",
+                    "C": "Yangtzé",
+                    "D": "Mississippi"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a capital da Argentina?",
+                "alternativas": {
+                    "A": "Rosário",
+                    "B": "Buenos Aires",
+                    "C": "Córdoba",
+                    "D": "Mendoza"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o maior deserto do mundo?",
+                "alternativas": {
+                    "A": "Saara",
+                    "B": "Gobi",
+                    "C": "Atacama",
+                    "D": "Kalahari"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual país tem a maior população do mundo?",
+                "alternativas": {
+                    "A": "Índia",
+                    "B": "China",
+                    "C": "Estados Unidos",
+                    "D": "Rússia"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual país é conhecido pelos cangurus?",
+                "alternativas": {
+                    "A": "Austrália",
+                    "B": "Nova Zelândia",
+                    "C": "Canadá",
+                    "D": "África do Sul"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a capital do Japão?",
+                "alternativas": {
+                    "A": "Tóquio",
+                    "B": "Pequim",
+                    "C": "Seul",
+                    "D": "Bangkok"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual continente é chamado de 'o continente gelado'?",
+                "alternativas": {
+                    "A": "Ártico",
+                    "B": "Antártida",
+                    "C": "África",
+                    "D": "Europa"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual país é conhecido pela Torre Eiffel?",
+                "alternativas": {
+                    "A": "Itália",
+                    "B": "França",
+                    "C": "Espanha",
+                    "D": "Alemanha"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o maior lago do mundo?",
+                "alternativas": {
+                    "A": "Lago Superior",
+                    "B": "Mar Cáspio",
+                    "C": "Lago Vitória",
+                    "D": "Lago Michigan"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual país tem formato de bota?",
+                "alternativas": {
+                    "A": "Espanha",
+                    "B": "Itália",
+                    "C": "Grécia",
+                    "D": "Portugal"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o menor país do mundo?",
+                "alternativas": {
+                    "A": "Mônaco",
+                    "B": "Vaticano",
+                    "C": "Liechtenstein",
+                    "D": "San Marino"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual país tem mais ilhas?",
+                "alternativas": {
+                    "A": "Filipinas",
+                    "B": "Canadá",
+                    "C": "Indonésia",
+                    "D": "Noruega"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual país é conhecido pelo carnaval do Rio?",
+                "alternativas": {
+                    "A": "Argentina",
+                    "B": "Brasil",
+                    "C": "México",
+                    "D": "Espanha"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual continente é o mais frio?",
+                "alternativas": {
+                    "A": "Ásia",
+                    "B": "Europa",
+                    "C": "Antártida",
+                    "D": "América"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual rio passa pelo Egito?",
+                "alternativas": {
+                    "A": "Nilo",
+                    "B": "Amazonas",
+                    "C": "Tigre",
+                    "D": "Mississippi"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "RIO",
+                "dica": "Curso de água doce que corre para o mar ou lago"
+            },
+            {
+                "palavra": "MONTANHA",
+                "dica": "Elevação natural do terreno"
+            },
+            {
+                "palavra": "OCEANO",
+                "dica": "Grande massa de água salgada"
+            },
+            {
+                "palavra": "ILHA",
+                "dica": "Terra cercada de água"
+            },
+            {
+                "palavra": "DESERTO",
+                "dica": "Grande área seca e árida"
+            },
+            {
+                "palavra": "PAÍS",
+                "dica": "Território com governo próprio"
+            },
+            {
+                "palavra": "CONTINENTE",
+                "dica": "Grande massa de terra"
+            },
+            {
+                "palavra": "CAPITAL",
+                "dica": "Cidade principal de um país"
+            },
+            {
+                "palavra": "LAGO",
+                "dica": "Grande corpo de água cercado por terra"
+            },
+            {
+                "palavra": "VULCÃO",
+                "dica": "Montanha que pode expelir lava"
+            },
+            {
+                "palavra": "GEOGRAFIA",
+                "dica": "Estudo da Terra e seus fenômenos"
+            },
+            {
+                "palavra": "PLANÍCIE",
+                "dica": "Terreno plano e extenso"
+            },
+            {
+                "palavra": "PENÍNSULA",
+                "dica": "Porção de terra cercada de água em três lados"
+            },
+            {
+                "palavra": "ESTREITO",
+                "dica": "Faixa de água que conecta dois oceanos ou mares"
+            },
+            {
+                "palavra": "RELEVO",
+                "dica": "Formas da superfície terrestre"
+            },
+            {
+                "palavra": "FLOR",
+                "dica": "Parte da planta com função reprodutiva"
+            },
+            {
+                "palavra": "CACHOEIRA",
+                "dica": "Água que despenca de uma altura"
+            },
+            {
+                "palavra": "BOSQUE",
+                "dica": "Área com muitas árvores"
+            },
+            {
+                "palavra": "NEVE",
+                "dica": "Água congelada que cai do céu"
+            },
+            {
+                "palavra": "GLACIAL",
+                "dica": "Grande massa de gelo que se move lentamente"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [{
+                "pergunta": "Qual país é cortado pela linha do Equador e pelo Trópico de Capricórnio?",
+                "alternativas": {
+                    "A": "Brasil",
+                    "B": "Indonésia",
+                    "C": "Austrália",
+                    "D": "México"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o continente com o maior número de países?",
+                "alternativas": {
+                    "A": "África",
+                    "B": "Ásia",
+                    "C": "Europa",
+                    "D": "América"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a capital do Canadá?",
+                "alternativas": {
+                    "A": "Toronto",
+                    "B": "Vancouver",
+                    "C": "Ottawa",
+                    "D": "Montreal"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual país possui a maior quantidade de vulcões ativos?",
+                "alternativas": {
+                    "A": "Japão",
+                    "B": "Indonésia",
+                    "C": "Itália",
+                    "D": "México"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a capital da Austrália?",
+                "alternativas": {
+                    "A": "Sydney",
+                    "B": "Melbourne",
+                    "C": "Canberra",
+                    "D": "Brisbane"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual rio é considerado o maior em volume de água do mundo?",
+                "alternativas": {
+                    "A": "Nilo",
+                    "B": "Yangtzé",
+                    "C": "Amazonas",
+                    "D": "Mississippi"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o maior país da África em área?",
+                "alternativas": {
+                    "A": "Argélia",
+                    "B": "Sudão",
+                    "C": "Nigéria",
+                    "D": "Egito"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a capital do Egito?",
+                "alternativas": {
+                    "A": "Cairo",
+                    "B": "Alexandria",
+                    "C": "Luxor",
+                    "D": "Giza"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual país é conhecido como 'terra do sol nascente'?",
+                "alternativas": {
+                    "A": "China",
+                    "B": "Japão",
+                    "C": "Coreia do Sul",
+                    "D": "Tailândia"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o ponto mais alto da África?",
+                "alternativas": {
+                    "A": "Monte Quênia",
+                    "B": "Monte Kilimanjaro",
+                    "C": "Atlas",
+                    "D": "Ruwenzori"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a capital da Rússia?",
+                "alternativas": {
+                    "A": "São Petersburgo",
+                    "B": "Moscou",
+                    "C": "Kiev",
+                    "D": "Minsk"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a maior ilha do mundo?",
+                "alternativas": {
+                    "A": "Groenlândia",
+                    "B": "Madagáscar",
+                    "C": "Borneo",
+                    "D": "Sumatra"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual país tem a maior fronteira terrestre do mundo?",
+                "alternativas": {
+                    "A": "China",
+                    "B": "Rússia",
+                    "C": "Canadá",
+                    "D": "Estados Unidos"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual país africano tem o maior território?",
+                "alternativas": {
+                    "A": "Argélia",
+                    "B": "Sudão",
+                    "C": "Libéria",
+                    "D": "Chade"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o maior arquipélago do mundo?",
+                "alternativas": {
+                    "A": "Indonésia",
+                    "B": "Filipinas",
+                    "C": "Japão",
+                    "D": "Maldivas"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a capital da Índia?",
+                "alternativas": {
+                    "A": "Nova Deli",
+                    "B": "Mumbai",
+                    "C": "Bangalore",
+                    "D": "Hyderabad"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual país tem o maior número de fusos horários?",
+                "alternativas": {
+                    "A": "Rússia",
+                    "B": "Canadá",
+                    "C": "Estados Unidos",
+                    "D": "França"
+                },
+                "resposta_certa": "D"
+            },
+            {
+                "pergunta": "Qual país é famoso pelo Canal do Panamá?",
+                "alternativas": {
+                    "A": "Costa Rica",
+                    "B": "Panamá",
+                    "C": "Colômbia",
+                    "D": "México"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a capital da Turquia?",
+                "alternativas": {
+                    "A": "Istambul",
+                    "B": "Ancara",
+                    "C": "Izmir",
+                    "D": "Bursa"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual país tem o maior litoral do mundo?",
+                "alternativas": {
+                    "A": "Canadá",
+                    "B": "Austrália",
+                    "C": "Rússia",
+                    "D": "Estados Unidos"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "ILHA",
+                "dica": "Porção de terra cercada de água por todos os lados"
+            },
+            {
+                "palavra": "ANDES",
+                "dica": "Cadeia de montanhas localizada na América do Sul"
+            },
+            {
+                "palavra": "SAVANA",
+                "dica": "Grande planície com vegetação rasteira e algumas árvores"
+            },
+            {
+                "palavra": "ESTEPES",
+                "dica": "Planalto coberto por vegetação de gramíneas"
+            },
+            {
+                "palavra": "GLACIAL",
+                "dica": "Grande massa de gelo que se move lentamente"
+            },
+            {
+                "palavra": "CANYON",
+                "dica": "Vale profundo com paredões íngremes"
+            },
+            {
+                "palavra": "PENÍNSULA",
+                "dica": "Porção de terra cercada de água em três lados"
+            },
+            {
+                "palavra": "DESEERT",
+                "dica": "Grande área seca e árida"
+            },
+            {
+                "palavra": "VULCÃO",
+                "dica": "Montanha que pode expelir lava"
+            },
+            {
+                "palavra": "PLANÍCIE",
+                "dica": "Terreno plano e extenso"
+            },
+            {
+                "palavra": "CACHOEIRA",
+                "dica": "Água que despenca de uma altura"
+            },
+            {
+                "palavra": "ESTREITO",
+                "dica": "Faixa de água que conecta dois oceanos ou mares"
+            },
+            {
+                "palavra": "PANTANAL",
+                "dica": "Grande planície alagada no Brasil"
+            },
+            {
+                "palavra": "DESFILADEIRO",
+                "dica": "Vale estreito com paredes íngremes"
+            },
+            {
+                "palavra": "GEYSER",
+                "dica": "Fonte termal que jorra água quente"
+            },
+            {
+                "palavra": "OASIS",
+                "dica": "Área fértil em meio ao deserto"
+            },
+            {
+                "palavra": "ARQUIPELAGO",
+                "dica": "Conjunto de ilhas próximas umas das outras"
+            },
+            {
+                "palavra": "RELEVO",
+                "dica": "Formas da superfície terrestre"
+            },
+            {
+                "palavra": "ESTUÁRIO",
+                "dica": "Encontro de rio com o mar"
+            },
+            {
+                "palavra": "DELTA",
+                "dica": "Área formada pela sedimentação na foz de um rio"
+            }
+        ]
+    },
+    "dificil": {
+            "objetiva": [
+                {
+                    "pergunta": "Qual é o ponto mais alto do Brasil?",
+                    "alternativas": {
+                        "A": "Pico da Neblina",
+                        "B": "Pico das Agulhas Negras",
+                        "C": "Monte Roraima",
+                        "D": "Serra do Mar"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual deserto é considerado o mais seco do mundo?",
+                    "alternativas": {
+                        "A": "Saara",
+                        "B": "Atacama",
+                        "C": "Gobi",
+                        "D": "Kalahari"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual é a cordilheira mais longa do mundo?",
+                    "alternativas": {
+                        "A": "Andes",
+                        "B": "Himalaia",
+                        "C": "Rockies",
+                        "D": "Urais"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual país possui o maior número de fusos horários?",
+                    "alternativas": {
+                        "A": "Rússia",
+                        "B": "Canadá",
+                        "C": "França",
+                        "D": "Estados Unidos"
+                    },
+                    "resposta_certa": "C"
+                },
+                {
+                    "pergunta": "Qual é o lago mais profundo do mundo?",
+                    "alternativas": {
+                        "A": "Lago Baikal",
+                        "B": "Lago Tanganyika",
+                        "C": "Lago Superior",
+                        "D": "Lago Vitória"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual país sul-americano faz fronteira com o Brasil e a Argentina?",
+                    "alternativas": {
+                        "A": "Paraguai",
+                        "B": "Uruguai",
+                        "C": "Bolívia",
+                        "D": "Chile"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual é a capital da Mongólia?",
+                    "alternativas": {
+                        "A": "Ulan Bator",
+                        "B": "Astana",
+                        "C": "Tashkent",
+                        "D": "Bishkek"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual é o maior país do Oriente Médio em área?",
+                    "alternativas": {
+                        "A": "Irã",
+                        "B": "Arábia Saudita",
+                        "C": "Iraque",
+                        "D": "Turquia"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual rio atravessa a cidade de Paris?",
+                    "alternativas": {
+                        "A": "Seine",
+                        "B": "Tamisa",
+                        "C": "Danúbio",
+                        "D": "Reno"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual é o menor continente em área?",
+                    "alternativas": {
+                        "A": "Oceania",
+                        "B": "Europa",
+                        "C": "América",
+                        "D": "África"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual é a capital do Nepal?",
+                    "alternativas": {
+                        "A": "Kathmandu",
+                        "B": "Thimphu",
+                        "C": "Lhasa",
+                        "D": "Dhaka"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual é a maior floresta tropical do mundo?",
+                    "alternativas": {
+                        "A": "Congo",
+                        "B": "Amazonas",
+                        "C": "Sudeste Asiático",
+                        "D": "Taiga"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual país europeu é famoso por seus canais e moinhos?",
+                    "alternativas": {
+                        "A": "Bélgica",
+                        "B": "Países Baixos",
+                        "C": "Alemanha",
+                        "D": "Dinamarca"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual é o maior arquipélago do mundo em número de ilhas?",
+                    "alternativas": {
+                        "A": "Indonésia",
+                        "B": "Filipinas",
+                        "C": "Japão",
+                        "D": "Noruega"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual é o ponto mais baixo da Terra em terra firme?",
+                    "alternativas": {
+                        "A": "Mar Morto",
+                        "B": "Vale da Morte",
+                        "C": "Depressão de Turfan",
+                        "D": "Lago Assal"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual país é conhecido como a 'Terra dos Mil Lagos'?",
+                    "alternativas": {
+                        "A": "Canadá",
+                        "B": "Finlândia",
+                        "C": "Noruega",
+                        "D": "Suécia"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual montanha é considerada a mais alta fora do Himalaia?",
+                    "alternativas": {
+                        "A": "Aconcágua",
+                        "B": "Denali",
+                        "C": "Kilimanjaro",
+                        "D": "Elbrus"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual país possui a maior extensão de fronteira terrestre?",
+                    "alternativas": {
+                        "A": "Rússia",
+                        "B": "China",
+                        "C": "Canadá",
+                        "D": "Brasil"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual deserto cobre grande parte da Austrália?",
+                    "alternativas": {
+                        "A": "Simpson",
+                        "B": "Gibson",
+                        "C": "Great Victoria",
+                        "D": "Sahara"
+                    },
+                    "resposta_certa": "C"
+                },
+                {
+                    "pergunta": "Qual é a capital do Quênia?",
+                    "alternativas": {
+                        "A": "Mombasa",
+                        "B": "Nairobi",
+                        "C": "Kampala",
+                        "D": "Dodoma"
+                    },
+                    "resposta_certa": "B"
+                }
+            ],
+            "descobrir_palavra": [
+                {
+                    "palavra": "HIMALAIA",
+                    "dica": "Cordilheira onde fica o Monte Everest"
+                },
+                {
+                    "palavra": "URUGUAI",
+                    "dica": "País sul-americano que faz fronteira com Brasil e Argentina"
+                },
+                {
+                    "palavra": "PAMPA",
+                    "dica": "Grande planície fértil na Argentina"
+                },
+                {
+                    "palavra": "PATAGÔNIA",
+                    "dica": "Região fria e extensa no sul da Argentina e Chile"
+                },
+                {
+                    "palavra": "SAHARA",
+                    "dica": "Maior deserto quente do mundo"
+                },
+                {
+                    "palavra": "TAIGA",
+                    "dica": "Floresta de coníferas do hemisfério norte"
+                },
+                {
+                    "palavra": "FIORDES",
+                    "dica": "Entradas de mar entre montanhas, comuns na Noruega"
+                },
+                {
+                    "palavra": "ALTITUDE",
+                    "dica": "Distância vertical em relação ao nível do mar"
+                },
+                {
+                    "palavra": "ISÓBARA",
+                    "dica": "Linha que une pontos com mesma pressão atmosférica"
+                },
+                {
+                    "palavra": "BOSQUE",
+                    "dica": "Área com muitas árvores"
+                },
+                {
+                    "palavra": "ESTUÁRIO",
+                    "dica": "Região onde rio deságua no mar"
+                },
+                {
+                    "palavra": "DELTA",
+                    "dica": "Área formada pela sedimentação na foz de um rio"
+                },
+                {
+                    "palavra": "CORDILHEIRA",
+                    "dica": "Conjunto de montanhas alinhadas"
+                },
+                {
+                    "palavra": "PLATÔ",
+                    "dica": "Terreno elevado e relativamente plano"
+                },
+                {
+                    "palavra": "OCEANOGRAFIA",
+                    "dica": "Estudo dos oceanos"
+                },
+                {
+                    "palavra": "GEOMORFOLOGIA",
+                    "dica": "Estudo das formas do relevo terrestre"
+                },
+                {
+                    "palavra": "CLIMA",
+                    "dica": "Conjunto de condições atmosféricas de uma região"
+                },
+                {
+                    "palavra": "HIDROGRAFIA",
+                    "dica": "Estudo dos rios, lagos e mares"
+                },
+                {
+                    "palavra": "LATITUDE",
+                    "dica": "Distância em graus em relação à linha do Equador"
+                },
+                {
+                    "palavra": "LONGITUDE",
+                    "dica": "Distância em graus em relação ao meridiano de Greenwich"
+                }
+            ]
+    }
+}

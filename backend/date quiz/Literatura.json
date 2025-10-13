@@ -1,0 +1,855 @@
+{
+    "facil": {
+        "objetiva": [{
+                "pergunta": "Quem escreveu 'Dom Casmurro'?",
+                "alternativas": {
+                    "A": "Machado de Assis",
+                    "B": "José de Alencar",
+                    "C": "Carlos Drummond",
+                    "D": "Monteiro Lobato"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'O Pequeno Príncipe'?",
+                "alternativas": {
+                    "A": "Antoine de Saint-Exupéry",
+                    "B": "Jules Verne",
+                    "C": "Victor Hugo",
+                    "D": "Franz Kafka"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em que país nasceu William Shakespeare?",
+                "alternativas": {
+                    "A": "França",
+                    "B": "Itália",
+                    "C": "Inglaterra",
+                    "D": "Espanha"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o gênero literário de 'Romeu e Julieta'?",
+                "alternativas": {
+                    "A": "Comédia",
+                    "B": "Tragédia",
+                    "C": "Romance policial",
+                    "D": "Fábula"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem escreveu 'O Guarani'?",
+                "alternativas": {
+                    "A": "José de Alencar",
+                    "B": "Machado de Assis",
+                    "C": "Cecília Meireles",
+                    "D": "Manuel Bandeira"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'Os Lusíadas'?",
+                "alternativas": {
+                    "A": "Camões",
+                    "B": "Fernando Pessoa",
+                    "C": "Eça de Queirós",
+                    "D": "Gil Vicente"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'Capitães da Areia'?",
+                "alternativas": {
+                    "A": "Jorge Amado",
+                    "B": "Graciliano Ramos",
+                    "C": "Clarice Lispector",
+                    "D": "Machado de Assis"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual escritor criou o personagem Harry Potter?",
+                "alternativas": {
+                    "A": "J.K. Rowling",
+                    "B": "Suzanne Collins",
+                    "C": "Rick Riordan",
+                    "D": "Stephen King"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'Memórias Póstumas de Brás Cubas'?",
+                "alternativas": {
+                    "A": "Machado de Assis",
+                    "B": "José de Alencar",
+                    "C": "Manuel Bandeira",
+                    "D": "Carlos Drummond"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o principal gênero literário de fábulas?",
+                "alternativas": {
+                    "A": "Narrativo",
+                    "B": "Poético",
+                    "C": "Teatral",
+                    "D": "Lírico"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'Vidas Secas'?",
+                "alternativas": {
+                    "A": "Graciliano Ramos",
+                    "B": "Jorge Amado",
+                    "C": "Érico Veríssimo",
+                    "D": "José de Alencar"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual poeta é conhecido por escrever 'Canção do Exílio'?",
+                "alternativas": {
+                    "A": "Gonçalves Dias",
+                    "B": "Castro Alves",
+                    "C": "Manuel Bandeira",
+                    "D": "Cecília Meireles"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'O Cortiço'?",
+                "alternativas": {
+                    "A": "Aluísio Azevedo",
+                    "B": "Machado de Assis",
+                    "C": "José de Alencar",
+                    "D": "Graciliano Ramos"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'O Alienista'?",
+                "alternativas": {
+                    "A": "Machado de Assis",
+                    "B": "Lima Barreto",
+                    "C": "José de Alencar",
+                    "D": "Eça de Queirós"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é a autora de 'A Hora da Estrela'?",
+                "alternativas": {
+                    "A": "Clarice Lispector",
+                    "B": "Rachel de Queiroz",
+                    "C": "Cecília Meireles",
+                    "D": "Lygia Fagundes Telles"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual dessas obras é de Monteiro Lobato?",
+                "alternativas": {
+                    "A": "Sítio do Picapau Amarelo",
+                    "B": "O Guarani",
+                    "C": "Os Sertões",
+                    "D": "Vidas Secas"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'Os Sertões'?",
+                "alternativas": {
+                    "A": "Euclides da Cunha",
+                    "B": "Graciliano Ramos",
+                    "C": "Jorge Amado",
+                    "D": "José de Alencar"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual escritor criou o personagem Dom Quixote?",
+                "alternativas": {
+                    "A": "Miguel de Cervantes",
+                    "B": "Fernando Pessoa",
+                    "C": "Eça de Queirós",
+                    "D": "Camões"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'A Moreninha'?",
+                "alternativas": {
+                    "A": "Joaquim Manuel de Macedo",
+                    "B": "Machado de Assis",
+                    "C": "José de Alencar",
+                    "D": "Lima Barreto"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual poeta escreveu 'Soneto de Fidelidade'?",
+                "alternativas": {
+                    "A": "Vinicius de Moraes",
+                    "B": "Carlos Drummond",
+                    "C": "Manuel Bandeira",
+                    "D": "Ferreira Gullar"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "DOMCASMURRO",
+                "dica": "Obra de Machado de Assis"
+            },
+            {
+                "palavra": "OPEQUENOPRINCIPE",
+                "dica": "Clássico de Antoine de Saint-Exupéry"
+            },
+            {
+                "palavra": "SHAKESPEARE",
+                "dica": "Autor inglês de 'Romeu e Julieta'"
+            },
+            {
+                "palavra": "TRAGEDIA",
+                "dica": "Gênero de 'Romeu e Julieta'"
+            },
+            {
+                "palavra": "JOSÉDEALENCAR",
+                "dica": "Autor de 'O Guarani'"
+            },
+            {
+                "palavra": "OSLUSIADAS",
+                "dica": "Obra épica de Camões"
+            },
+            {
+                "palavra": "JORGEAMADO",
+                "dica": "Autor de 'Capitães da Areia'"
+            },
+            {
+                "palavra": "JKROWLING",
+                "dica": "Autora de 'Harry Potter'"
+            },
+            {
+                "palavra": "BRASCUBAS",
+                "dica": "Personagem de Machado de Assis"
+            },
+            {
+                "palavra": "FABULA",
+                "dica": "Gênero com animais e moral"
+            },
+            {
+                "palavra": "GRACILIANORAMOS",
+                "dica": "Autor de 'Vidas Secas'"
+            },
+            {
+                "palavra": "GONCALVESDIAS",
+                "dica": "Autor de 'Canção do Exílio'"
+            },
+            {
+                "palavra": "ALUISIOAZEVEDO",
+                "dica": "Autor de 'O Cortiço'"
+            },
+            {
+                "palavra": "CLARICELISPECTOR",
+                "dica": "Autora de 'A Hora da Estrela'"
+            },
+            {
+                "palavra": "MONTEIROLOBATO",
+                "dica": "Criador do Sítio do Picapau Amarelo"
+            },
+            {
+                "palavra": "EUCLIDESDACUNHA",
+                "dica": "Autor de 'Os Sertões'"
+            },
+            {
+                "palavra": "DOMQUIXOTE",
+                "dica": "Personagem de Cervantes"
+            },
+            {
+                "palavra": "AMORENINHA",
+                "dica": "Obra de Joaquim Manuel de Macedo"
+            },
+            {
+                "palavra": "VINICIUSDEMORAES",
+                "dica": "Autor de 'Soneto de Fidelidade'"
+            },
+            {
+                "palavra": "POESIA",
+                "dica": "Gênero literário em versos"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [{
+                "pergunta": "Quem é o autor de 'Grande Sertão: Veredas'?",
+                "alternativas": {
+                    "A": "João Guimarães Rosa",
+                    "B": "Graciliano Ramos",
+                    "C": "Jorge Amado",
+                    "D": "Machado de Assis"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual movimento literário brasileiro foi influenciado pelo nacionalismo e indianismo?",
+                "alternativas": {
+                    "A": "Romantismo",
+                    "B": "Realismo",
+                    "C": "Modernismo",
+                    "D": "Parnasianismo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'A Escrava Isaura'?",
+                "alternativas": {
+                    "A": "Bernardo Guimarães",
+                    "B": "José de Alencar",
+                    "C": "Machado de Assis",
+                    "D": "Aluísio Azevedo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual poeta é considerado o 'Boca do Inferno'?",
+                "alternativas": {
+                    "A": "Gregório de Matos",
+                    "B": "Castro Alves",
+                    "C": "Manuel Bandeira",
+                    "D": "Tomás Antônio Gonzaga"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'A Metamorfose'?",
+                "alternativas": {
+                    "A": "Franz Kafka",
+                    "B": "George Orwell",
+                    "C": "Aldous Huxley",
+                    "D": "Victor Hugo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a principal característica do Realismo?",
+                "alternativas": {
+                    "A": "Idealização da realidade",
+                    "B": "Crítica social e psicológica",
+                    "C": "Valorização da emoção",
+                    "D": "Nacionalismo exacerbado"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem escreveu 'O Primo Basílio'?",
+                "alternativas": {
+                    "A": "Eça de Queirós",
+                    "B": "Camilo Castelo Branco",
+                    "C": "Fernando Pessoa",
+                    "D": "José Saramago"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual poeta é conhecido pelo verso 'No meio do caminho tinha uma pedra'?",
+                "alternativas": {
+                    "A": "Carlos Drummond de Andrade",
+                    "B": "Manuel Bandeira",
+                    "C": "Vinicius de Moraes",
+                    "D": "Cecília Meireles"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'Dom Quixote'?",
+                "alternativas": {
+                    "A": "Miguel de Cervantes",
+                    "B": "Fernando Pessoa",
+                    "C": "Camões",
+                    "D": "Eça de Queirós"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual obra é considerada o marco inicial do Modernismo brasileiro?",
+                "alternativas": {
+                    "A": "Pauliceia Desvairada",
+                    "B": "Iracema",
+                    "C": "Vidas Secas",
+                    "D": "A Moreninha"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'Memórias de um Sargento de Milícias'?",
+                "alternativas": {
+                    "A": "Manuel Antônio de Almeida",
+                    "B": "José de Alencar",
+                    "C": "Machado de Assis",
+                    "D": "Lima Barreto"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual autora escreveu 'Quarto de Despejo'?",
+                "alternativas": {
+                    "A": "Carolina Maria de Jesus",
+                    "B": "Clarice Lispector",
+                    "C": "Rachel de Queiroz",
+                    "D": "Lygia Fagundes Telles"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual poeta simbolista brasileiro escreveu 'Broquéis'?",
+                "alternativas": {
+                    "A": "Cruz e Sousa",
+                    "B": "Alphonsus de Guimaraens",
+                    "C": "Casimiro de Abreu",
+                    "D": "Raimundo Correia"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'O Mulato'?",
+                "alternativas": {
+                    "A": "Aluísio Azevedo",
+                    "B": "Graciliano Ramos",
+                    "C": "Jorge Amado",
+                    "D": "José de Alencar"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual movimento literário foi marcado pela Semana de Arte Moderna de 1922?",
+                "alternativas": {
+                    "A": "Modernismo",
+                    "B": "Realismo",
+                    "C": "Romantismo",
+                    "D": "Naturalismo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'Ensaio sobre a Cegueira'?",
+                "alternativas": {
+                    "A": "José Saramago",
+                    "B": "Fernando Pessoa",
+                    "C": "Eça de Queirós",
+                    "D": "Camões"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual obra de Machado de Assis é considerada um marco do Realismo no Brasil?",
+                "alternativas": {
+                    "A": "Memórias Póstumas de Brás Cubas",
+                    "B": "Dom Casmurro",
+                    "C": "O Alienista",
+                    "D": "Quincas Borba"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'A Moreninha'?",
+                "alternativas": {
+                    "A": "Joaquim Manuel de Macedo",
+                    "B": "José de Alencar",
+                    "C": "Machado de Assis",
+                    "D": "Gregório de Matos"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'Iracema'?",
+                "alternativas": {
+                    "A": "José de Alencar",
+                    "B": "Aluísio Azevedo",
+                    "C": "Machado de Assis",
+                    "D": "Euclides da Cunha"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual autora é conhecida por sua escrita introspectiva e filosófica?",
+                "alternativas": {
+                    "A": "Clarice Lispector",
+                    "B": "Cecília Meireles",
+                    "C": "Rachel de Queiroz",
+                    "D": "Hilda Hilst"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "GRANDESERTAO",
+                "dica": "Obra-prima de Guimarães Rosa"
+            },
+            {
+                "palavra": "ROMANTISMO",
+                "dica": "Movimento literário com idealização e nacionalismo"
+            },
+            {
+                "palavra": "AESCRAVAISAURA",
+                "dica": "Romance abolicionista de Bernardo Guimarães"
+            },
+            {
+                "palavra": "GREGORIODAMATOS",
+                "dica": "Poeta barroco conhecido como 'Boca do Inferno'"
+            },
+            {
+                "palavra": "FRANZKAFKA",
+                "dica": "Autor de 'A Metamorfose'"
+            },
+            {
+                "palavra": "REALISMO",
+                "dica": "Movimento literário que retrata a realidade com crítica social"
+            },
+            {
+                "palavra": "ECASDEQUEIROS",
+                "dica": "Autor de 'O Primo Basílio'"
+            },
+            {
+                "palavra": "CARLOSDRUMMOND",
+                "dica": "Autor de 'No meio do caminho'"
+            },
+            {
+                "palavra": "PAULICEIADESVAIRADA",
+                "dica": "Obra inicial do Modernismo brasileiro"
+            },
+            {
+                "palavra": "MANUELANTONIODEALMEIDA",
+                "dica": "Autor de 'Memórias de um Sargento de Milícias'"
+            },
+            {
+                "palavra": "CAROLINAMARIADEJESUS",
+                "dica": "Autora de 'Quarto de Despejo'"
+            },
+            {
+                "palavra": "CRUZESOUSA",
+                "dica": "Poeta simbolista conhecido como 'Cisne Negro'"
+            },
+            {
+                "palavra": "ALUISIOAZEVEDO",
+                "dica": "Autor naturalista de 'O Mulato'"
+            },
+            {
+                "palavra": "MODERNISMO",
+                "dica": "Movimento que começou na Semana de Arte Moderna de 1922"
+            },
+            {
+                "palavra": "JOSÉSARAMAGO",
+                "dica": "Autor de 'Ensaio sobre a Cegueira'"
+            },
+            {
+                "palavra": "BRASCUBAS",
+                "dica": "Protagonista de obra realista de Machado de Assis"
+            },
+            {
+                "palavra": "JOAQUIMMANUELDEMACEDO",
+                "dica": "Autor de 'A Moreninha'"
+            },
+            {
+                "palavra": "IRACEMA",
+                "dica": "Personagem símbolo do romantismo indianista"
+            },
+            {
+                "palavra": "CLARICELISPECTOR",
+                "dica": "Autora de 'A Paixão segundo G.H.'"
+            },
+            {
+                "palavra": "CECILIAMEIRELES",
+                "dica": "Poeta modernista e autora de 'Romanceiro da Inconfidência'"
+            }
+        ]
+    },
+    "dificil": {
+        "objetiva": [{
+                "pergunta": "Qual obra é considerada a primeira manifestação realista na literatura brasileira?",
+                "alternativas": {
+                    "A": "Memórias Póstumas de Brás Cubas",
+                    "B": "O Primo Basílio",
+                    "C": "Dom Casmurro",
+                    "D": "O Mulato"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor da obra 'Os Sertões'?",
+                "alternativas": {
+                    "A": "Euclides da Cunha",
+                    "B": "Graciliano Ramos",
+                    "C": "José de Alencar",
+                    "D": "Jorge Amado"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o principal tema abordado em 'Dom Casmurro'?",
+                "alternativas": {
+                    "A": "Ciúme e dúvida",
+                    "B": "Abandono e amor",
+                    "C": "Guerra e honra",
+                    "D": "Misticismo e fé"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem foi o principal representante do Parnasianismo no Brasil?",
+                "alternativas": {
+                    "A": "Olavo Bilac",
+                    "B": "Machado de Assis",
+                    "C": "Castro Alves",
+                    "D": "Cruz e Sousa"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a principal característica do Naturalismo?",
+                "alternativas": {
+                    "A": "Determinismo biológico e social",
+                    "B": "Idealização da mulher",
+                    "C": "Valorização do sentimento",
+                    "D": "Experimentação linguística"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'Vidas Secas'?",
+                "alternativas": {
+                    "A": "Graciliano Ramos",
+                    "B": "Jorge Amado",
+                    "C": "José Lins do Rego",
+                    "D": "Rachel de Queiroz"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual foi o principal escritor da terceira fase do Modernismo brasileiro?",
+                "alternativas": {
+                    "A": "João Cabral de Melo Neto",
+                    "B": "Carlos Drummond de Andrade",
+                    "C": "Clarice Lispector",
+                    "D": "Guimarães Rosa"
+                },
+                "resposta_certa": "D"
+            },
+            {
+                "pergunta": "Quem escreveu 'A Hora da Estrela'?",
+                "alternativas": {
+                    "A": "Clarice Lispector",
+                    "B": "Lygia Fagundes Telles",
+                    "C": "Cecília Meireles",
+                    "D": "Rachel de Queiroz"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em qual movimento literário se destaca Mário de Andrade?",
+                "alternativas": {
+                    "A": "Modernismo",
+                    "B": "Realismo",
+                    "C": "Romantismo",
+                    "D": "Parnasianismo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'Capitães da Areia'?",
+                "alternativas": {
+                    "A": "Jorge Amado",
+                    "B": "José Lins do Rego",
+                    "C": "Graciliano Ramos",
+                    "D": "Erico Verissimo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual autor é conhecido por criar a personagem Macabéa?",
+                "alternativas": {
+                    "A": "Clarice Lispector",
+                    "B": "Rachel de Queiroz",
+                    "C": "Lygia Fagundes Telles",
+                    "D": "Cecília Meireles"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual poeta modernista escreveu 'Morte e Vida Severina'?",
+                "alternativas": {
+                    "A": "João Cabral de Melo Neto",
+                    "B": "Vinicius de Moraes",
+                    "C": "Carlos Drummond de Andrade",
+                    "D": "Manuel Bandeira"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'Sagarana'?",
+                "alternativas": {
+                    "A": "Guimarães Rosa",
+                    "B": "Graciliano Ramos",
+                    "C": "Jorge Amado",
+                    "D": "Euclides da Cunha"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o estilo predominante em 'O Cortiço'?",
+                "alternativas": {
+                    "A": "Naturalismo",
+                    "B": "Romantismo",
+                    "C": "Simbolismo",
+                    "D": "Modernismo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem escreveu 'A Rosa do Povo'?",
+                "alternativas": {
+                    "A": "Carlos Drummond de Andrade",
+                    "B": "Vinicius de Moraes",
+                    "C": "Cecília Meireles",
+                    "D": "João Cabral de Melo Neto"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual autor escreveu 'Menino de Engenho'?",
+                "alternativas": {
+                    "A": "José Lins do Rego",
+                    "B": "Jorge Amado",
+                    "C": "Graciliano Ramos",
+                    "D": "Rachel de Queiroz"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'A Moreninha'?",
+                "alternativas": {
+                    "A": "Joaquim Manuel de Macedo",
+                    "B": "José de Alencar",
+                    "C": "Machado de Assis",
+                    "D": "Aluísio Azevedo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual obra de José de Alencar é considerada indianista?",
+                "alternativas": {
+                    "A": "Iracema",
+                    "B": "Senhora",
+                    "C": "Lucíola",
+                    "D": "O Guarani"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o autor de 'O Tempo e o Vento'?",
+                "alternativas": {
+                    "A": "Erico Verissimo",
+                    "B": "Jorge Amado",
+                    "C": "Graciliano Ramos",
+                    "D": "José Lins do Rego"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a principal obra do poeta português Fernando Pessoa?",
+                "alternativas": {
+                    "A": "Mensagem",
+                    "B": "Os Lusíadas",
+                    "C": "Os Maias",
+                    "D": "O Primo Basílio"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "MEMORIASPOSTUMAS",
+                "dica": "Obra que inaugura o Realismo brasileiro"
+            },
+            {
+                "palavra": "EUCLIDESDACUNHA",
+                "dica": "Autor de 'Os Sertões'"
+            },
+            {
+                "palavra": "DOMCASMURRO",
+                "dica": "Romance marcado pelo ciúme de Bentinho"
+            },
+            {
+                "palavra": "OLAVOBILAC",
+                "dica": "Principal poeta parnasiano do Brasil"
+            },
+            {
+                "palavra": "NATURALISMO",
+                "dica": "Movimento que destaca o determinismo"
+            },
+            {
+                "palavra": "VIDASSECAS",
+                "dica": "Obra de Graciliano Ramos"
+            },
+            {
+                "palavra": "GUIMARAESROSA",
+                "dica": "Autor de 'Grande Sertão: Veredas'"
+            },
+            {
+                "palavra": "CLARICELISPECTOR",
+                "dica": "Autora de 'A Hora da Estrela'"
+            },
+            {
+                "palavra": "MARIODEANDRADE",
+                "dica": "Líder modernista e autor de 'Macunaíma'"
+            },
+            {
+                "palavra": "JORGEAMADO",
+                "dica": "Autor de 'Capitães da Areia'"
+            },
+            {
+                "palavra": "MACABEA",
+                "dica": "Personagem de 'A Hora da Estrela'"
+            },
+            {
+                "palavra": "JOAOCABRALDEMELO",
+                "dica": "Autor de 'Morte e Vida Severina'"
+            },
+            {
+                "palavra": "SAGARANA",
+                "dica": "Coletânea de contos de Guimarães Rosa"
+            },
+            {
+                "palavra": "OCORTICO",
+                "dica": "Romance naturalista de Aluísio Azevedo"
+            },
+            {
+                "palavra": "AROSADOPOVO",
+                "dica": "Livro de poesia de Drummond"
+            },
+            {
+                "palavra": "JOSÉLINSDOREGO",
+                "dica": "Autor de 'Menino de Engenho'"
+            },
+            {
+                "palavra": "IRACEMA",
+                "dica": "Obra indianista de José de Alencar"
+            },
+            {
+                "palavra": "ERICOVERISSIMO",
+                "dica": "Autor de 'O Tempo e o Vento'"
+            },
+            {
+                "palavra": "FERNANDOPESSOA",
+                "dica": "Poeta português e autor de 'Mensagem'"
+            },
+            {
+                "palavra": "PARANASIANISMO",
+                "dica": "Movimento que valoriza a forma e perfeição estética"
+            }
+        ]
+    }
+
+}

@@ -1,0 +1,855 @@
+{
+    "facil": {
+        "objetiva": [{
+                "pergunta": "Quem é o criador do personagem Mickey Mouse?",
+                "alternativas": {
+                    "A": "Walt Disney",
+                    "B": "Stan Lee",
+                    "C": "George Lucas",
+                    "D": "Hanna-Barbera"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual grupo musical lançou a música 'Let It Be'?",
+                "alternativas": {
+                    "A": "The Rolling Stones",
+                    "B": "The Beatles",
+                    "C": "Queen",
+                    "D": "ABBA"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do bruxo protagonista de uma famosa série de livros e filmes?",
+                "alternativas": {
+                    "A": "Harry Potter",
+                    "B": "Gandalf",
+                    "C": "Merlin",
+                    "D": "Dr. Estranho"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em qual rede social o símbolo é um passarinho azul?",
+                "alternativas": {
+                    "A": "Facebook",
+                    "B": "Instagram",
+                    "C": "Twitter",
+                    "D": "TikTok"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Quem canta a música 'Shape of You'?",
+                "alternativas": {
+                    "A": "Ed Sheeran",
+                    "B": "Justin Bieber",
+                    "C": "Shawn Mendes",
+                    "D": "Bruno Mars"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o nome do super-herói que usa uma armadura de ferro?",
+                "alternativas": {
+                    "A": "Homem de Ferro",
+                    "B": "Capitão América",
+                    "C": "Superman",
+                    "D": "Batman"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual empresa criou o videogame PlayStation?",
+                "alternativas": {
+                    "A": "Microsoft",
+                    "B": "Nintendo",
+                    "C": "Sony",
+                    "D": "Sega"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual personagem mora no fundo do mar e trabalha em um restaurante?",
+                "alternativas": {
+                    "A": "Nemo",
+                    "B": "Bob Esponja",
+                    "C": "Patrick",
+                    "D": "Plâncton"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome da saga de filmes com sabres de luz?",
+                "alternativas": {
+                    "A": "Star Trek",
+                    "B": "Star Wars",
+                    "C": "Guardians",
+                    "D": "Matrix"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o melhor amigo do Homem-Aranha?",
+                "alternativas": {
+                    "A": "Ned",
+                    "B": "Harry Osborn",
+                    "C": "Tony Stark",
+                    "D": "Flash"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do jogo onde os jogadores constroem blocos e sobrevivem a monstros?",
+                "alternativas": {
+                    "A": "Roblox",
+                    "B": "Minecraft",
+                    "C": "Fortnite",
+                    "D": "Terraria"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual cantora é conhecida como a 'Rainha do Pop'?",
+                "alternativas": {
+                    "A": "Beyoncé",
+                    "B": "Madonna",
+                    "C": "Rihanna",
+                    "D": "Lady Gaga"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do parque temático criado por Walt Disney?",
+                "alternativas": {
+                    "A": "Wonderland",
+                    "B": "Magic Park",
+                    "C": "Disneyland",
+                    "D": "Dream Park"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o nome do super-herói que vive em Gotham City?",
+                "alternativas": {
+                    "A": "Superman",
+                    "B": "Batman",
+                    "C": "Flash",
+                    "D": "Aquaman"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o protagonista da série 'Stranger Things'?",
+                "alternativas": {
+                    "A": "Mike",
+                    "B": "Eleven",
+                    "C": "Will",
+                    "D": "Lucas"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do robô dourado de Star Wars?",
+                "alternativas": {
+                    "A": "R2-D2",
+                    "B": "C-3PO",
+                    "C": "BB-8",
+                    "D": "K-2SO"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o vilão principal dos filmes dos Vingadores?",
+                "alternativas": {
+                    "A": "Loki",
+                    "B": "Thanos",
+                    "C": "Ultron",
+                    "D": "Kang"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual princesa da Disney tem um cabelo mágico?",
+                "alternativas": {
+                    "A": "Ariel",
+                    "B": "Rapunzel",
+                    "C": "Elsa",
+                    "D": "Bela"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do personagem verde e forte dos quadrinhos da Marvel?",
+                "alternativas": {
+                    "A": "Hulk",
+                    "B": "Shrek",
+                    "C": "Groot",
+                    "D": "Yoda"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o nome do jogo popular de dança com câmera?",
+                "alternativas": {
+                    "A": "Dance Central",
+                    "B": "Just Dance",
+                    "C": "Beat Saber",
+                    "D": "Step Mania"
+                },
+                "resposta_certa": "B"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "MARVEL",
+                "dica": "Universo dos Vingadores e Homem-Aranha"
+            },
+            {
+                "palavra": "DISNEY",
+                "dica": "Criadora de Mickey e princesas"
+            },
+            {
+                "palavra": "NETFLIX",
+                "dica": "Plataforma popular de streaming"
+            },
+            {
+                "palavra": "PODCAST",
+                "dica": "Programa de áudio sob demanda"
+            },
+            {
+                "palavra": "TIKTOK",
+                "dica": "Rede social de vídeos curtos"
+            },
+            {
+                "palavra": "MEME",
+                "dica": "Conteúdo engraçado que viraliza"
+            },
+            {
+                "palavra": "YOUTUBE",
+                "dica": "Plataforma de vídeos mais usada"
+            },
+            {
+                "palavra": "INSTAGRAM",
+                "dica": "Rede social de fotos e stories"
+            },
+            {
+                "palavra": "BATMAN",
+                "dica": "Herói de Gotham City"
+            },
+            {
+                "palavra": "HARRY",
+                "dica": "Nome do bruxo mais famoso do cinema"
+            },
+            {
+                "palavra": "POPPER",
+                "dica": "Termo que dá origem a 'Cultura Pop'"
+            },
+            {
+                "palavra": "FORTNITE",
+                "dica": "Jogo de batalha e dança"
+            },
+            {
+                "palavra": "MINECRAFT",
+                "dica": "Jogo de blocos e sobrevivência"
+            },
+            {
+                "palavra": "THANOS",
+                "dica": "Vilão que usou a Manopla do Infinito"
+            },
+            {
+                "palavra": "BEYONCE",
+                "dica": "Cantora famosa de 'Single Ladies'"
+            },
+            {
+                "palavra": "MADONNA",
+                "dica": "Conhecida como Rainha do Pop"
+            },
+            {
+                "palavra": "SPONGEBOB",
+                "dica": "Personagem que mora no abacaxi"
+            },
+            {
+                "palavra": "SONY",
+                "dica": "Empresa criadora do PlayStation"
+            },
+            {
+                "palavra": "STARWARS",
+                "dica": "Saga com sabres de luz"
+            },
+            {
+                "palavra": "MARVEL",
+                "dica": "Casa dos Vingadores e do Hulk"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [{
+                "pergunta": "Quem é o criador do universo Marvel?",
+                "alternativas": {
+                    "A": "George Lucas",
+                    "B": "Stan Lee",
+                    "C": "Walt Disney",
+                    "D": "James Gunn"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual cantor é conhecido como o 'Rei do Pop'?",
+                "alternativas": {
+                    "A": "Elvis Presley",
+                    "B": "Justin Timberlake",
+                    "C": "Michael Jackson",
+                    "D": "Bruno Mars"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual série da Netflix mostra o jogo mortal do 'batatinha frita 1, 2, 3'?",
+                "alternativas": {
+                    "A": "Alice in Borderland",
+                    "B": "Round 6",
+                    "C": "Black Mirror",
+                    "D": "Dark"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem interpretou o Homem de Ferro no cinema?",
+                "alternativas": {
+                    "A": "Chris Evans",
+                    "B": "Robert Downey Jr.",
+                    "C": "Tom Cruise",
+                    "D": "Mark Ruffalo"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome verdadeiro da cantora Lady Gaga?",
+                "alternativas": {
+                    "A": "Stefani Germanotta",
+                    "B": "Adele Laurie",
+                    "C": "Katy Hudson",
+                    "D": "Taylor Alison"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual série da HBO conta a história da família Targaryen?",
+                "alternativas": {
+                    "A": "The Witcher",
+                    "B": "House of the Dragon",
+                    "C": "Vikings",
+                    "D": "Game of Thrones"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual foi o primeiro filme do Universo Cinematográfico Marvel?",
+                "alternativas": {
+                    "A": "Homem de Ferro",
+                    "B": "Capitão América",
+                    "C": "Thor",
+                    "D": "Hulk"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual rapper lançou o álbum 'The Marshall Mathers LP'?",
+                "alternativas": {
+                    "A": "Kanye West",
+                    "B": "Dr. Dre",
+                    "C": "Eminem",
+                    "D": "Jay-Z"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Em qual série aparece o personagem Walter White?",
+                "alternativas": {
+                    "A": "The Sopranos",
+                    "B": "Breaking Bad",
+                    "C": "Narcos",
+                    "D": "Ozark"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual cantora interpretou Ally no filme 'Nasce uma Estrela'?",
+                "alternativas": {
+                    "A": "Adele",
+                    "B": "Lady Gaga",
+                    "C": "Rihanna",
+                    "D": "Dua Lipa"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual banda é responsável pela música 'Bohemian Rhapsody'?",
+                "alternativas": {
+                    "A": "Queen",
+                    "B": "The Beatles",
+                    "C": "U2",
+                    "D": "Coldplay"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em 'Stranger Things', qual é o nome da dimensão paralela?",
+                "alternativas": {
+                    "A": "Upside Down",
+                    "B": "The Other Side",
+                    "C": "The Shadow",
+                    "D": "Dark World"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem é o criador da série 'The Simpsons'?",
+                "alternativas": {
+                    "A": "Matt Groening",
+                    "B": "Seth MacFarlane",
+                    "C": "Dan Harmon",
+                    "D": "Mike Judge"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o nome do herói interpretado por Chadwick Boseman?",
+                "alternativas": {
+                    "A": "Pantera Negra",
+                    "B": "Homem de Ferro",
+                    "C": "Blade",
+                    "D": "Falcon"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o nome do universo compartilhado de filmes da DC Comics?",
+                "alternativas": {
+                    "A": "DCU",
+                    "B": "DCEU",
+                    "C": "DC Multiverse",
+                    "D": "JusticeVerse"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o criador da saga Star Wars?",
+                "alternativas": {
+                    "A": "George Lucas",
+                    "B": "James Cameron",
+                    "C": "Steven Spielberg",
+                    "D": "Ridley Scott"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o nome da heroína vivida por Gal Gadot?",
+                "alternativas": {
+                    "A": "Viúva Negra",
+                    "B": "Mulher-Maravilha",
+                    "C": "Capitã Marvel",
+                    "D": "Gamora"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual série popular da Netflix é inspirada em um jogo de xadrez?",
+                "alternativas": {
+                    "A": "O Gambito da Rainha",
+                    "B": "Lupin",
+                    "C": "You",
+                    "D": "Mindhunter"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual cantor lançou o álbum 'After Hours' com o hit 'Blinding Lights'?",
+                "alternativas": {
+                    "A": "The Weeknd",
+                    "B": "Drake",
+                    "C": "Post Malone",
+                    "D": "Bruno Mars"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual banda coreana se tornou um fenômeno global com o hit 'Dynamite'?",
+                "alternativas": {
+                    "A": "EXO",
+                    "B": "BLACKPINK",
+                    "C": "BTS",
+                    "D": "TWICE"
+                },
+                "resposta_certa": "C"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "NETFLIX",
+                "dica": "Plataforma que lançou Round 6 e Stranger Things"
+            },
+            {
+                "palavra": "STANLEE",
+                "dica": "Criador do universo Marvel"
+            },
+            {
+                "palavra": "POPCORN",
+                "dica": "Comida clássica de cinema"
+            },
+            {
+                "palavra": "EMINEM",
+                "dica": "Rapper do álbum The Marshall Mathers LP"
+            },
+            {
+                "palavra": "GAGA",
+                "dica": "Cantora de 'Bad Romance' e atriz em 'Nasce uma Estrela'"
+            },
+            {
+                "palavra": "BTS",
+                "dica": "Grupo coreano de sucesso mundial"
+            },
+            {
+                "palavra": "QUEEN",
+                "dica": "Banda que lançou Bohemian Rhapsody"
+            },
+            {
+                "palavra": "TARGARYEN",
+                "dica": "Família da série House of the Dragon"
+            },
+            {
+                "palavra": "DISNEY",
+                "dica": "Casa de Mickey e Marvel"
+            },
+            {
+                "palavra": "MARVEL",
+                "dica": "Universo dos Vingadores"
+            },
+            {
+                "palavra": "DC",
+                "dica": "Editora de Batman e Mulher-Maravilha"
+            },
+            {
+                "palavra": "WALTER",
+                "dica": "Nome do protagonista de Breaking Bad"
+            },
+            {
+                "palavra": "POTTER",
+                "dica": "Sobrenome do bruxo famoso"
+            },
+            {
+                "palavra": "GROENING",
+                "dica": "Criador de Os Simpsons"
+            },
+            {
+                "palavra": "THANOS",
+                "dica": "Vilão que usou a Manopla do Infinito"
+            },
+            {
+                "palavra": "DRAKE",
+                "dica": "Rapper canadense de 'Hotline Bling'"
+            },
+            {
+                "palavra": "GAMER",
+                "dica": "Pessoa que joga videogames"
+            },
+            {
+                "palavra": "TWITTER",
+                "dica": "Rede social do passarinho azul"
+            },
+            {
+                "palavra": "PIXAR",
+                "dica": "Estúdio de animações como Toy Story"
+            },
+            {
+                "palavra": "COSPLAY",
+                "dica": "Prática de se vestir como personagens"
+            }
+        ]
+    },
+
+    "dificil": {
+        "objetiva": [{
+                "pergunta": "Qual diretor é conhecido por filmes como 'Pulp Fiction' e 'Kill Bill'?",
+                "alternativas": {
+                    "A": "Martin Scorsese",
+                    "B": "Christopher Nolan",
+                    "C": "Quentin Tarantino",
+                    "D": "Steven Spielberg"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual banda britânica lançou o álbum 'The Dark Side of the Moon'?",
+                "alternativas": {
+                    "A": "Pink Floyd",
+                    "B": "The Beatles",
+                    "C": "The Rolling Stones",
+                    "D": "Queen"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem compôs a trilha sonora original de 'Interestelar'?",
+                "alternativas": {
+                    "A": "Hans Zimmer",
+                    "B": "John Williams",
+                    "C": "James Newton Howard",
+                    "D": "Danny Elfman"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual série popular da HBO tem o episódio 'The Red Wedding'?",
+                "alternativas": {
+                    "A": "House of the Dragon",
+                    "B": "Game of Thrones",
+                    "C": "Westworld",
+                    "D": "The Last of Us"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual o verdadeiro nome de The Weeknd?",
+                "alternativas": {
+                    "A": "Abel Tesfaye",
+                    "B": "Aubrey Graham",
+                    "C": "Shawn Carter",
+                    "D": "Calvin Harris"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em qual cidade se passa a maior parte de 'Breaking Bad'?",
+                "alternativas": {
+                    "A": "Las Vegas",
+                    "B": "Phoenix",
+                    "C": "Albuquerque",
+                    "D": "Dallas"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual foi o primeiro filme a ganhar 11 Oscars sem ser musical?",
+                "alternativas": {
+                    "A": "Titanic",
+                    "B": "Ben-Hur",
+                    "C": "O Senhor dos Anéis: O Retorno do Rei",
+                    "D": "Avatar"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual personagem da Marvel empunha o martelo Mjolnir?",
+                "alternativas": {
+                    "A": "Loki",
+                    "B": "Thor",
+                    "C": "Odin",
+                    "D": "Heimdall"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o autor dos livros que inspiraram 'Game of Thrones'?",
+                "alternativas": {
+                    "A": "J.R.R. Tolkien",
+                    "B": "George R.R. Martin",
+                    "C": "Neil Gaiman",
+                    "D": "Stephen King"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual filme de Christopher Nolan trata de sonhos dentro de sonhos?",
+                "alternativas": {
+                    "A": "Memento",
+                    "B": "A Origem",
+                    "C": "Tenet",
+                    "D": "O Grande Truque"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual artista lançou o álbum 'Lemonade'?",
+                "alternativas": {
+                    "A": "Beyoncé",
+                    "B": "Rihanna",
+                    "C": "Adele",
+                    "D": "Nicki Minaj"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em que ano foi lançado o primeiro filme dos Vingadores?",
+                "alternativas": {
+                    "A": "2010",
+                    "B": "2012",
+                    "C": "2014",
+                    "D": "2015"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o protagonista da série 'Peaky Blinders'?",
+                "alternativas": {
+                    "A": "Tom Hardy",
+                    "B": "Cillian Murphy",
+                    "C": "Sam Neill",
+                    "D": "Charlie Hunnam"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual diretor foi responsável por 'O Senhor dos Anéis'?",
+                "alternativas": {
+                    "A": "James Cameron",
+                    "B": "Peter Jackson",
+                    "C": "Ridley Scott",
+                    "D": "Zack Snyder"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o verdadeiro nome do personagem Deadpool?",
+                "alternativas": {
+                    "A": "Wade Wilson",
+                    "B": "Logan Howlett",
+                    "C": "Frank Castle",
+                    "D": "Scott Lang"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem foi o criador da série 'Black Mirror'?",
+                "alternativas": {
+                    "A": "Charlie Brooker",
+                    "B": "David Fincher",
+                    "C": "Sam Esmail",
+                    "D": "Mike Flanagan"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual banda é responsável pela música 'Smells Like Teen Spirit'?",
+                "alternativas": {
+                    "A": "Nirvana",
+                    "B": "Pearl Jam",
+                    "C": "Foo Fighters",
+                    "D": "Soundgarden"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual série da Netflix é baseada em 'The Witcher'?",
+                "alternativas": {
+                    "A": "Shadow and Bone",
+                    "B": "The Witcher",
+                    "C": "The Sandman",
+                    "D": "Cursed"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual filme de 1999 revolucionou o cinema com câmeras lentas e estética cibernética?",
+                "alternativas": {
+                    "A": "Matrix",
+                    "B": "Blade Runner",
+                    "C": "Equilibrium",
+                    "D": "Minority Report"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual rapper foi o primeiro a ganhar o Prêmio Pulitzer de Música?",
+                "alternativas": {
+                    "A": "Jay-Z",
+                    "B": "Kendrick Lamar",
+                    "C": "Drake",
+                    "D": "Kanye West"
+                },
+                "resposta_certa": "B"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "TARANTINO",
+                "dica": "Diretor de Pulp Fiction"
+            },
+            {
+                "palavra": "NOLAN",
+                "dica": "Diretor de A Origem e Interestelar"
+            },
+            {
+                "palavra": "ZIMMER",
+                "dica": "Compositor da trilha de Interestelar"
+            },
+            {
+                "palavra": "ALBUQUERQUE",
+                "dica": "Cidade de Breaking Bad"
+            },
+            {
+                "palavra": "TOLKIEN",
+                "dica": "Autor de O Senhor dos Anéis"
+            },
+            {
+                "palavra": "BEYONCE",
+                "dica": "Cantora do álbum Lemonade"
+            },
+            {
+                "palavra": "MJOLNIR",
+                "dica": "Martelo de Thor"
+            },
+            {
+                "palavra": "MATRIX",
+                "dica": "Filme com Neo e o mundo simulado"
+            },
+            {
+                "palavra": "GOLLUM",
+                "dica": "Criatura obcecada pelo 'precioso'"
+            },
+            {
+                "palavra": "MURPHY",
+                "dica": "Ator de Peaky Blinders"
+            },
+            {
+                "palavra": "BROOKER",
+                "dica": "Criador de Black Mirror"
+            },
+            {
+                "palavra": "KENDRICK",
+                "dica": "Primeiro rapper a ganhar o Pulitzer"
+            },
+            {
+                "palavra": "NIRVANA",
+                "dica": "Banda de Kurt Cobain"
+            },
+            {
+                "palavra": "TESFAYE",
+                "dica": "Sobrenome do The Weeknd"
+            },
+            {
+                "palavra": "AVENGERS",
+                "dica": "Grupo de heróis da Marvel"
+            },
+            {
+                "palavra": "JACKSON",
+                "dica": "Sobrenome do diretor de O Senhor dos Anéis"
+            },
+            {
+                "palavra": "FLOYD",
+                "dica": "Parte do nome da banda de The Dark Side of the Moon"
+            },
+            {
+                "palavra": "THANOS",
+                "dica": "Vilão que busca as Joias do Infinito"
+            },
+            {
+                "palavra": "GOTHAM",
+                "dica": "Cidade do Batman"
+            },
+            {
+                "palavra": "SCORSESE",
+                "dica": "Diretor de O Lobo de Wall Street"
+            }
+        ]
+    }
+}

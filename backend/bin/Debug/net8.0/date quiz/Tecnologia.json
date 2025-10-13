@@ -1,0 +1,854 @@
+{
+    "facil": {
+        "objetiva": [{
+                "pergunta": "O que é um computador?",
+                "alternativas": {
+                    "A": "Um tipo de animal",
+                    "B": "Um dispositivo para processar informações",
+                    "C": "Um brinquedo",
+                    "D": "Uma ferramenta de jardinagem"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual dispositivo usamos para digitar textos no computador?",
+                "alternativas": {
+                    "A": "Mouse",
+                    "B": "Teclado",
+                    "C": "Monitor",
+                    "D": "Impressora"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual parte do computador mostra as imagens?",
+                "alternativas": {
+                    "A": "CPU",
+                    "B": "Mouse",
+                    "C": "Monitor",
+                    "D": "Teclado"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o sistema operacional mais usado em computadores pessoais?",
+                "alternativas": {
+                    "A": "Linux",
+                    "B": "Windows",
+                    "C": "MacOS",
+                    "D": "Android"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa a sigla 'USB'?",
+                "alternativas": {
+                    "A": "Universal Serial Bus",
+                    "B": "Unique System Base",
+                    "C": "User System Backup",
+                    "D": "Unified Storage Box"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual dispositivo é usado para mover o cursor na tela?",
+                "alternativas": {
+                    "A": "Teclado",
+                    "B": "Mouse",
+                    "C": "Monitor",
+                    "D": "CPU"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é a Internet?",
+                "alternativas": {
+                    "A": "Um tipo de computador",
+                    "B": "Uma rede mundial de computadores",
+                    "C": "Um software de jogos",
+                    "D": "Um programa de música"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é um smartphone?",
+                "alternativas": {
+                    "A": "Um tipo de relógio",
+                    "B": "Um telefone com funções de computador",
+                    "C": "Um rádio antigo",
+                    "D": "Um projetor"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual programa é usado para navegar na Internet?",
+                "alternativas": {
+                    "A": "Navegador",
+                    "B": "Editor de texto",
+                    "C": "Calculadora",
+                    "D": "Antivírus"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um arquivo?",
+                "alternativas": {
+                    "A": "Um documento digital ou dado armazenado",
+                    "B": "Um tipo de vírus",
+                    "C": "Um programa de música",
+                    "D": "Um hardware de vídeo"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um vírus de computador?",
+                "alternativas": {
+                    "A": "Um erro do teclado",
+                    "B": "Um programa que danifica o sistema",
+                    "C": "Uma peça do computador",
+                    "D": "Um arquivo de som"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa 'Wi-Fi'?",
+                "alternativas": {
+                    "A": "Conexão sem fio com a Internet",
+                    "B": "Um tipo de cabo de rede",
+                    "C": "Um programa de vídeo",
+                    "D": "Um aplicativo de jogos"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é a nuvem (cloud)?",
+                "alternativas": {
+                    "A": "Um local físico para guardar dados",
+                    "B": "Um serviço online para armazenar arquivos",
+                    "C": "Um tipo de vírus digital",
+                    "D": "Um programa de antivírus"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual destas é uma marca de smartphone?",
+                "alternativas": {
+                    "A": "Windows",
+                    "B": "Samsung",
+                    "C": "Google Chrome",
+                    "D": "Excel"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é um aplicativo (app)?",
+                "alternativas": {
+                    "A": "Um tipo de site",
+                    "B": "Um programa usado em dispositivos digitais",
+                    "C": "Uma linguagem de programação",
+                    "D": "Um tipo de hardware"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual destes é um exemplo de rede social?",
+                "alternativas": {
+                    "A": "Google Drive",
+                    "B": "Facebook",
+                    "C": "Microsoft Word",
+                    "D": "Excel"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa 'CPU'?",
+                "alternativas": {
+                    "A": "Central Processing Unit",
+                    "B": "Computer Power Unit",
+                    "C": "Central Program Utility",
+                    "D": "Control Personal User"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um pendrive?",
+                "alternativas": {
+                    "A": "Um tipo de programa",
+                    "B": "Um dispositivo para armazenar dados",
+                    "C": "Um tipo de antivírus",
+                    "D": "Um aplicativo de música"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é um software?",
+                "alternativas": {
+                    "A": "Parte física do computador",
+                    "B": "Parte lógica, os programas e sistemas",
+                    "C": "Um tipo de cabo",
+                    "D": "Um componente da placa-mãe"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é um hardware?",
+                "alternativas": {
+                    "A": "Parte física do computador",
+                    "B": "Parte lógica do computador",
+                    "C": "Um tipo de vírus",
+                    "D": "Um programa de edição"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "COMPUTADOR",
+                "dica": "Máquina usada para processar informações"
+            },
+            {
+                "palavra": "INTERNET",
+                "dica": "Rede mundial que conecta computadores"
+            },
+            {
+                "palavra": "TECLADO",
+                "dica": "Usado para digitar textos"
+            },
+            {
+                "palavra": "MOUSE",
+                "dica": "Usado para mover o cursor na tela"
+            },
+            {
+                "palavra": "MONITOR",
+                "dica": "Exibe imagens e vídeos"
+            },
+            {
+                "palavra": "SOFTWARE",
+                "dica": "Parte lógica de um computador"
+            },
+            {
+                "palavra": "HARDWARE",
+                "dica": "Parte física de um computador"
+            },
+            {
+                "palavra": "WI-FI",
+                "dica": "Conexão sem fio com a Internet"
+            },
+            {
+                "palavra": "VIRUS",
+                "dica": "Programa que danifica o computador"
+            },
+            {
+                "palavra": "CPU",
+                "dica": "Parte do computador que processa dados"
+            },
+            {
+                "palavra": "USB",
+                "dica": "Padrão de conexão de dispositivos"
+            },
+            {
+                "palavra": "APLICATIVO",
+                "dica": "Programa usado em celulares e tablets"
+            },
+            {
+                "palavra": "SMARTPHONE",
+                "dica": "Telefone com funções de computador"
+            },
+            {
+                "palavra": "REDE",
+                "dica": "Conjunto de computadores conectados"
+            },
+            {
+                "palavra": "DADOS",
+                "dica": "Informações processadas pelo computador"
+            },
+            {
+                "palavra": "NAVEGADOR",
+                "dica": "Programa usado para acessar sites"
+            },
+            {
+                "palavra": "CLOUD",
+                "dica": "Serviço de armazenamento online"
+            },
+            {
+                "palavra": "TECNOLOGIA",
+                "dica": "Uso do conhecimento para criar soluções"
+            },
+            {
+                "palavra": "ENERGIA",
+                "dica": "Necessária para o funcionamento dos aparelhos"
+            },
+            {
+                "palavra": "TELA",
+                "dica": "Superfície onde são exibidas imagens"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [{
+                "pergunta": "O que é um sistema operacional?",
+                "alternativas": {
+                    "A": "Um tipo de hardware",
+                    "B": "Programa que gerencia o computador e seus recursos",
+                    "C": "Um tipo de vírus",
+                    "D": "Um aplicativo de mensagens"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa 'HTTP' em endereços de sites?",
+                "alternativas": {
+                    "A": "HyperText Transfer Protocol",
+                    "B": "High Tech Transmission Protocol",
+                    "C": "Hyper Tool Text Program",
+                    "D": "Host Transfer Technology Protocol"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um banco de dados?",
+                "alternativas": {
+                    "A": "Um tipo de computador",
+                    "B": "Coleção organizada de informações armazenadas",
+                    "C": "Programa de edição de fotos",
+                    "D": "Rede de computadores sem fio"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa 'IP' em endereços de rede?",
+                "alternativas": {
+                    "A": "Internet Provider",
+                    "B": "Internet Protocol",
+                    "C": "Internal Program",
+                    "D": "Information Path"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é um firewall?",
+                "alternativas": {
+                    "A": "Um antivírus",
+                    "B": "Um sistema que controla o acesso à rede e protege contra ataques",
+                    "C": "Um programa de edição",
+                    "D": "Um tipo de roteador"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual linguagem de programação é muito usada para web?",
+                "alternativas": {
+                    "A": "HTML",
+                    "B": "Photoshop",
+                    "C": "Word",
+                    "D": "Excel"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é a nuvem (cloud computing)?",
+                "alternativas": {
+                    "A": "Um tipo de processador",
+                    "B": "Armazenamento e processamento de dados online",
+                    "C": "Uma linguagem de programação",
+                    "D": "Um antivírus"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual dispositivo conecta computadores a uma rede sem fio?",
+                "alternativas": {
+                    "A": "Roteador",
+                    "B": "Teclado",
+                    "C": "Monitor",
+                    "D": "Impressora"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um endereço MAC?",
+                "alternativas": {
+                    "A": "Número único de identificação de um dispositivo na rede",
+                    "B": "Um tipo de vírus",
+                    "C": "Um arquivo de configuração",
+                    "D": "Um programa de monitoramento"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é criptografia?",
+                "alternativas": {
+                    "A": "Cálculo matemático para quebrar senhas",
+                    "B": "Processo de codificar informações para proteção",
+                    "C": "Tipo de processador",
+                    "D": "Uma rede de computadores"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é inteligência artificial (IA)?",
+                "alternativas": {
+                    "A": "Programas que simulam comportamento humano",
+                    "B": "Hardware avançado",
+                    "C": "Rede sem fio",
+                    "D": "Sistema de antivírus"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um algoritmo?",
+                "alternativas": {
+                    "A": "Uma sequência de instruções para resolver problemas",
+                    "B": "Um tipo de hardware",
+                    "C": "Um programa de edição de imagens",
+                    "D": "Um tipo de rede"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que significa 'HTML'?",
+                "alternativas": {
+                    "A": "HyperText Markup Language",
+                    "B": "High Tech Media Language",
+                    "C": "Hyper Tool Module Language",
+                    "D": "Host Transfer Media Link"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um software de código aberto (open source)?",
+                "alternativas": {
+                    "A": "Software pago",
+                    "B": "Programa com código disponível para modificação",
+                    "C": "Software apenas para empresas",
+                    "D": "Um antivírus gratuito"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o principal objetivo do backup?",
+                "alternativas": {
+                    "A": "Aumentar a velocidade do computador",
+                    "B": "Proteger dados copiando-os para outro local",
+                    "C": "Instalar programas",
+                    "D": "Monitorar a rede"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é IoT (Internet das Coisas)?",
+                "alternativas": {
+                    "A": "Redes sociais",
+                    "B": "Dispositivos conectados que trocam informações",
+                    "C": "Programa de antivírus",
+                    "D": "Tipo de hardware"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa SSD em computadores?",
+                "alternativas": {
+                    "A": "Solid State Drive",
+                    "B": "Super Speed Device",
+                    "C": "Standard Storage Disk",
+                    "D": "System Software Disk"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a função de um antivírus?",
+                "alternativas": {
+                    "A": "Aumentar a velocidade do computador",
+                    "B": "Proteger o computador contra softwares maliciosos",
+                    "C": "Editar fotos",
+                    "D": "Armazenar arquivos"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa LAN?",
+                "alternativas": {
+                    "A": "Local Area Network",
+                    "B": "Long Access Node",
+                    "C": "Large Application Network",
+                    "D": "Light Access Node"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é realidade aumentada (AR)?",
+                "alternativas": {
+                    "A": "Simular objetos virtuais sobre o mundo real",
+                    "B": "Criar jogos offline",
+                    "C": "Desenhar imagens 2D",
+                    "D": "Imprimir arquivos"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "SISTEMA_OPERACIONAL",
+                "dica": "Programa que gerencia hardware e software"
+            },
+            {
+                "palavra": "HTTP",
+                "dica": "Protocolo usado na web"
+            },
+            {
+                "palavra": "FIREWALL",
+                "dica": "Protege a rede de acessos não autorizados"
+            },
+            {
+                "palavra": "ALGORITMO",
+                "dica": "Sequência de instruções para resolver problemas"
+            },
+            {
+                "palavra": "BACKUP",
+                "dica": "Cópia de segurança de dados"
+            },
+            {
+                "palavra": "IOT",
+                "dica": "Dispositivos conectados trocando informações"
+            },
+            {
+                "palavra": "SSD",
+                "dica": "Dispositivo de armazenamento rápido"
+            },
+            {
+                "palavra": "NAVEGADOR",
+                "dica": "Programa usado para acessar sites"
+            },
+            {
+                "palavra": "CLOUD",
+                "dica": "Armazenamento e processamento online"
+            },
+            {
+                "palavra": "CRIPTOGRAFIA",
+                "dica": "Codificação de dados para segurança"
+            },
+            {
+                "palavra": "IP",
+                "dica": "Endereço que identifica um dispositivo na rede"
+            },
+            {
+                "palavra": "CPU",
+                "dica": "Processador de informações do computador"
+            },
+            {
+                "palavra": "HTML",
+                "dica": "Linguagem de marcação usada na web"
+            },
+            {
+                "palavra": "IA",
+                "dica": "Programas que simulam inteligência humana"
+            },
+            {
+                "palavra": "OPEN_SOURCE",
+                "dica": "Software com código aberto"
+            },
+            {
+                "palavra": "ANTIVIRUS",
+                "dica": "Protege o computador de programas maliciosos"
+            },
+            {
+                "palavra": "ROTEADOR",
+                "dica": "Dispositivo que conecta computadores à rede"
+            },
+            {
+                "palavra": "REDE",
+                "dica": "Conjunto de computadores conectados"
+            },
+            {
+                "palavra": "APLICATIVO",
+                "dica": "Programa usado em celulares ou tablets"
+            },
+            {
+                "palavra": "TECNOLOGIA",
+                "dica": "Uso do conhecimento para criar soluções"
+            }
+        ]
+    },
+    "dificil": {
+        "objetiva": [{
+                "pergunta": "O que é computação quântica?",
+                "alternativas": {
+                    "A": "Uso de computadores muito rápidos convencionais",
+                    "B": "Computação baseada em princípios da mecânica quântica",
+                    "C": "Computação na nuvem",
+                    "D": "Processamento de dados em rede local"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é machine learning?",
+                "alternativas": {
+                    "A": "Aprendizado de máquina por humanos",
+                    "B": "Treinamento de algoritmos para aprender padrões e fazer previsões",
+                    "C": "Montagem de computadores",
+                    "D": "Programas de edição de imagens"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é blockchain?",
+                "alternativas": {
+                    "A": "Um tipo de antivírus",
+                    "B": "Banco de dados distribuído e seguro usado em criptomoedas",
+                    "C": "Programa para armazenamento local",
+                    "D": "Linguagem de programação"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa API?",
+                "alternativas": {
+                    "A": "Application Programming Interface",
+                    "B": "Automatic Program Integration",
+                    "C": "Advanced Processing Interface",
+                    "D": "Application Protocol Input"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é virtualização?",
+                "alternativas": {
+                    "A": "Criação de múltiplos sistemas virtuais em um único hardware",
+                    "B": "Simulação de rede sem fio",
+                    "C": "Programa de edição de fotos",
+                    "D": "Criação de sites"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é deep learning?",
+                "alternativas": {
+                    "A": "Aprendizado profundo de redes neurais artificiais",
+                    "B": "Programação de baixo nível",
+                    "C": "Design de hardware",
+                    "D": "Criptografia avançada"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um protocolo de comunicação?",
+                "alternativas": {
+                    "A": "Conjunto de regras para troca de informações entre sistemas",
+                    "B": "Programa de edição de vídeo",
+                    "C": "Computador conectado à internet",
+                    "D": "Software de banco de dados"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é DevOps?",
+                "alternativas": {
+                    "A": "Integração entre desenvolvimento de software e operações de TI",
+                    "B": "Programa de antivírus",
+                    "C": "Banco de dados distribuído",
+                    "D": "Linguagem de programação web"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um microserviço?",
+                "alternativas": {
+                    "A": "Serviço de armazenamento físico",
+                    "B": "Arquitetura de software baseada em serviços pequenos e independentes",
+                    "C": "Dispositivo de rede",
+                    "D": "Programa de monitoramento"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é edge computing?",
+                "alternativas": {
+                    "A": "Processamento de dados próximo à fonte para reduzir latência",
+                    "B": "Computação na nuvem",
+                    "C": "Armazenamento local",
+                    "D": "Criação de aplicativos móveis"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é cibersegurança?",
+                "alternativas": {
+                    "A": "Proteção de computadores, redes e dados contra ataques digitais",
+                    "B": "Programação de jogos",
+                    "C": "Conexão de dispositivos IoT",
+                    "D": "Design de interfaces"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um container em TI?",
+                "alternativas": {
+                    "A": "Sistema de armazenamento físico",
+                    "B": "Tecnologia que empacota aplicações e dependências para execução isolada",
+                    "C": "Programa de edição",
+                    "D": "Tipo de protocolo de rede"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é um protocolo HTTPS?",
+                "alternativas": {
+                    "A": "Versão segura do HTTP que criptografa dados",
+                    "B": "Programa de transferência de arquivos",
+                    "C": "Rede privada local",
+                    "D": "Sistema operacional"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é token em tecnologia blockchain?",
+                "alternativas": {
+                    "A": "Arquivo de configuração",
+                    "B": "Unidade de valor registrada em blockchain",
+                    "C": "Dispositivo de hardware",
+                    "D": "Programa de monitoramento"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que significa SaaS?",
+                "alternativas": {
+                    "A": "Software as a Service",
+                    "B": "Security and Systems",
+                    "C": "System and Application Software",
+                    "D": "Storage as a Solution"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é quantum bit (qubit)?",
+                "alternativas": {
+                    "A": "Unidade de informação na computação quântica",
+                    "B": "Tipo de processador",
+                    "C": "Linguagem de programação",
+                    "D": "Dispositivo de armazenamento"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é um honeypot em cibersegurança?",
+                "alternativas": {
+                    "A": "Dispositivo de rede",
+                    "B": "Sistema falso criado para atrair hackers",
+                    "C": "Programa antivírus",
+                    "D": "Banco de dados"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é uma VPN?",
+                "alternativas": {
+                    "A": "Virtual Private Network que cria conexão segura entre redes",
+                    "B": "Programa de monitoramento",
+                    "C": "Rede de sensores",
+                    "D": "Hardware de armazenamento"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que significa CI/CD?",
+                "alternativas": {
+                    "A": "Continuous Integration e Continuous Deployment",
+                    "B": "Computing Infrastructure / Cloud Development",
+                    "C": "Code Input / Code Deployment",
+                    "D": "Central Integration / Control Device"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que é realidade virtual (VR)?",
+                "alternativas": {
+                    "A": "Simulação de ambientes digitais imersivos",
+                    "B": "Aplicativos de escritório",
+                    "C": "Dispositivos de armazenamento",
+                    "D": "Redes sociais"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "COMPUTAÇÃO_QUÂNTICA",
+                "dica": "Computação baseada em princípios da mecânica quântica"
+            },
+            {
+                "palavra": "MACHINE_LEARNING",
+                "dica": "Treinamento de algoritmos para aprender padrões"
+            },
+            {
+                "palavra": "BLOCKCHAIN",
+                "dica": "Banco de dados distribuído e seguro"
+            },
+            {
+                "palavra": "API",
+                "dica": "Interface de programação de aplicações"
+            },
+            {
+                "palavra": "VIRTUALIZAÇÃO",
+                "dica": "Criação de múltiplos sistemas virtuais em um único hardware"
+            },
+            {
+                "palavra": "DEEP_LEARNING",
+                "dica": "Aprendizado profundo de redes neurais artificiais"
+            },
+            {
+                "palavra": "MICROSERVIÇO",
+                "dica": "Arquitetura de software com serviços independentes"
+            },
+            {
+                "palavra": "EDGE_COMPUTING",
+                "dica": "Processamento próximo à fonte de dados"
+            },
+            {
+                "palavra": "CIBERSEGURANÇA",
+                "dica": "Proteção de computadores, redes e dados"
+            },
+            {
+                "palavra": "CONTAINER",
+                "dica": "Empacotamento de aplicações e dependências isoladas"
+            },
+            {
+                "palavra": "HTTPS",
+                "dica": "Protocolo de comunicação seguro na web"
+            },
+            {
+                "palavra": "TOKEN",
+                "dica": "Unidade de valor registrada em blockchain"
+            },
+            {
+                "palavra": "SAAS",
+                "dica": "Software como serviço"
+            },
+            {
+                "palavra": "QUBIT",
+                "dica": "Unidade de informação quântica"
+            },
+            {
+                "palavra": "HONEYPOT",
+                "dica": "Sistema falso para atrair hackers"
+            },
+            {
+                "palavra": "VPN",
+                "dica": "Rede privada virtual segura"
+            },
+            {
+                "palavra": "CI_CD",
+                "dica": "Integração e entrega contínua de software"
+            },
+            {
+                "palavra": "REALIDADE_VIRTUAL",
+                "dica": "Simulação de ambientes digitais imersivos"
+            },
+            {
+                "palavra": "DEVOPS",
+                "dica": "Integração entre desenvolvimento de software e operações"
+            },
+            {
+                "palavra": "MICROSOFT",
+                "dica": "Empresa multinacional de tecnologia"
+            }
+        ]
+    }
+}

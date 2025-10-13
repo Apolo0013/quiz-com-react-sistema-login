@@ -1,0 +1,12 @@
+.conteiner-handler {
+    width: 100%;
+    height: 100%;
+}
+
+.conteiner-disabled {
+    pointer-events: none !important;
+
+    * {
+        transition: 0s !important;
+    }
+}

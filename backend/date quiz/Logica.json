@@ -1,0 +1,434 @@
+{
+    "facil": {
+        "objetiva": [{
+                "pergunta": "Se todo A é B, e todo B é C, então todo A é C? ",
+                "alternativas": {
+                    "A": "Sim",
+                    "B": "Não",
+                    "C": "Depende",
+                    "D": "Não sei"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual número completa a sequência: 2, 4, 6, 8, ?",
+                "alternativas": {
+                    "A": "10",
+                    "B": "12",
+                    "C": "9",
+                    "D": "11"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Se hoje é segunda-feira, que dia será daqui a 3 dias?",
+                "alternativas": {
+                    "A": "Quarta-feira",
+                    "B": "Sexta-feira",
+                    "C": "Quinta-feira",
+                    "D": "Terça-feira"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual número completa a sequência: 1, 3, 5, 7, ?",
+                "alternativas": {
+                    "A": "9",
+                    "B": "10",
+                    "C": "8",
+                    "D": "7"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Se João é maior que Pedro, e Pedro é maior que Ana, quem é o menor?",
+                "alternativas": {
+                    "A": "João",
+                    "B": "Pedro",
+                    "C": "Ana",
+                    "D": "Não dá para saber"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Se 3 + 2 = 5, então 5 - 3 = ?",
+                "alternativas": {
+                    "A": "2",
+                    "B": "3",
+                    "C": "5",
+                    "D": "1"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Se todos os gatos têm cauda, e Miau é um gato, Miau tem cauda?",
+                "alternativas": {
+                    "A": "Sim",
+                    "B": "Não",
+                    "C": "Depende",
+                    "D": "Não sei"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual palavra não pertence ao grupo: Maçã, Banana, Laranja, Cadeira?",
+                "alternativas": {
+                    "A": "Maçã",
+                    "B": "Banana",
+                    "C": "Laranja",
+                    "D": "Cadeira"
+                },
+                "resposta_certa": "D"
+            },
+            {
+                "pergunta": "Qual figura completa a sequência: ◼, ◻, ◼, ?",
+                "alternativas": {
+                    "A": "◻",
+                    "B": "◼",
+                    "C": "▲",
+                    "D": "○"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Se A é verdadeiro e B é falso, qual é o resultado de A E B?",
+                "alternativas": {
+                    "A": "Verdadeiro",
+                    "B": "Falso",
+                    "C": "Indefinido",
+                    "D": "Verdadeiro ou falso"
+                },
+                "resposta_certa": "B"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "SEQUENCIA",
+                "dica": "Ordem de elementos seguindo um padrão"
+            },
+            {
+                "palavra": "CONJUNTO",
+                "dica": "Coleção de elementos"
+            },
+            {
+                "palavra": "LOGICA",
+                "dica": "Raciocínio correto e estruturado"
+            },
+            {
+                "palavra": "PADRAO",
+                "dica": "Repetição ou regularidade que pode ser observada"
+            },
+            {
+                "palavra": "RAZONAMENTO",
+                "dica": "Capacidade de pensar de forma coerente"
+            },
+            {
+                "palavra": "INFERENCIA",
+                "dica": "Conclusão a partir de premissas"
+            },
+            {
+                "palavra": "PROBABILIDADE",
+                "dica": "Chance de algo acontecer"
+            },
+            {
+                "palavra": "DEDUCAO",
+                "dica": "Raciocínio do geral para o particular"
+            },
+            {
+                "palavra": "INDUCAO",
+                "dica": "Raciocínio do particular para o geral"
+            },
+            {
+                "palavra": "ALGORITMO",
+                "dica": "Conjunto de instruções passo a passo"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [{
+                "pergunta": "Se todos os A são B, e alguns B são C, então é verdade que alguns A são C?",
+                "alternativas": {
+                    "A": "Sim",
+                    "B": "Não",
+                    "C": "Depende",
+                    "D": "Não sei"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual número completa a sequência: 2, 4, 8, 16, ?",
+                "alternativas": {
+                    "A": "20",
+                    "B": "24",
+                    "C": "32",
+                    "D": "64"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Se todos os cães latem e Rex é um cão, Rex late?",
+                "alternativas": {
+                    "A": "Sim",
+                    "B": "Não",
+                    "C": "Depende",
+                    "D": "Não sei"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual figura completa a sequência: ◼, ◻, ▲, ◼, ◻, ?",
+                "alternativas": {
+                    "A": "▲",
+                    "B": "◼",
+                    "C": "◻",
+                    "D": "○"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Se hoje é terça-feira, que dia será em 9 dias?",
+                "alternativas": {
+                    "A": "Quarta-feira",
+                    "B": "Sexta-feira",
+                    "C": "Quinta-feira",
+                    "D": "Terça-feira"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual número completa a sequência: 1, 1, 2, 3, 5, 8, ?",
+                "alternativas": {
+                    "A": "10",
+                    "B": "12",
+                    "C": "13",
+                    "D": "15"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Se A implica B, e B é falso, o que podemos dizer sobre A?",
+                "alternativas": {
+                    "A": "A é verdadeiro",
+                    "B": "A é falso",
+                    "C": "Não podemos saber",
+                    "D": "A e B são verdadeiros"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual palavra não pertence ao grupo: Cachorro, Gato, Elefante, Mesa?",
+                "alternativas": {
+                    "A": "Cachorro",
+                    "B": "Gato",
+                    "C": "Elefante",
+                    "D": "Mesa"
+                },
+                "resposta_certa": "D"
+            },
+            {
+                "pergunta": "Se A OU B é verdadeiro, e A é falso, o que podemos afirmar?",
+                "alternativas": {
+                    "A": "B é verdadeiro",
+                    "B": "B é falso",
+                    "C": "A e B são falsos",
+                    "D": "Indeterminado"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Se o padrão é +2, qual o próximo número: 5, 7, 9, 11, ?",
+                "alternativas": {
+                    "A": "12",
+                    "B": "13",
+                    "C": "14",
+                    "D": "15"
+                },
+                "resposta_certa": "C"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "SEQUENCIA",
+                "dica": "Ordem de elementos seguindo um padrão"
+            },
+            {
+                "palavra": "INFERENCIA",
+                "dica": "Conclusão a partir de premissas"
+            },
+            {
+                "palavra": "RAZONAMENTO",
+                "dica": "Capacidade de pensar de forma coerente"
+            },
+            {
+                "palavra": "LOGICA",
+                "dica": "Raciocínio correto e estruturado"
+            },
+            {
+                "palavra": "ALGORITMO",
+                "dica": "Conjunto de instruções passo a passo"
+            },
+            {
+                "palavra": "PROBABILIDADE",
+                "dica": "Chance de algo acontecer"
+            },
+            {
+                "palavra": "CONJUNTO",
+                "dica": "Coleção de elementos"
+            },
+            {
+                "palavra": "PADRAO",
+                "dica": "Repetição ou regularidade que pode ser observada"
+            },
+            {
+                "palavra": "INDUCAO",
+                "dica": "Raciocínio do particular para o geral"
+            },
+            {
+                "palavra": "DEDUCAO",
+                "dica": "Raciocínio do geral para o particular"
+            }
+        ]
+    },
+    "dificil": {
+        "objetiva": [{
+                "pergunta": "Se A implica B, e B implica C, então A implica C?",
+                "alternativas": {
+                    "A": "Sim",
+                    "B": "Não",
+                    "C": "Depende",
+                    "D": "Não sei"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Complete a sequência lógica: 2, 6, 12, 20, 30, ?",
+                "alternativas": {
+                    "A": "36",
+                    "B": "42",
+                    "C": "40",
+                    "D": "48"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Se todos os X são Y, e alguns Y não são Z, podemos afirmar que alguns X não são Z?",
+                "alternativas": {
+                    "A": "Sim",
+                    "B": "Não",
+                    "C": "Depende",
+                    "D": "Não sei"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Se o padrão de uma sequência é n², qual o próximo número: 1, 4, 9, 16, 25, ?",
+                "alternativas": {
+                    "A": "30",
+                    "B": "35",
+                    "C": "36",
+                    "D": "40"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Em uma proposição lógica, se não(A ou B) é verdadeiro, qual a negação correta?",
+                "alternativas": {
+                    "A": "A e B",
+                    "B": "Não A e Não B",
+                    "C": "Não A ou Não B",
+                    "D": "A ou B"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Se cinco casas estão em fila e o verde está à esquerda do azul, qual posição lógica do azul?",
+                "alternativas": {
+                    "A": "Primeira",
+                    "B": "Segunda",
+                    "C": "Terceira",
+                    "D": "Não é possível determinar"
+                },
+                "resposta_certa": "D"
+            },
+            {
+                "pergunta": "Qual número completa a sequência: 1, 2, 6, 24, 120, ?",
+                "alternativas": {
+                    "A": "720",
+                    "B": "600",
+                    "C": "7200",
+                    "D": "72000"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Se A é verdadeiro ou B é falso, e B é verdadeiro, qual é a verdade de A?",
+                "alternativas": {
+                    "A": "Verdadeiro",
+                    "B": "Falso",
+                    "C": "Indeterminado",
+                    "D": "Nenhuma das anteriores"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Se todos os homens são mortais, e Sócrates é homem, o que podemos concluir?",
+                "alternativas": {
+                    "A": "Sócrates é imortal",
+                    "B": "Sócrates é mortal",
+                    "C": "Não podemos saber",
+                    "D": "Sócrates é homem e imortal"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual palavra não pertence ao grupo: Pentágono, Hexágono, Heptágono, Círculo?",
+                "alternativas": {
+                    "A": "Pentágono",
+                    "B": "Hexágono",
+                    "C": "Heptágono",
+                    "D": "Círculo"
+                },
+                "resposta_certa": "D"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "DEDUCAO",
+                "dica": "Raciocínio do geral para o particular"
+            },
+            {
+                "palavra": "INDUCAO",
+                "dica": "Raciocínio do particular para o geral"
+            },
+            {
+                "palavra": "INFERENCIA",
+                "dica": "Conclusão a partir de premissas"
+            },
+            {
+                "palavra": "ALGORITMO",
+                "dica": "Conjunto de instruções passo a passo"
+            },
+            {
+                "palavra": "SEQUENCIA",
+                "dica": "Ordem de elementos seguindo um padrão"
+            },
+            {
+                "palavra": "LOGICA",
+                "dica": "Raciocínio correto e estruturado"
+            },
+            {
+                "palavra": "PROPOSICAO",
+                "dica": "Sentença declarativa que é verdadeira ou falsa"
+            },
+            {
+                "palavra": "PADRAO",
+                "dica": "Repetição ou regularidade que pode ser observada"
+            },
+            {
+                "palavra": "CONJUNTO",
+                "dica": "Coleção de elementos"
+            },
+            {
+                "palavra": "RAZONAMENTO",
+                "dica": "Capacidade de pensar de forma coerente"
+            }
+        ]
+    }
+}

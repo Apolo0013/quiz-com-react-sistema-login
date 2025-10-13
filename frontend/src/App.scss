@@ -26,3 +26,27 @@
         background-position: 100% 0%;
     }
 }
+
+
+//Scrolll
+/* Barra de rolagem Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; /* altura para scroll horizontal */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #868686;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+/* Barra de rolagem Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #868686 rgba(0, 0, 0, 0.35);
+}
+

@@ -1,0 +1,854 @@
+{
+    "facil": {
+        "objetiva": [{
+                "pergunta": "Quem foi o primeiro presidente do Brasil?",
+                "alternativas": {
+                    "A": "Getúlio Vargas",
+                    "B": "Juscelino Kubitschek",
+                    "C": "Deodoro da Fonseca",
+                    "D": "Tancredo Neves"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Em que ano aconteceu a Proclamação da República no Brasil?",
+                "alternativas": {
+                    "A": "1888",
+                    "B": "1889",
+                    "C": "1822",
+                    "D": "1808"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem descobriu o Brasil em 1500?",
+                "alternativas": {
+                    "A": "Vasco da Gama",
+                    "B": "Pedro Álvares Cabral",
+                    "C": "Cristóvão Colombo",
+                    "D": "Fernão de Magalhães"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual guerra terminou com a assinatura do Tratado de Versalhes em 1919?",
+                "alternativas": {
+                    "A": "Segunda Guerra Mundial",
+                    "B": "Primeira Guerra Mundial",
+                    "C": "Guerra do Paraguai",
+                    "D": "Guerra Fria"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem foi o líder da Independência dos Estados Unidos?",
+                "alternativas": {
+                    "A": "George Washington",
+                    "B": "Abraham Lincoln",
+                    "C": "Thomas Jefferson",
+                    "D": "Benjamin Franklin"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual civilização construiu as pirâmides do Egito?",
+                "alternativas": {
+                    "A": "Mesopotâmia",
+                    "B": "Egípcia",
+                    "C": "Romana",
+                    "D": "Grega"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual imperador romano foi assassinado em 44 a.C.?",
+                "alternativas": {
+                    "A": "Augusto",
+                    "B": "Nero",
+                    "C": "Júlio César",
+                    "D": "César Augusto"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Em que país nasceu Napoleão Bonaparte?",
+                "alternativas": {
+                    "A": "França",
+                    "B": "Itália",
+                    "C": "Córsega",
+                    "D": "Alemanha"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Quem foi o primeiro homem a pisar na Lua?",
+                "alternativas": {
+                    "A": "Neil Armstrong",
+                    "B": "Buzz Aldrin",
+                    "C": "Yuri Gagarin",
+                    "D": "Michael Collins"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual revolução marcou o fim da monarquia na França?",
+                "alternativas": {
+                    "A": "Revolução Industrial",
+                    "B": "Revolução Francesa",
+                    "C": "Revolução Russa",
+                    "D": "Revolução Americana"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Em que ano terminou a Segunda Guerra Mundial?",
+                "alternativas": {
+                    "A": "1945",
+                    "B": "1939",
+                    "C": "1918",
+                    "D": "1941"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem foi o responsável pela unificação da Alemanha em 1871?",
+                "alternativas": {
+                    "A": "Otto von Bismarck",
+                    "B": "Napoleão",
+                    "C": "Wilhelm II",
+                    "D": "Franz Joseph"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual império foi governado por Genghis Khan?",
+                "alternativas": {
+                    "A": "Império Mongol",
+                    "B": "Império Romano",
+                    "C": "Império Otomano",
+                    "D": "Império Persa"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem assinou a Lei Áurea em 1888?",
+                "alternativas": {
+                    "A": "Dom Pedro II",
+                    "B": "Princesa Isabel",
+                    "C": "Getúlio Vargas",
+                    "D": "Juscelino Kubitschek"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual civilização antiga construiu o Coliseu?",
+                "alternativas": {
+                    "A": "Egípcia",
+                    "B": "Grega",
+                    "C": "Romana",
+                    "D": "Mesopotâmica"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Quem foi o líder do movimento de independência da Índia?",
+                "alternativas": {
+                    "A": "Jawaharlal Nehru",
+                    "B": "Mahatma Gandhi",
+                    "C": "Indira Gandhi",
+                    "D": "Sardar Patel"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual país lançou as bombas atômicas em Hiroshima e Nagasaki?",
+                "alternativas": {
+                    "A": "Alemanha",
+                    "B": "Estados Unidos",
+                    "C": "Japão",
+                    "D": "União Soviética"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem foi o último faraó do Egito?",
+                "alternativas": {
+                    "A": "Cleópatra",
+                    "B": "Tutancâmon",
+                    "C": "Ramsés II",
+                    "D": "Nefertiti"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual país era governado por Fidel Castro?",
+                "alternativas": {
+                    "A": "Venezuela",
+                    "B": "Cuba",
+                    "C": "México",
+                    "D": "Brasil"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual movimento lutou contra a escravidão no século XIX?",
+                "alternativas": {
+                    "A": "Iluminismo",
+                    "B": "Abolicionismo",
+                    "C": "Renascimento",
+                    "D": "Revolução Industrial"
+                },
+                "resposta_certa": "B"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "BRASIL",
+                "dica": "País da Proclamação da República em 1889"
+            },
+            {
+                "palavra": "NAPOLEAO",
+                "dica": "Imperador francês do século XIX"
+            },
+            {
+                "palavra": "EGITO",
+                "dica": "Civilização que construiu as pirâmides"
+            },
+            {
+                "palavra": "GENGHISKHAN",
+                "dica": "Líder do Império Mongol"
+            },
+            {
+                "palavra": "JULIUSCAESAR",
+                "dica": "Imperador romano assassinado em 44 a.C."
+            },
+            {
+                "palavra": "CLEOPATRA",
+                "dica": "Última faraó do Egito"
+            },
+            {
+                "palavra": "MAHATMAGANDHI",
+                "dica": "Líder da independência da Índia"
+            },
+            {
+                "palavra": "PROCLAMACAO",
+                "dica": "Ato que marcou a República no Brasil"
+            },
+            {
+                "palavra": "PRINCESAISABEL",
+                "dica": "Assinou a Lei Áurea em 1888"
+            },
+            {
+                "palavra": "REVOLUCAOFANCESA",
+                "dica": "Movimento que terminou com a monarquia na França"
+            },
+            {
+                "palavra": "SEGUNDAGUERRAMUNDIAL",
+                "dica": "Conflito mundial de 1939 a 1945"
+            },
+            {
+                "palavra": "TRATADOVERSALHES",
+                "dica": "Pôs fim à Primeira Guerra Mundial"
+            },
+            {
+                "palavra": "COLOSEO",
+                "dica": "Anfiteatro romano"
+            },
+            {
+                "palavra": "INDIA",
+                "dica": "País de Gandhi"
+            },
+            {
+                "palavra": "ESTADOSUNIDOS",
+                "dica": "Lançou bombas atômicas em 1945"
+            },
+            {
+                "palavra": "PRIMEIRAGUERRAMUNDIAL",
+                "dica": "Conflito de 1914 a 1918"
+            },
+            {
+                "palavra": "ALLEMANNHA",
+                "dica": "País de Otto von Bismarck"
+            },
+            {
+                "palavra": "ROMA",
+                "dica": "Cidade do Império Romano"
+            },
+            {
+                "palavra": "FIDELCASTRO",
+                "dica": "Líder revolucionário de Cuba"
+            },
+            {
+                "palavra": "ABOLICIONISMO",
+                "dica": "Movimento contra a escravidão"
+            }
+        ]
+    },
+        "medio": {
+            "objetiva": [{
+                    "pergunta": "Em que ano começou a Revolução Francesa?",
+                    "alternativas": {
+                        "A": "1789",
+                        "B": "1776",
+                        "C": "1799",
+                        "D": "1804"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Quem foi o líder da Revolução Russa de 1917?",
+                    "alternativas": {
+                        "A": "Stálin",
+                        "B": "Lenin",
+                        "C": "Trotsky",
+                        "D": "Nicholas II"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual tratado encerrou a Guerra do Paraguai?",
+                    "alternativas": {
+                        "A": "Tratado de Tordesilhas",
+                        "B": "Tratado de Paris",
+                        "C": "Tratado de Assunção",
+                        "D": "Paz de Versailles"
+                    },
+                    "resposta_certa": "C"
+                },
+                {
+                    "pergunta": "Qual era a capital do Império Bizantino?",
+                    "alternativas": {
+                        "A": "Roma",
+                        "B": "Constantinopla",
+                        "C": "Atenas",
+                        "D": "Alexandria"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Quem foi o líder do movimento de independência da América Espanhola conhecido como 'Libertador'?",
+                    "alternativas": {
+                        "A": "Simón Bolívar",
+                        "B": "José de San Martín",
+                        "C": "Miguel Hidalgo",
+                        "D": "Dom Pedro I"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Em que ano começou a Segunda Guerra Mundial?",
+                    "alternativas": {
+                        "A": "1939",
+                        "B": "1941",
+                        "C": "1936",
+                        "D": "1945"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual país era governado por Mussolini?",
+                    "alternativas": {
+                        "A": "Espanha",
+                        "B": "Itália",
+                        "C": "Alemanha",
+                        "D": "Portugal"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual rei francês foi executado durante a Revolução Francesa?",
+                    "alternativas": {
+                        "A": "Luís XIV",
+                        "B": "Luís XVI",
+                        "C": "Henrique IV",
+                        "D": "Carlos X"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Quem foi o último imperador do Brasil?",
+                    "alternativas": {
+                        "A": "Dom Pedro I",
+                        "B": "Dom Pedro II",
+                        "C": "Getúlio Vargas",
+                        "D": "Tancredo Neves"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Em que século ocorreu a Idade Média?",
+                    "alternativas": {
+                        "A": "V ao XV",
+                        "B": "XV ao XVIII",
+                        "C": "III ao IX",
+                        "D": "XVIII ao XIX"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual civilização antiga criou a escrita cuneiforme?",
+                    "alternativas": {
+                        "A": "Egípcia",
+                        "B": "Mesopotâmica",
+                        "C": "Grega",
+                        "D": "Romana"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Quem liderou a independência do Brasil?",
+                    "alternativas": {
+                        "A": "José Bonifácio",
+                        "B": "Dom Pedro I",
+                        "C": "Marechal Deodoro",
+                        "D": "Tiradentes"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Em que ano a União Soviética se dissolveu?",
+                    "alternativas": {
+                        "A": "1989",
+                        "B": "1991",
+                        "C": "1995",
+                        "D": "1985"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual civilização construiu Machu Picchu?",
+                    "alternativas": {
+                        "A": "Asteca",
+                        "B": "Maia",
+                        "C": "Inca",
+                        "D": "Olmeca"
+                    },
+                    "resposta_certa": "C"
+                },
+                {
+                    "pergunta": "Qual foi a principal causa da Primeira Guerra Mundial?",
+                    "alternativas": {
+                        "A": "Invasão da Polônia",
+                        "B": "Assassinato do arquiduque Francisco Ferdinando",
+                        "C": "Revolução Russa",
+                        "D": "Tratado de Versalhes"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Quem liderou o movimento abolicionista no Brasil?",
+                    "alternativas": {
+                        "A": "Zumbi dos Palmares",
+                        "B": "Princesa Isabel",
+                        "C": "José Bonifácio",
+                        "D": "Dom Pedro II"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual foi o período da história marcado pela Revolução Industrial?",
+                    "alternativas": {
+                        "A": "Século XVII",
+                        "B": "Século XVIII e XIX",
+                        "C": "Século XV",
+                        "D": "Século XX"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Quem foi o líder do movimento de independência dos Estados Unidos?",
+                    "alternativas": {
+                        "A": "George Washington",
+                        "B": "Abraham Lincoln",
+                        "C": "Thomas Jefferson",
+                        "D": "Benjamin Franklin"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual país foi invadido pela Alemanha em 1940 na Segunda Guerra Mundial?",
+                    "alternativas": {
+                        "A": "França",
+                        "B": "Itália",
+                        "C": "Polônia",
+                        "D": "Noruega"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Quem foi o responsável pela Reforma Protestante?",
+                    "alternativas": {
+                        "A": "Martinho Lutero",
+                        "B": "João Calvino",
+                        "C": "Henrique VIII",
+                        "D": "Ignácio de Loyola"
+                    },
+                    "resposta_certa": "A"
+                }
+            ],
+            "descobrir_palavra": [{
+                    "palavra": "REVOLUCAOFANCESA",
+                    "dica": "Movimento que terminou com a monarquia na França"
+                },
+                {
+                    "palavra": "LENIN",
+                    "dica": "Líder da Revolução Russa de 1917"
+                },
+                {
+                    "palavra": "TRATADODEASSUNCAO",
+                    "dica": "Encerrou a Guerra do Paraguai"
+                },
+                {
+                    "palavra": "CONSTANTINOPLA",
+                    "dica": "Capital do Império Bizantino"
+                },
+                {
+                    "palavra": "SIMONBOLIVAR",
+                    "dica": "Libertador da América Espanhola"
+                },
+                {
+                    "palavra": "MUSSOLINI",
+                    "dica": "Ditador italiano"
+                },
+                {
+                    "palavra": "LUISXVI",
+                    "dica": "Rei francês executado durante a Revolução"
+                },
+                {
+                    "palavra": "DOMPEDROII",
+                    "dica": "Último imperador do Brasil"
+                },
+                {
+                    "palavra": "IDADEMEDIA",
+                    "dica": "Período do século V ao XV"
+                },
+                {
+                    "palavra": "MESOPOTAMIA",
+                    "dica": "Civilização que criou a escrita cuneiforme"
+                },
+                {
+                    "palavra": "MACHUPICCHU",
+                    "dica": "Cidade inca nas montanhas do Peru"
+                },
+                {
+                    "palavra": "PRINCESAISABEL",
+                    "dica": "Assinou a Lei Áurea no Brasil"
+                },
+                {
+                    "palavra": "REVOLUCAOINDUSTRIAL",
+                    "dica": "Período de grande avanço tecnológico e produção em massa"
+                },
+                {
+                    "palavra": "GEORGEWASHINGTON",
+                    "dica": "Líder da independência dos EUA"
+                },
+                {
+                    "palavra": "MARTINHOLUTERO",
+                    "dica": "Iniciou a Reforma Protestante"
+                },
+                {
+                    "palavra": "PRIMEIRAGUERRAMUNDIAL",
+                    "dica": "Conflito de 1914 a 1918"
+                },
+                {
+                    "palavra": "SEGUNDAGUERRAMUNDIAL",
+                    "dica": "Conflito de 1939 a 1945"
+                },
+                {
+                    "palavra": "FRANCA",
+                    "dica": "País invadido pela Alemanha em 1940"
+                },
+                {
+                    "palavra": "INDIA",
+                    "dica": "País de Gandhi"
+                },
+                {
+                    "palavra": "OTTOBISMARCK",
+                    "dica": "Unificador da Alemanha"
+                }
+            ]
+        },
+        "dificil": {
+            "objetiva": [{
+                    "pergunta": "Quem foi o chanceler alemão durante a unificação da Alemanha em 1871?",
+                    "alternativas": {
+                        "A": "Otto von Bismarck",
+                        "B": "Kaiser Wilhelm II",
+                        "C": "Napoleão III",
+                        "D": "Adolf Hitler"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Em que ano começou a Guerra dos Cem Anos entre França e Inglaterra?",
+                    "alternativas": {
+                        "A": "1337",
+                        "B": "1346",
+                        "C": "1314",
+                        "D": "1360"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Quem liderou a Revolução Cultural na China?",
+                    "alternativas": {
+                        "A": "Deng Xiaoping",
+                        "B": "Mao Tsé-Tung",
+                        "C": "Sun Yat-sen",
+                        "D": "Chiang Kai-shek"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Qual tratado pôs fim à Primeira Guerra Mundial?",
+                    "alternativas": {
+                        "A": "Versalhes",
+                        "B": "Tordesilhas",
+                        "C": "Utrecht",
+                        "D": "Paris"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual país foi o primeiro a abolir a escravidão no século XIX?",
+                    "alternativas": {
+                        "A": "Reino Unido",
+                        "B": "França",
+                        "C": "Brasil",
+                        "D": "Estados Unidos"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Quem foi o imperador romano durante a Pax Romana?",
+                    "alternativas": {
+                        "A": "Augusto",
+                        "B": "Nero",
+                        "C": "César",
+                        "D": "Trajano"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual guerra teve a Batalha de Stalingrado como um ponto de virada?",
+                    "alternativas": {
+                        "A": "Primeira Guerra Mundial",
+                        "B": "Segunda Guerra Mundial",
+                        "C": "Guerra Fria",
+                        "D": "Guerra do Vietnã"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Quem foi o líder da independência da Argentina e do Chile?",
+                    "alternativas": {
+                        "A": "José de San Martín",
+                        "B": "Simón Bolívar",
+                        "C": "Miguel Hidalgo",
+                        "D": "Dom Pedro I"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual tratado dividiu as terras do Novo Mundo entre Portugal e Espanha?",
+                    "alternativas": {
+                        "A": "Tratado de Paris",
+                        "B": "Tratado de Tordesilhas",
+                        "C": "Tratado de Utrecht",
+                        "D": "Paz de Westfália"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Quem foi o fundador do Império Mongol?",
+                    "alternativas": {
+                        "A": "Genghis Khan",
+                        "B": "Kublai Khan",
+                        "C": "Tamerlão",
+                        "D": "Atilla"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual líder soviético iniciou a coletivização agrícola?",
+                    "alternativas": {
+                        "A": "Lenin",
+                        "B": "Stálin",
+                        "C": "Khrushchev",
+                        "D": "Trotsky"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Em que ano caiu o Império Romano do Ocidente?",
+                    "alternativas": {
+                        "A": "476",
+                        "B": "410",
+                        "C": "395",
+                        "D": "499"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Quem foi o líder da Revolução Americana contra a Grã-Bretanha?",
+                    "alternativas": {
+                        "A": "George Washington",
+                        "B": "Thomas Jefferson",
+                        "C": "Benjamin Franklin",
+                        "D": "John Adams"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual civilização construiu a Grande Muralha da China?",
+                    "alternativas": {
+                        "A": "Dinastia Qin",
+                        "B": "Dinastia Han",
+                        "C": "Dinastia Ming",
+                        "D": "Dinastia Tang"
+                    },
+                    "resposta_certa": "C"
+                },
+                {
+                    "pergunta": "Quem liderou o Império Bizantino durante o auge do seu poder?",
+                    "alternativas": {
+                        "A": "Justiniano I",
+                        "B": "Constantino",
+                        "C": "Alexandre",
+                        "D": "Heráclio"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual tratado encerrou a Guerra do Paraguai?",
+                    "alternativas": {
+                        "A": "Tratado de Assunção",
+                        "B": "Tratado de Versalhes",
+                        "C": "Tratado de Paris",
+                        "D": "Tratado de Tordesilhas"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Quem foi o líder da independência do México?",
+                    "alternativas": {
+                        "A": "Miguel Hidalgo",
+                        "B": "José de San Martín",
+                        "C": "Simón Bolívar",
+                        "D": "Iturbide"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual foi o último imperador do Sacro Império Romano-Germânico?",
+                    "alternativas": {
+                        "A": "Francisco II",
+                        "B": "Carlos V",
+                        "C": "Otto I",
+                        "D": "Leopoldo II"
+                    },
+                    "resposta_certa": "A"
+                },
+                {
+                    "pergunta": "Qual movimento social lutou pelos direitos civis nos EUA na década de 1960?",
+                    "alternativas": {
+                        "A": "Abolicionismo",
+                        "B": "Movimento pelos Direitos Civis",
+                        "C": "Sufragismo",
+                        "D": "Revolução Industrial"
+                    },
+                    "resposta_certa": "B"
+                },
+                {
+                    "pergunta": "Quem foi o líder do fascismo na Itália?",
+                    "alternativas": {
+                        "A": "Benito Mussolini",
+                        "B": "Adolf Hitler",
+                        "C": "Francisco Franco",
+                        "D": "Vladimir Lenin"
+                    },
+                    "resposta_certa": "A"
+                }
+            ],
+            "descobrir_palavra": [{
+                    "palavra": "OTTOBISMARCK",
+                    "dica": "Chanceler da Alemanha na unificação de 1871"
+                },
+                {
+                    "palavra": "REVOLUCAOCULTURAL",
+                    "dica": "Movimento liderado por Mao Tsé-Tung"
+                },
+                {
+                    "palavra": "TRATADOVERSALHES",
+                    "dica": "Pôs fim à Primeira Guerra Mundial"
+                },
+                {
+                    "palavra": "GENGHISKHAN",
+                    "dica": "Fundador do Império Mongol"
+                },
+                {
+                    "palavra": "JUSTINIANO",
+                    "dica": "Imperador bizantino durante o auge"
+                },
+                {
+                    "palavra": "MUSSOLINI",
+                    "dica": "Ditador italiano fascista"
+                },
+                {
+                    "palavra": "BENITOMUSSOLINI",
+                    "dica": "Líder do fascismo na Itália"
+                },
+                {
+                    "palavra": "MIGUELHIDALGO",
+                    "dica": "Líder da independência do México"
+                },
+                {
+                    "palavra": "SIMONBOLIVAR",
+                    "dica": "Libertador da América Espanhola"
+                },
+                {
+                    "palavra": "TRATADODEASSUNCAO",
+                    "dica": "Final da Guerra do Paraguai"
+                },
+                {
+                    "palavra": "CONSTANTINOPLA",
+                    "dica": "Capital do Império Bizantino"
+                },
+                {
+                    "palavra": "DINASTIAMING",
+                    "dica": "Construiu grande parte da Grande Muralha da China"
+                },
+                {
+                    "palavra": "PAXROMANA",
+                    "dica": "Período de paz no Império Romano"
+                },
+                {
+                    "palavra": "SEGUNDAGUERRAMUNDIAL",
+                    "dica": "Conflito mundial de 1939 a 1945"
+                },
+                {
+                    "palavra": "PRIMEIRAGUERRAMUNDIAL",
+                    "dica": "Conflito mundial de 1914 a 1918"
+                },
+                {
+                    "palavra": "FRANCISCOII",
+                    "dica": "Último imperador do Sacro Império Romano-Germânico"
+                },
+                {
+                    "palavra": "GEORGEWASHINGTON",
+                    "dica": "Líder da Revolução Americana"
+                },
+                {
+                    "palavra": "DIREITOSCIVIS",
+                    "dica": "Movimento social nos EUA nos anos 1960"
+                },
+                {
+                    "palavra": "LUISXVI",
+                    "dica": "Rei francês executado durante a Revolução Francesa"
+                },
+                {
+                    "palavra": "DOMPEDROII",
+                    "dica": "Último imperador do Brasil"
+                }
+            ]
+        }
+    }

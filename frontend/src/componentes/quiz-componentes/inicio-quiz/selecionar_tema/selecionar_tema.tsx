@@ -7,8 +7,8 @@ import ImgCiencia from '../../../../assets/imagens/quiz-main-tema/ciencia.svg'
 import ImgHistoria from '../../../../assets/imagens/quiz-main-tema/historia.svg'
 import ImgMatematica from '../../../../assets/imagens/quiz-main-tema/matematica.svg'
 import ImgCinema from '../../../../assets/imagens/quiz-main-tema/cinema.svg'
-import ImgMusica from '../../../../assets/imagens/quiz-main-tema/musica.svg'
-import ImgEsporte from '../../../../assets/imagens/quiz-main-tema/sport.svg'
+import ImgFisica from '../../../../assets/imagens/quiz-main-tema/fisica.svg'
+import ImgQuimica from '../../../../assets/imagens/quiz-main-tema/quimica.svg'
 import ImgLiteratura from '../../../../assets/imagens/quiz-main-tema/literatura.svg'
 import ImgTech from '../../../../assets/imagens/quiz-main-tema/tech.svg'
 import ImgLogica from '../../../../assets/imagens/quiz-main-tema/logica.svg'
@@ -21,20 +21,28 @@ import { type TypeGetRefTemaEDificuldade, type InfoOpcaoTypeTema } from '../../.
 function Selecionar_Tema({ RefGetInfo, RefConteiner}: TypeGetRefTemaEDificuldade) {
     function Seleciona(e: MouseEvent<Element>) {
         if (!RefTemaOpcao.current) return
-        const filhos: Element[] = [...RefTemaOpcao.current.children]
-        for (const div of filhos) {
-            div.classList.remove('selecionado-botao-dificuldade-e-tema')
-        }
         const el: Element = e.currentTarget
         if (!el) return
-        el.classList.add('selecionado-botao-dificuldade-e-tema')
+        //ele clica no mesmo bloco duas vezes, isso que significa que ele que "desmarca" por algum motivo
+        if ([...el.classList].includes('selecionado-botao-dificuldade-e-tema')) {
+            console.log('aqui o ')
+            el.classList.remove('selecionado-botao-dificuldade-e-tema') 
+            SetTema('')
+        }
+        else {
+            const filhos: Element[] = [...RefTemaOpcao.current.children]
+            for (const div of filhos) {
+                div.classList.remove('selecionado-botao-dificuldade-e-tema')
+            }
+            //add a classname que faz o efeito de selecionado
+            el.classList.add('selecionado-botao-dificuldade-e-tema')
+        }
     }   
 
 
     const [Tema, SetTema] = useState<InfoOpcaoTypeTema>("")
     //Ref do conteiner opcao-tema// ondem esta os card do tema pae.
     const RefTemaOpcao = useRef<HTMLDivElement | null>(null)
-    
 
     useEffect(() => {
         RefGetInfo.current.tema = Tema
@@ -48,8 +56,8 @@ function Selecionar_Tema({ RefGetInfo, RefConteiner}: TypeGetRefTemaEDificuldade
                 <Card_Tema Nome_Tema="Ciências" SetTema={SetTema} img_path={ImgCiencia} EventClick={Seleciona}/>
                 <Card_Tema Nome_Tema="Matemática" SetTema={SetTema} img_path={ImgMatematica} EventClick={Seleciona}/>
                 <Card_Tema Nome_Tema="Cinema" SetTema={SetTema} img_path={ImgCinema} EventClick={Seleciona}/>
-                <Card_Tema Nome_Tema="Música" SetTema={SetTema} img_path={ImgMusica} EventClick={Seleciona}/>
-                <Card_Tema Nome_Tema="Esportes" SetTema={SetTema} img_path={ImgEsporte} EventClick={Seleciona}/>
+                <Card_Tema Nome_Tema="Fisica" SetTema={SetTema} img_path={ImgFisica} EventClick={Seleciona}/>
+                <Card_Tema Nome_Tema="Quimica" SetTema={SetTema} img_path={ImgQuimica} EventClick={Seleciona}/>
                 <Card_Tema Nome_Tema="Literatura" SetTema={SetTema} img_path={ImgLiteratura} EventClick={Seleciona}/>
                 <Card_Tema Nome_Tema="Tecnologia" SetTema={SetTema} img_path={ImgTech} EventClick={Seleciona}/>
                 <Card_Tema Nome_Tema="Logica" SetTema={SetTema} img_path={ImgLogica} EventClick={Seleciona}/>

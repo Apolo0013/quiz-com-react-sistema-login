@@ -1,6 +1,5 @@
 namespace BackEnd.Type.BackInFront
 {
-    
     class RespostaResultado
     {
         public bool Sucesso { get; set; }

@@ -1,0 +1,448 @@
+{
+    "facil": {
+        "objetiva": [{
+                "tipo": "Adicao",
+                "pergunta": "Em uma adição, qual é o resultado de ",
+                "formula": "x + y",
+                "assunto": "Operação básica"
+            },
+            {
+                "tipo": "Subtracao",
+                "pergunta": "Em uma subtração, qual é o resultado de ",
+                "formula": "x - y",
+                "assunto": "Operação básica"
+            },
+            {
+                "tipo": "Multiplicacao",
+                "pergunta": "Em uma multiplicação, quanto é ",
+                "formula": "x * y",
+                "assunto": "Operação básica"
+            },
+            {
+                "tipo": "Divisao",
+                "pergunta": "Em uma divisão, quanto é ",
+                "formula": "x / y",
+                "assunto": "Operação básica"
+            },
+            {
+                "tipo": "Dobro",
+                "pergunta": "Qual é o dobro de ",
+                "formula": "2 * x",
+                "assunto": "Operação básica"
+            },
+            {
+                "tipo": "Triplo",
+                "pergunta": "Qual é o triplo de ",
+                "formula": "3 * x",
+                "assunto": "Operação básica"
+            },
+            {
+                "tipo": "Metade",
+                "pergunta": "Qual é a metade de ",
+                "formula": "x / 2",
+                "assunto": "Operação básica"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "SOMA",
+                "dica": "Operação que adiciona valores"
+            },
+            {
+                "palavra": "SUBTRACAO",
+                "dica": "Operação que calcula a diferença entre números"
+            },
+            {
+                "palavra": "MULTIPLICACAO",
+                "dica": "Operação que representa adições sucessivas"
+            },
+            {
+                "palavra": "DIVISAO",
+                "dica": "Operação que separa em partes iguais"
+            },
+            {
+                "palavra": "DOBRO",
+                "dica": "Resultado de multiplicar por dois"
+            },
+            {
+                "palavra": "METADE",
+                "dica": "Quando algo é dividido em duas partes iguais"
+            },
+            {
+                "palavra": "TRIPLO",
+                "dica": "Resultado de multiplicar por três"
+            },
+            {
+                "palavra": "NUMERO",
+                "dica": "Símbolo usado para representar quantidade"
+            },
+            {
+                "palavra": "PAR",
+                "dica": "Número divisível por 2"
+            },
+            {
+                "palavra": "IMPAR",
+                "dica": "Número que não é divisível por 2"
+            },
+            {
+                "palavra": "ZERO",
+                "dica": "Número que representa ausência de quantidade"
+            },
+            {
+                "palavra": "DEZENA",
+                "dica": "Conjunto de dez unidades"
+            },
+            {
+                "palavra": "CENTENA",
+                "dica": "Conjunto de cem unidades"
+            },
+            {
+                "palavra": "UNIDADE",
+                "dica": "Representa uma quantidade individual"
+            },
+            {
+                "palavra": "RESULTADO",
+                "dica": "O que se obtém após resolver uma operação"
+            },
+            {
+                "palavra": "OPERACAO",
+                "dica": "Ação matemática como somar ou dividir"
+            },
+            {
+                "palavra": "EQUACAO",
+                "dica": "Expressão que indica igualdade entre dois lados"
+            },
+            {
+                "palavra": "VALOR",
+                "dica": "Quantidade numérica representada"
+            },
+            {
+                "palavra": "CALCULO",
+                "dica": "Processo de resolver uma operação"
+            },
+            {
+                "palavra": "CONTA",
+                "dica": "Outro nome dado a uma operação matemática"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [{
+                "tipo": "Porcentagem",
+                "pergunta": "Em uma situação de porcentagem, quanto é P% de X?",
+                "formula": "(P / 100) * X",
+                "assunto": "Porcentagem"
+            },
+            {
+                "tipo": "Fracao",
+                "pergunta": "Em uma operação com frações, qual é o resultado de X/Y + A/B?",
+                "formula": "X/Y + A/B",
+                "assunto": "Frações"
+            },
+            {
+                "tipo": "Decimal Adicao",
+                "pergunta": "Em uma adição de números decimais, quanto é X + Y?",
+                "formula": "X + Y",
+                "assunto": "Decimal"
+            },
+            {
+                "tipo": "Decimal Subtracao",
+                "pergunta": "Em uma subtração de números decimais, quanto é X - Y?",
+                "formula": "X - Y",
+                "assunto": "Decimal"
+            },
+            {
+                "tipo": "Decimal Multiplicacao",
+                "pergunta": "Em uma multiplicação de números decimais, quanto é X x Y?",
+                "formula": "X * Y",
+                "assunto": "Decimal"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "PORCENTAGEM",
+                "dica": "Representa uma parte de 100"
+            },
+            {
+                "palavra": "EQUACAO",
+                "dica": "Expressão que indica igualdade"
+            },
+            {
+                "palavra": "VARIAVEL",
+                "dica": "Símbolo que representa um valor desconhecido"
+            },
+            {
+                "palavra": "EXPONENCIACAO",
+                "dica": "Operação que eleva um número a uma potência"
+            },
+            {
+                "palavra": "POTENCIA",
+                "dica": "Resultado de uma base elevada a um expoente"
+            },
+            {
+                "palavra": "RAIZ",
+                "dica": "Operação inversa da potenciação"
+            },
+            {
+                "palavra": "FRAÇÃO",
+                "dica": "Forma de representar partes de um todo"
+            },
+            {
+                "palavra": "PROPORCAO",
+                "dica": "Relação de igualdade entre duas razões"
+            },
+            {
+                "palavra": "AREA",
+                "dica": "Medida da superfície de uma figura"
+            },
+            {
+                "palavra": "PERIMETRO",
+                "dica": "Soma dos lados de uma figura geométrica"
+            },
+            {
+                "palavra": "GEOMETRIA",
+                "dica": "Ramo da matemática que estuda formas e espaços"
+            },
+            {
+                "palavra": "ALGEBRA",
+                "dica": "Parte da matemática que usa letras e números"
+            },
+            {
+                "palavra": "TRIANGULO",
+                "dica": "Figura com três lados"
+            },
+            {
+                "palavra": "QUADRADO",
+                "dica": "Figura com quatro lados iguais"
+            },
+            {
+                "palavra": "RETANGULO",
+                "dica": "Figura com lados opostos iguais"
+            },
+            {
+                "palavra": "CIRCULO",
+                "dica": "Figura redonda sem lados"
+            },
+            {
+                "palavra": "ANGULO",
+                "dica": "Abertura entre duas retas"
+            },
+            {
+                "palavra": "DECIMAL",
+                "dica": "Número que possui parte fracionária"
+            },
+            {
+                "palavra": "NEGATIVO",
+                "dica": "Número menor que zero"
+            },
+            {
+                "palavra": "POSITIVO",
+                "dica": "Número maior que zero"
+            }
+        ]
+    },
+    "dificil": {
+        "objetiva": [{
+                "tipo": "Equacao Linear",
+                "pergunta": "Em uma equação linear, resolva 3x + 5 = Y. Qual é o valor de x?",
+                "formula": "(Y - 5) / 3",
+                "assunto": "Álgebra"
+            },
+            {
+                "tipo": "Equacao Quadratica",
+                "pergunta": "Em uma equação quadrática, resolva x² + 5x + 6 = 0. Qual é o valor de x?",
+                "formula": "(-5 ± sqrt(5² - 4*1*6)) / (2*1)",
+                "assunto": "Álgebra"
+            },
+            {
+                "tipo": "Soma de Frações",
+                "pergunta": "Em uma operação com frações, qual é o resultado de X/Y + A/B?",
+                "formula": "X/Y + A/B",
+                "assunto": "Frações"
+            },
+            {
+                "tipo": "Multiplicacao Decimais",
+                "pergunta": "Em uma multiplicação de números decimais, quanto é X x Y?",
+                "formula": "X * Y",
+                "assunto": "Decimal"
+            },
+            {
+                "tipo": "Perimetro",
+                "pergunta": "Qual é o perímetro de um retângulo com lados X e Y?",
+                "formula": "2 * (X + Y)",
+                "assunto": "Geometria"
+            },
+            {
+                "tipo": "Area Triangulo",
+                "pergunta": "Qual é a área de um triângulo com base X e altura Y?",
+                "formula": "(X * Y) / 2",
+                "assunto": "Geometria"
+            },
+            {
+                "tipo": "Volume Cubo",
+                "pergunta": "Qual é o volume de um cubo com aresta X?",
+                "formula": "X^3",
+                "assunto": "Geometria"
+            },
+            {
+                "tipo": "Teorema de Pitagoras",
+                "pergunta": "Em um triângulo retângulo com catetos X e Y, qual é a hipotenusa?",
+                "formula": "sqrt(X^2 + Y^2)",
+                "assunto": "Geometria"
+            },
+            {
+                "tipo": "Seno",
+                "pergunta": "Qual é o valor de sen(X°)?",
+                "formula": "sin(X)",
+                "assunto": "Trigonometria"
+            },
+            {
+                "tipo": "Cosseno",
+                "pergunta": "Qual é o valor de cos(X°)?",
+                "formula": "cos(X)",
+                "assunto": "Trigonometria"
+            },
+            {
+                "tipo": "Tangente",
+                "pergunta": "Qual é o valor de tan(X°)?",
+                "formula": "tan(X)",
+                "assunto": "Trigonometria"
+            },
+            {
+                "tipo": "Media Aritmetica",
+                "pergunta": "Qual é a média aritmética de X, Y e Z?",
+                "formula": "(X + Y + Z) / 3",
+                "assunto": "Raciocínio Matemático"
+            },
+            {
+                "tipo": "Porcentagem Avançada",
+                "pergunta": "Se um valor X aumenta P%, qual é o novo valor?",
+                "formula": "X * (1 + P/100)",
+                "assunto": "Porcentagem"
+            },
+            {
+                "tipo": "Raiz Quadrada",
+                "pergunta": "Qual é a raiz quadrada de X?",
+                "formula": "sqrt(X)",
+                "assunto": "Raciocínio Matemático"
+            },
+            {
+                "tipo": "Potencia",
+                "pergunta": "Qual é o valor de X elevado a Y?",
+                "formula": "X^Y",
+                "assunto": "Raciocínio Matemático"
+            },
+            {
+                "tipo": "Subtracao Decimais",
+                "pergunta": "Em uma subtração de números decimais, quanto é X - Y?",
+                "formula": "X - Y",
+                "assunto": "Decimal"
+            },
+            {
+                "tipo": "Divisao Decimais",
+                "pergunta": "Em uma divisão de números decimais, quanto é X ÷ Y?",
+                "formula": "X / Y",
+                "assunto": "Decimal"
+            },
+            {
+                "tipo": "Equacao Sistema 2x2",
+                "pergunta": "Resolva o sistema: aX + bY = M e cX + dY = N. Qual é X?",
+                "formula": "(M*d - b*N)/(a*d - b*c)",
+                "assunto": "Álgebra"
+            },
+            {
+                "tipo": "Equacao Sistema 2x2",
+                "pergunta": "Resolva o sistema: aX + bY = M e cX + dY = N. Qual é Y?",
+                "formula": "(a*N - M*c)/(a*d - b*c)",
+                "assunto": "Álgebra"
+            },
+            {
+                "tipo": "Fracao Multiplicacao",
+                "pergunta": "Em uma multiplicação de frações, quanto é X/Y x A/B?",
+                "formula": "(X* A)/(Y * B)",
+                "assunto": "Frações"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "DERIVADA",
+                "dica": "Medida da taxa de variação de uma função"
+            },
+            {
+                "palavra": "INTEGRAL",
+                "dica": "Operação inversa da derivada"
+            },
+            {
+                "palavra": "LOGARITMO",
+                "dica": "Inverso da exponenciação"
+            },
+            {
+                "palavra": "BHASKARA",
+                "dica": "Fórmula usada para resolver equações quadráticas"
+            },
+            {
+                "palavra": "EQUACAOQUADRATICA",
+                "dica": "Equação do segundo grau"
+            },
+            {
+                "palavra": "MATRIZ",
+                "dica": "Tabela de números dispostos em linhas e colunas"
+            },
+            {
+                "palavra": "DETERMINANTE",
+                "dica": "Número associado a uma matriz quadrada"
+            },
+            {
+                "palavra": "FUNCAO",
+                "dica": "Relação entre variáveis independentes e dependentes"
+            },
+            {
+                "palavra": "TRIGONOMETRIA",
+                "dica": "Estudo das relações entre ângulos e lados de triângulos"
+            },
+            {
+                "palavra": "HIPOTENUSA",
+                "dica": "O maior lado de um triângulo retângulo"
+            },
+            {
+                "palavra": "GEOMETRIAESPACIAL",
+                "dica": "Ramo que estuda sólidos e volumes"
+            },
+            {
+                "palavra": "POLIGONO",
+                "dica": "Figura geométrica fechada com vários lados"
+            },
+            {
+                "palavra": "EXPOENTE",
+                "dica": "Número que indica quantas vezes a base é multiplicada por si"
+            },
+            {
+                "palavra": "ALGEBRALINEAR",
+                "dica": "Ramo que estuda vetores e matrizes"
+            },
+            {
+                "palavra": "PI",
+                "dica": "Constante usada em cálculos de círculo"
+            },
+            {
+                "palavra": "SENO",
+                "dica": "Função trigonométrica relacionada ao ângulo"
+            },
+            {
+                "palavra": "COSSENO",
+                "dica": "Função trigonométrica complementar ao seno"
+            },
+            {
+                "palavra": "TANGENTE",
+                "dica": "Relação entre seno e cosseno"
+            },
+            {
+                "palavra": "VARIAVELINDEPENDENTE",
+                "dica": "Valor que não depende de outro em uma função"
+            },
+            {
+                "palavra": "GRAFICO",
+                "dica": "Representação visual de uma função ou relação"
+            }
+        ]
+
+    }
+
+}

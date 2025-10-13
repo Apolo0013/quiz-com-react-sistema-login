@@ -1,0 +1,855 @@
+{
+    "facil": {
+        "objetiva": [{
+                "pergunta": "Qual astro ilumina e aquece a Terra?",
+                "alternativas": {
+                    "A": "Lua",
+                    "B": "Sol",
+                    "C": "Estrela Polar",
+                    "D": "Vênus"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o planeta em que vivemos?",
+                "alternativas": {
+                    "A": "Marte",
+                    "B": "Terra",
+                    "C": "Vênus",
+                    "D": "Júpiter"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quantos planetas existem no Sistema Solar?",
+                "alternativas": {
+                    "A": "7",
+                    "B": "8",
+                    "C": "9",
+                    "D": "10"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o estado físico da água no gelo?",
+                "alternativas": {
+                    "A": "Líquido",
+                    "B": "Sólido",
+                    "C": "Gasoso",
+                    "D": "Plasma"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual parte do corpo usamos para cheirar?",
+                "alternativas": {
+                    "A": "Olhos",
+                    "B": "Boca",
+                    "C": "Nariz",
+                    "D": "Ouvido"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o maior órgão do corpo humano?",
+                "alternativas": {
+                    "A": "Coração",
+                    "B": "Pele",
+                    "C": "Pulmão",
+                    "D": "Fígado"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Os peixes respiram por meio de qual órgão?",
+                "alternativas": {
+                    "A": "Pulmões",
+                    "B": "Guélras",
+                    "C": "Nariz",
+                    "D": "Bexiga"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o principal gás que respiramos?",
+                "alternativas": {
+                    "A": "Gás Carbônico",
+                    "B": "Hidrogênio",
+                    "C": "Oxigênio",
+                    "D": "Nitrogênio"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual animal é conhecido por produzir mel?",
+                "alternativas": {
+                    "A": "Formiga",
+                    "B": "Abelha",
+                    "C": "Borboleta",
+                    "D": "Besouro"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual parte da planta realiza a fotossíntese?",
+                "alternativas": {
+                    "A": "Raiz",
+                    "B": "Flor",
+                    "C": "Folha",
+                    "D": "Caule"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "O que é necessário para existir combustão?",
+                "alternativas": {
+                    "A": "Água",
+                    "B": "Oxigênio",
+                    "C": "Gelo",
+                    "D": "Vento"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O sangue transporta o quê pelo corpo?",
+                "alternativas": {
+                    "A": "Oxigênio",
+                    "B": "Água",
+                    "C": "Ar",
+                    "D": "Luz"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o planeta mais próximo do Sol?",
+                "alternativas": {
+                    "A": "Vênus",
+                    "B": "Terra",
+                    "C": "Mercúrio",
+                    "D": "Marte"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual órgão bombeia o sangue no corpo humano?",
+                "alternativas": {
+                    "A": "Pulmão",
+                    "B": "Estômago",
+                    "C": "Coração",
+                    "D": "Fígado"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o líquido essencial à vida?",
+                "alternativas": {
+                    "A": "Leite",
+                    "B": "Água",
+                    "C": "Óleo",
+                    "D": "Suco"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o principal astro do Sistema Solar?",
+                "alternativas": {
+                    "A": "Terra",
+                    "B": "Sol",
+                    "C": "Lua",
+                    "D": "Saturno"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o animal mais rápido do mundo?",
+                "alternativas": {
+                    "A": "Leão",
+                    "B": "Guepardo",
+                    "C": "Cavalo",
+                    "D": "Águia"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Os seres humanos pertencem a qual reino?",
+                "alternativas": {
+                    "A": "Animal",
+                    "B": "Vegetal",
+                    "C": "Fungi",
+                    "D": "Protista"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual parte do corpo humano é responsável pela visão?",
+                "alternativas": {
+                    "A": "Nariz",
+                    "B": "Ouvido",
+                    "C": "Olhos",
+                    "D": "Boca"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "O que é reciclável?",
+                "alternativas": {
+                    "A": "Papel",
+                    "B": "Comida",
+                    "C": "Folhas",
+                    "D": "Pedra"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "SOL",
+                "dica": "Estrela que ilumina e aquece a Terra"
+            },
+            {
+                "palavra": "ÁGUA",
+                "dica": "Substância essencial à vida"
+            },
+            {
+                "palavra": "PLANTA",
+                "dica": "Ser vivo que realiza fotossíntese"
+            },
+            {
+                "palavra": "CORAÇÃO",
+                "dica": "Órgão que bombeia o sangue"
+            },
+            {
+                "palavra": "PULMÃO",
+                "dica": "Órgão usado na respiração"
+            },
+            {
+                "palavra": "OSSOS",
+                "dica": "Sustentam o corpo humano"
+            },
+            {
+                "palavra": "CÉLULA",
+                "dica": "Unidade básica da vida"
+            },
+            {
+                "palavra": "NARIZ",
+                "dica": "Usado para sentir cheiros"
+            },
+            {
+                "palavra": "OXYGÊNIO",
+                "dica": "Gás essencial para respirar"
+            },
+            {
+                "palavra": "TERRA",
+                "dica": "Planeta onde vivemos"
+            },
+            {
+                "palavra": "LUZ",
+                "dica": "Necessária para a fotossíntese"
+            },
+            {
+                "palavra": "ENERGIA",
+                "dica": "O que move tudo no universo"
+            },
+            {
+                "palavra": "ESTRELA",
+                "dica": "Corpo celeste que emite luz própria"
+            },
+            {
+                "palavra": "LUA",
+                "dica": "Satélite natural da Terra"
+            },
+            {
+                "palavra": "PEIXE",
+                "dica": "Animal que vive na água"
+            },
+            {
+                "palavra": "AR",
+                "dica": "Mistura de gases que respiramos"
+            },
+            {
+                "palavra": "RAIZ",
+                "dica": "Parte da planta que absorve água do solo"
+            },
+            {
+                "palavra": "FLORES",
+                "dica": "Parte colorida das plantas"
+            },
+            {
+                "palavra": "INSETOS",
+                "dica": "Pequenos animais de seis patas"
+            },
+            {
+                "palavra": "VIDA",
+                "dica": "Condição dos seres vivos"
+            }
+        ]
+    },
+
+    "medio": {
+        "objetiva": [{
+                "pergunta": "Qual é o gás mais abundante na atmosfera terrestre?",
+                "alternativas": {
+                    "A": "Oxigênio",
+                    "B": "Nitrogênio",
+                    "C": "Gás Carbônico",
+                    "D": "Hidrogênio"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual parte da célula contém o material genético?",
+                "alternativas": {
+                    "A": "Citoplasma",
+                    "B": "Núcleo",
+                    "C": "Mitocôndria",
+                    "D": "Membrana"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o maior planeta do Sistema Solar?",
+                "alternativas": {
+                    "A": "Saturno",
+                    "B": "Júpiter",
+                    "C": "Urano",
+                    "D": "Netuno"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do processo pelo qual as plantas produzem alimento?",
+                "alternativas": {
+                    "A": "Respiração",
+                    "B": "Digestão",
+                    "C": "Fotossíntese",
+                    "D": "Evaporação"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o órgão responsável por filtrar o sangue?",
+                "alternativas": {
+                    "A": "Pulmão",
+                    "B": "Coração",
+                    "C": "Fígado",
+                    "D": "Rim"
+                },
+                "resposta_certa": "D"
+            },
+            {
+                "pergunta": "Qual elemento químico tem o símbolo O?",
+                "alternativas": {
+                    "A": "Ouro",
+                    "B": "Oxigênio",
+                    "C": "Ósmio",
+                    "D": "Ozônio"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a camada mais externa da Terra?",
+                "alternativas": {
+                    "A": "Manto",
+                    "B": "Crosta",
+                    "C": "Núcleo",
+                    "D": "Litosfera"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a função principal do estômago?",
+                "alternativas": {
+                    "A": "Respiração",
+                    "B": "Digestão",
+                    "C": "Circulação",
+                    "D": "Reprodução"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome da galáxia onde estamos?",
+                "alternativas": {
+                    "A": "Via Láctea",
+                    "B": "Andrômeda",
+                    "C": "Sagittarius A",
+                    "D": "Órion"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual dos seguintes animais é um mamífero?",
+                "alternativas": {
+                    "A": "Tubarão",
+                    "B": "Golfinho",
+                    "C": "Sapo",
+                    "D": "Pinguim"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é a clorofila?",
+                "alternativas": {
+                    "A": "Tipo de bactéria",
+                    "B": "Corante verde das folhas",
+                    "C": "Hormônio vegetal",
+                    "D": "Raiz da planta"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o órgão do corpo humano responsável pela produção de insulina?",
+                "alternativas": {
+                    "A": "Rim",
+                    "B": "Fígado",
+                    "C": "Pâncreas",
+                    "D": "Coração"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o principal gás responsável pelo efeito estufa?",
+                "alternativas": {
+                    "A": "Nitrogênio",
+                    "B": "Oxigênio",
+                    "C": "Gás Carbônico",
+                    "D": "Argônio"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual parte da planta é responsável pela absorção de água?",
+                "alternativas": {
+                    "A": "Flor",
+                    "B": "Raiz",
+                    "C": "Caule",
+                    "D": "Folha"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do satélite natural da Terra?",
+                "alternativas": {
+                    "A": "Lua",
+                    "B": "Sol",
+                    "C": "Titã",
+                    "D": "Europa"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o processo que transforma o vapor de água em líquido?",
+                "alternativas": {
+                    "A": "Evaporação",
+                    "B": "Condensação",
+                    "C": "Sublimação",
+                    "D": "Fusão"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a unidade básica da vida?",
+                "alternativas": {
+                    "A": "Célula",
+                    "B": "Molécula",
+                    "C": "Átomo",
+                    "D": "Órgão"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que significa H2O?",
+                "alternativas": {
+                    "A": "Água",
+                    "B": "Oxigênio",
+                    "C": "Gás Carbônico",
+                    "D": "Ácido"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual planeta é conhecido como o planeta vermelho?",
+                "alternativas": {
+                    "A": "Marte",
+                    "B": "Vênus",
+                    "C": "Saturno",
+                    "D": "Mercúrio"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "O que acontece quando um corpo é aquecido?",
+                "alternativas": {
+                    "A": "Contrai",
+                    "B": "Expande",
+                    "C": "Fica igual",
+                    "D": "Evapora"
+                },
+                "resposta_certa": "B"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "CÉLULA",
+                "dica": "Unidade básica da vida"
+            },
+            {
+                "palavra": "MITOCÔNDRIA",
+                "dica": "Produz energia nas células"
+            },
+            {
+                "palavra": "FOTOSSÍNTESE",
+                "dica": "Processo que transforma luz em energia para plantas"
+            },
+            {
+                "palavra": "ATMOSFERA",
+                "dica": "Camada de gases que envolve a Terra"
+            },
+            {
+                "palavra": "CLOROFILA",
+                "dica": "Pigmento verde das plantas"
+            },
+            {
+                "palavra": "OZÔNIO",
+                "dica": "Gás que protege a Terra dos raios ultravioleta"
+            },
+            {
+                "palavra": "ECOLOGIA",
+                "dica": "Estudo das relações entre seres vivos e ambiente"
+            },
+            {
+                "palavra": "NÚCLEO",
+                "dica": "Parte da célula que contém o DNA"
+            },
+            {
+                "palavra": "DNA",
+                "dica": "Molécula que carrega a informação genética"
+            },
+            {
+                "palavra": "INSULINA",
+                "dica": "Hormônio que controla o açúcar no sangue"
+            },
+            {
+                "palavra": "OXIGÊNIO",
+                "dica": "Gás essencial à respiração"
+            },
+            {
+                "palavra": "HIDROGÊNIO",
+                "dica": "Elemento mais leve e abundante do universo"
+            },
+            {
+                "palavra": "PLANETA",
+                "dica": "Corpo celeste que orbita uma estrela"
+            },
+            {
+                "palavra": "GALÁXIA",
+                "dica": "Conjunto de bilhões de estrelas"
+            },
+            {
+                "palavra": "SATÉLITE",
+                "dica": "Corpo que orbita um planeta"
+            },
+            {
+                "palavra": "CONDENSAÇÃO",
+                "dica": "Transformação do vapor em líquido"
+            },
+            {
+                "palavra": "EVAPORAÇÃO",
+                "dica": "Transformação de líquido em vapor"
+            },
+            {
+                "palavra": "MICROSCÓPIO",
+                "dica": "Instrumento usado para ver seres muito pequenos"
+            },
+            {
+                "palavra": "ENERGIA",
+                "dica": "Capacidade de realizar trabalho"
+            },
+            {
+                "palavra": "CIRCUITO",
+                "dica": "Caminho fechado por onde passa corrente elétrica"
+            }
+        ]
+    },
+    "dificil": {
+        "objetiva": [{
+                "pergunta": "Qual é a unidade básica da hereditariedade?",
+                "alternativas": {
+                    "A": "Cromossomo",
+                    "B": "DNA",
+                    "C": "Gene",
+                    "D": "RNA"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual partícula tem carga negativa?",
+                "alternativas": {
+                    "A": "Próton",
+                    "B": "Nêutron",
+                    "C": "Elétron",
+                    "D": "Íon"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual órgão é responsável pela produção da bile?",
+                "alternativas": {
+                    "A": "Fígado",
+                    "B": "Estômago",
+                    "C": "Pâncreas",
+                    "D": "Baço"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é a fórmula química da glicose?",
+                "alternativas": {
+                    "A": "C2H6O",
+                    "B": "CO2",
+                    "C": "C6H12O6",
+                    "D": "CH4"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual cientista propôs a teoria da evolução por seleção natural?",
+                "alternativas": {
+                    "A": "Isaac Newton",
+                    "B": "Albert Einstein",
+                    "C": "Charles Darwin",
+                    "D": "Galileu Galilei"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o pH neutro da água pura?",
+                "alternativas": {
+                    "A": "5",
+                    "B": "6",
+                    "C": "7",
+                    "D": "8"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Em que órgão ocorre a troca gasosa nos humanos?",
+                "alternativas": {
+                    "A": "Fígado",
+                    "B": "Pulmão",
+                    "C": "Estômago",
+                    "D": "Rim"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o principal componente do ar atmosférico?",
+                "alternativas": {
+                    "A": "Oxigênio",
+                    "B": "Gás Carbônico",
+                    "C": "Nitrogênio",
+                    "D": "Hidrogênio"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é a camada mais interna da Terra?",
+                "alternativas": {
+                    "A": "Crosta",
+                    "B": "Manto",
+                    "C": "Núcleo",
+                    "D": "Litosfera"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é a principal função dos glóbulos vermelhos?",
+                "alternativas": {
+                    "A": "Combater infecções",
+                    "B": "Transportar oxigênio",
+                    "C": "Produzir energia",
+                    "D": "Formar hormônios"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é a molécula responsável pelo armazenamento de energia nas células?",
+                "alternativas": {
+                    "A": "DNA",
+                    "B": "RNA",
+                    "C": "ATP",
+                    "D": "Glicose"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "O que é a fotossíntese inversa?",
+                "alternativas": {
+                    "A": "Processo que libera energia",
+                    "B": "Respiração celular",
+                    "C": "Reação que consome oxigênio",
+                    "D": "Absorção de CO2 pela planta à noite"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do processo de divisão celular que forma gametas?",
+                "alternativas": {
+                    "A": "Mitose",
+                    "B": "Meiose",
+                    "C": "Cisão binária",
+                    "D": "Fusão"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que é o ponto de ebulição da água ao nível do mar?",
+                "alternativas": {
+                    "A": "50°C",
+                    "B": "75°C",
+                    "C": "100°C",
+                    "D": "120°C"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual planeta tem os anéis mais visíveis do Sistema Solar?",
+                "alternativas": {
+                    "A": "Júpiter",
+                    "B": "Saturno",
+                    "C": "Urano",
+                    "D": "Netuno"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "O que diferencia um vírus de uma bactéria?",
+                "alternativas": {
+                    "A": "O tamanho",
+                    "B": "A presença de núcleo",
+                    "C": "A reprodução independente",
+                    "D": "Os vírus não têm células"
+                },
+                "resposta_certa": "D"
+            },
+            {
+                "pergunta": "Qual é o nome da força que nos mantém presos ao solo?",
+                "alternativas": {
+                    "A": "Força centrípeta",
+                    "B": "Magnetismo",
+                    "C": "Gravidade",
+                    "D": "Inércia"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual cientista formulou as leis do movimento?",
+                "alternativas": {
+                    "A": "Galileu",
+                    "B": "Einstein",
+                    "C": "Newton",
+                    "D": "Kepler"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é a principal causa do aquecimento global?",
+                "alternativas": {
+                    "A": "Aumento do gás carbônico",
+                    "B": "Explosões solares",
+                    "C": "Rotação da Terra",
+                    "D": "Erupções vulcânicas"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual parte do cérebro controla os movimentos voluntários?",
+                "alternativas": {
+                    "A": "Cerebelo",
+                    "B": "Bulbo",
+                    "C": "Córtex motor",
+                    "D": "Hipotálamo"
+                },
+                "resposta_certa": "C"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "GENE",
+                "dica": "Unidade básica da hereditariedade"
+            },
+            {
+                "palavra": "ELÉTRON",
+                "dica": "Partícula subatômica com carga negativa"
+            },
+            {
+                "palavra": "ATP",
+                "dica": "Principal molécula de energia celular"
+            },
+            {
+                "palavra": "MEIOSE",
+                "dica": "Divisão celular que forma gametas"
+            },
+            {
+                "palavra": "MITOSE",
+                "dica": "Divisão celular que forma células idênticas"
+            },
+            {
+                "palavra": "GRAVIDADE",
+                "dica": "Força que mantém corpos atraídos entre si"
+            },
+            {
+                "palavra": "NITROGÊNIO",
+                "dica": "Principal gás da atmosfera"
+            },
+            {
+                "palavra": "PÂNCREAS",
+                "dica": "Órgão que produz insulina"
+            },
+            {
+                "palavra": "FOTOSSÍNTESE",
+                "dica": "Processo que transforma luz solar em energia"
+            },
+            {
+                "palavra": "CROMOSSOMO",
+                "dica": "Estrutura que contém os genes"
+            },
+            {
+                "palavra": "RNA",
+                "dica": "Molécula envolvida na síntese de proteínas"
+            },
+            {
+                "palavra": "ECOLOGIA",
+                "dica": "Estudo das relações entre os seres vivos e o ambiente"
+            },
+            {
+                "palavra": "BIOSFERA",
+                "dica": "Conjunto de todos os ecossistemas do planeta"
+            },
+            {
+                "palavra": "ATMOSFERA",
+                "dica": "Camada de gases que envolve a Terra"
+            },
+            {
+                "palavra": "EVOLUÇÃO",
+                "dica": "Processo de transformação das espécies ao longo do tempo"
+            },
+            {
+                "palavra": "GALÁXIA",
+                "dica": "Conjunto de bilhões de estrelas"
+            },
+            {
+                "palavra": "NEURÔNIO",
+                "dica": "Célula responsável pela transmissão de impulsos nervosos"
+            },
+            {
+                "palavra": "OZÔNIO",
+                "dica": "Gás que forma uma camada protetora contra radiação UV"
+            },
+            {
+                "palavra": "CÓRTEX",
+                "dica": "Camada externa do cérebro responsável por funções superiores"
+            },
+            {
+                "palavra": "FÍGADO",
+                "dica": "Órgão que produz a bile"
+            }
+        ]
+    }
+}

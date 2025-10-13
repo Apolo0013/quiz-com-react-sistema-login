@@ -1,0 +1,854 @@
+{
+    "facil": {
+        "objetiva": [{
+                "pergunta": "Quem é o famoso rato da Disney?",
+                "alternativas": {
+                    "A": "Jerry",
+                    "B": "Mickey Mouse",
+                    "C": "Stuart Little",
+                    "D": "Speedy Gonzales"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do brinquedo cowboy em Toy Story?",
+                "alternativas": {
+                    "A": "Woody",
+                    "B": "Buzz",
+                    "C": "Andy",
+                    "D": "Jessie"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em qual filme o personagem Simba aparece?",
+                "alternativas": {
+                    "A": "A Bela e a Fera",
+                    "B": "O Rei Leão",
+                    "C": "Tarzan",
+                    "D": "Aladdin"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o melhor amigo do Shrek?",
+                "alternativas": {
+                    "A": "Burro",
+                    "B": "Gato de Botas",
+                    "C": "Dragão",
+                    "D": "Lord Farquaad"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o nome do super-herói que usa um escudo?",
+                "alternativas": {
+                    "A": "Homem de Ferro",
+                    "B": "Capitão América",
+                    "C": "Thor",
+                    "D": "Hulk"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Em qual filme uma princesa perde o sapato de cristal?",
+                "alternativas": {
+                    "A": "Branca de Neve",
+                    "B": "Cinderela",
+                    "C": "Rapunzel",
+                    "D": "Ariel"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do peixe-palhaço de Procurando Nemo?",
+                "alternativas": {
+                    "A": "Dory",
+                    "B": "Marlin",
+                    "C": "Nemo",
+                    "D": "Bruce"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Quem é o parceiro do Batman?",
+                "alternativas": {
+                    "A": "Superman",
+                    "B": "Robin",
+                    "C": "Flash",
+                    "D": "Homem-Aranha"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Em que filme os brinquedos ganham vida?",
+                "alternativas": {
+                    "A": "Carros",
+                    "B": "Toy Story",
+                    "C": "Monstros S.A.",
+                    "D": "Divertida Mente"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual princesa da Disney tem um cabelo muito longo?",
+                "alternativas": {
+                    "A": "Ariel",
+                    "B": "Rapunzel",
+                    "C": "Elsa",
+                    "D": "Tiana"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o vilão principal de Star Wars?",
+                "alternativas": {
+                    "A": "Luke Skywalker",
+                    "B": "Darth Vader",
+                    "C": "Han Solo",
+                    "D": "Chewbacca"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual super-herói é conhecido como o Homem de Ferro?",
+                "alternativas": {
+                    "A": "Tony Stark",
+                    "B": "Peter Parker",
+                    "C": "Steve Rogers",
+                    "D": "Bruce Wayne"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em qual filme aparece o personagem Olaf?",
+                "alternativas": {
+                    "A": "Encanto",
+                    "B": "Frozen",
+                    "C": "Moana",
+                    "D": "Valente"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual estúdio criou os Minions?",
+                "alternativas": {
+                    "A": "Pixar",
+                    "B": "DreamWorks",
+                    "C": "Illumination",
+                    "D": "Disney"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Quem é o homem-aranha?",
+                "alternativas": {
+                    "A": "Clark Kent",
+                    "B": "Bruce Wayne",
+                    "C": "Peter Parker",
+                    "D": "Tony Stark"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual é o nome da princesa que comeu uma maçã envenenada?",
+                "alternativas": {
+                    "A": "Cinderela",
+                    "B": "Aurora",
+                    "C": "Branca de Neve",
+                    "D": "Ariel"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Em qual filme os personagens vivem dentro de um videogame?",
+                "alternativas": {
+                    "A": "Ralph Quebra Internet",
+                    "B": "Detona Ralph",
+                    "C": "Pixels",
+                    "D": "Jogador Nº1"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do leão de Madagascar?",
+                "alternativas": {
+                    "A": "Marty",
+                    "B": "Alex",
+                    "C": "Melman",
+                    "D": "Gloria"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem é o vilão de A Pequena Sereia?",
+                "alternativas": {
+                    "A": "Malévola",
+                    "B": "Ursula",
+                    "C": "Gothel",
+                    "D": "Cruella"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do brinquedo astronauta em Toy Story?",
+                "alternativas": {
+                    "A": "Woody",
+                    "B": "Buzz Lightyear",
+                    "C": "Ken",
+                    "D": "Andy"
+                },
+                "resposta_certa": "B"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "DISNEY",
+                "dica": "Maior estúdio de animação do mundo"
+            },
+            {
+                "palavra": "MICKEY",
+                "dica": "Rato símbolo da Disney"
+            },
+            {
+                "palavra": "PIXAR",
+                "dica": "Criou Toy Story e Monstros S.A."
+            },
+            {
+                "palavra": "CINEMA",
+                "dica": "Lugar onde assistimos filmes"
+            },
+            {
+                "palavra": "CAMERA",
+                "dica": "Equipamento usado para filmar"
+            },
+            {
+                "palavra": "FILME",
+                "dica": "História contada em vídeo"
+            },
+            {
+                "palavra": "ATORES",
+                "dica": "Pessoas que interpretam personagens"
+            },
+            {
+                "palavra": "CENAS",
+                "dica": "Partes que compõem um filme"
+            },
+            {
+                "palavra": "FROZEN",
+                "dica": "Filme com as irmãs Elsa e Anna"
+            },
+            {
+                "palavra": "MINIONS",
+                "dica": "Pequenas criaturas amarelas"
+            },
+            {
+                "palavra": "BATMAN",
+                "dica": "Herói de Gotham City"
+            },
+            {
+                "palavra": "MARVEL",
+                "dica": "Universo com super-heróis como Hulk e Thor"
+            },
+            {
+                "palavra": "CINDERELA",
+                "dica": "Perdeu o sapato de cristal"
+            },
+            {
+                "palavra": "SIMBA",
+                "dica": "Leão protagonista de O Rei Leão"
+            },
+            {
+                "palavra": "SHREK",
+                "dica": "Ogro simpático que vive em um pântano"
+            },
+            {
+                "palavra": "BUZZ",
+                "dica": "Astronauta de Toy Story"
+            },
+            {
+                "palavra": "WOODY",
+                "dica": "Cowboy de Toy Story"
+            },
+            {
+                "palavra": "OLAF",
+                "dica": "Boneco de neve amigo de Elsa"
+            },
+            {
+                "palavra": "URSULA",
+                "dica": "Vilã de A Pequena Sereia"
+            },
+            {
+                "palavra": "POPCORN",
+                "dica": "Comida tradicional do cinema"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [{
+                "pergunta": "Quem dirigiu o filme 'Titanic'?",
+                "alternativas": {
+                    "A": "Steven Spielberg",
+                    "B": "James Cameron",
+                    "C": "Christopher Nolan",
+                    "D": "Ridley Scott"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual ator interpretou Jack Sparrow em 'Piratas do Caribe'?",
+                "alternativas": {
+                    "A": "Brad Pitt",
+                    "B": "Johnny Depp",
+                    "C": "Leonardo DiCaprio",
+                    "D": "Tom Cruise"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do vilão principal em 'Os Vingadores' (2012)?",
+                "alternativas": {
+                    "A": "Ultron",
+                    "B": "Loki",
+                    "C": "Thanos",
+                    "D": "Kang"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Em qual cidade se passa a maior parte do filme 'Coringa' (2019)?",
+                "alternativas": {
+                    "A": "Gotham",
+                    "B": "Nova York",
+                    "C": "Chicago",
+                    "D": "Los Angeles"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem interpreta o personagem Harry Potter?",
+                "alternativas": {
+                    "A": "Daniel Radcliffe",
+                    "B": "Rupert Grint",
+                    "C": "Tom Holland",
+                    "D": "Elijah Wood"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual filme ganhou o Oscar de Melhor Filme em 2020?",
+                "alternativas": {
+                    "A": "1917",
+                    "B": "Parasita",
+                    "C": "Coringa",
+                    "D": "Era uma Vez em... Hollywood"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do robô em 'Wall-E'?",
+                "alternativas": {
+                    "A": "EVA",
+                    "B": "R2-D2",
+                    "C": "Wall-E",
+                    "D": "BB-8"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Quem é o diretor da trilogia 'O Senhor dos Anéis'?",
+                "alternativas": {
+                    "A": "Peter Jackson",
+                    "B": "James Cameron",
+                    "C": "Nolan",
+                    "D": "George Lucas"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual filme apresentou o personagem Darth Vader pela primeira vez?",
+                "alternativas": {
+                    "A": "Star Wars: Uma Nova Esperança",
+                    "B": "O Império Contra-Ataca",
+                    "C": "A Vingança dos Sith",
+                    "D": "O Retorno de Jedi"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em 'De Volta para o Futuro', qual é o nome do cientista?",
+                "alternativas": {
+                    "A": "Doc Brown",
+                    "B": "Rick Sanchez",
+                    "C": "Tony Stark",
+                    "D": "Walter White"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual atriz interpretou Mulher-Maravilha nos filmes recentes da DC?",
+                "alternativas": {
+                    "A": "Gal Gadot",
+                    "B": "Scarlett Johansson",
+                    "C": "Brie Larson",
+                    "D": "Anne Hathaway"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual filme popularizou a frase 'Say hello to my little friend'?",
+                "alternativas": {
+                    "A": "O Poderoso Chefão",
+                    "B": "Scarface",
+                    "C": "Pulp Fiction",
+                    "D": "Os Bons Companheiros"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do palhaço assassino criado por Stephen King?",
+                "alternativas": {
+                    "A": "Pogo",
+                    "B": "Pennywise",
+                    "C": "Joker",
+                    "D": "Chucky"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Em 'Matrix', qual é o nome verdadeiro de Neo?",
+                "alternativas": {
+                    "A": "John Smith",
+                    "B": "Thomas Anderson",
+                    "C": "Jack Harper",
+                    "D": "Bruce Wayne"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual desses filmes foi dirigido por Quentin Tarantino?",
+                "alternativas": {
+                    "A": "Gladiador",
+                    "B": "Clube da Luta",
+                    "C": "Pulp Fiction",
+                    "D": "O Resgate do Soldado Ryan"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Em que filme Leonardo DiCaprio finalmente ganhou o Oscar de Melhor Ator?",
+                "alternativas": {
+                    "A": "O Lobo de Wall Street",
+                    "B": "Titanic",
+                    "C": "O Regresso",
+                    "D": "Ilha do Medo"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Qual o nome da inteligência artificial em 'Ex Machina'?",
+                "alternativas": {
+                    "A": "Samantha",
+                    "B": "EVA",
+                    "C": "HAL",
+                    "D": "Alexa"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Em 'Jurassic Park', que tipo de animal é recriado?",
+                "alternativas": {
+                    "A": "Mamutes",
+                    "B": "Dinossauros",
+                    "C": "Tigres-dente-de-sabre",
+                    "D": "Dragões"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual filme é famoso pela frase 'I'm the king of the world!'?",
+                "alternativas": {
+                    "A": "Avatar",
+                    "B": "Titanic",
+                    "C": "Gladiador",
+                    "D": "Coração Valente"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem dirigiu 'A Origem' (Inception)?",
+                "alternativas": {
+                    "A": "Steven Spielberg",
+                    "B": "Martin Scorsese",
+                    "C": "Christopher Nolan",
+                    "D": "James Cameron"
+                },
+                "resposta_certa": "C"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "TITANIC",
+                "dica": "Filme com Leonardo DiCaprio e Kate Winslet"
+            },
+            {
+                "palavra": "OSCAR",
+                "dica": "Maior premiação do cinema mundial"
+            },
+            {
+                "palavra": "CÂMERA",
+                "dica": "Equipamento usado para filmar"
+            },
+            {
+                "palavra": "DIRETOR",
+                "dica": "Responsável por comandar o filme"
+            },
+            {
+                "palavra": "ROTEIRO",
+                "dica": "Texto que guia a produção do filme"
+            },
+            {
+                "palavra": "LUCASFILM",
+                "dica": "Produtora de Star Wars"
+            },
+            {
+                "palavra": "NOLAN",
+                "dica": "Diretor de Inception e Batman"
+            },
+            {
+                "palavra": "TARANTINO",
+                "dica": "Diretor de Pulp Fiction"
+            },
+            {
+                "palavra": "MATRIX",
+                "dica": "Filme com Neo e Morpheus"
+            },
+            {
+                "palavra": "PENNYWISE",
+                "dica": "Palhaço do filme It"
+            },
+            {
+                "palavra": "JURASSIC",
+                "dica": "Franquia famosa por dinossauros"
+            },
+            {
+                "palavra": "DISNEY",
+                "dica": "Estúdio que criou o Mickey e Pixar"
+            },
+            {
+                "palavra": "PIXAR",
+                "dica": "Produtora de animações 3D"
+            },
+            {
+                "palavra": "AVATAR",
+                "dica": "Filme sobre o planeta Pandora"
+            },
+            {
+                "palavra": "THANOS",
+                "dica": "Vilão que reuniu as Joias do Infinito"
+            },
+            {
+                "palavra": "MARVEL",
+                "dica": "Universo com Vingadores e Homem-Aranha"
+            },
+            {
+                "palavra": "CINEMA",
+                "dica": "Lugar onde se assistem filmes"
+            },
+            {
+                "palavra": "CORTINA",
+                "dica": "Parte tradicional das salas de cinema"
+            },
+            {
+                "palavra": "SOM",
+                "dica": "Elemento essencial junto com a imagem"
+            },
+            {
+                "palavra": "TRILHA",
+                "dica": "Música que acompanha o filme"
+            }
+        ]
+    },
+    "dificil": {
+        "objetiva": [{
+                "pergunta": "Qual foi o primeiro filme a ganhar o Oscar de Melhor Filme?",
+                "alternativas": {
+                    "A": "E o Vento Levou",
+                    "B": "Asas",
+                    "C": "Cidadão Kane",
+                    "D": "Casablanca"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual diretor é conhecido como 'O Mestre do Suspense'?",
+                "alternativas": {
+                    "A": "Stanley Kubrick",
+                    "B": "Alfred Hitchcock",
+                    "C": "Francis Ford Coppola",
+                    "D": "David Fincher"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Em 'Blade Runner', qual é o nome da corporação que cria os replicantes?",
+                "alternativas": {
+                    "A": "Weyland-Yutani",
+                    "B": "Tyrell Corporation",
+                    "C": "Cyberdyne Systems",
+                    "D": "Umbrella Corporation"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual filme é conhecido pela frase 'Rosebud'?",
+                "alternativas": {
+                    "A": "Psicose",
+                    "B": "O Iluminado",
+                    "C": "Cidadão Kane",
+                    "D": "Casablanca"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Em que ano foi lançado o primeiro filme de 'Star Wars'?",
+                "alternativas": {
+                    "A": "1975",
+                    "B": "1977",
+                    "C": "1980",
+                    "D": "1982"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem dirigiu 'Laranja Mecânica'?",
+                "alternativas": {
+                    "A": "Stanley Kubrick",
+                    "B": "Ridley Scott",
+                    "C": "Francis Coppola",
+                    "D": "Tarantino"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual é o verdadeiro nome do Coringa interpretado por Joaquin Phoenix?",
+                "alternativas": {
+                    "A": "Jack Napier",
+                    "B": "Arthur Fleck",
+                    "C": "Jerome Valeska",
+                    "D": "John Doe"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual o nome do hotel em 'O Iluminado'?",
+                "alternativas": {
+                    "A": "Bates Motel",
+                    "B": "Overlook Hotel",
+                    "C": "Continental",
+                    "D": "Roosevelt Hotel"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem dirigiu 'O Poderoso Chefão'?",
+                "alternativas": {
+                    "A": "Martin Scorsese",
+                    "B": "Francis Ford Coppola",
+                    "C": "Brian De Palma",
+                    "D": "Sergio Leone"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o nome do androide em 'Alien – O 8º Passageiro'?",
+                "alternativas": {
+                    "A": "Ash",
+                    "B": "Bishop",
+                    "C": "David",
+                    "D": "Roy"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Em '2001: Uma Odisseia no Espaço', qual é o nome da inteligência artificial?",
+                "alternativas": {
+                    "A": "EVA",
+                    "B": "HAL 9000",
+                    "C": "GERTY",
+                    "D": "VIKI"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual é o único ator a ganhar três Oscars de Melhor Ator?",
+                "alternativas": {
+                    "A": "Marlon Brando",
+                    "B": "Daniel Day-Lewis",
+                    "C": "Tom Hanks",
+                    "D": "Jack Nicholson"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Em 'Clube da Luta', qual é a primeira regra do clube?",
+                "alternativas": {
+                    "A": "Não falar sobre o Clube da Luta",
+                    "B": "Não desistir",
+                    "C": "Lutar até o fim",
+                    "D": "Chegar no horário"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Quem compôs a trilha sonora de 'Interestelar'?",
+                "alternativas": {
+                    "A": "John Williams",
+                    "B": "Hans Zimmer",
+                    "C": "Ennio Morricone",
+                    "D": "Alan Silvestri"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual filme de terror apresentou pela primeira vez o assassino Michael Myers?",
+                "alternativas": {
+                    "A": "Sexta-Feira 13",
+                    "B": "Halloween",
+                    "C": "A Hora do Pesadelo",
+                    "D": "O Exorcista"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Quem dirigiu 'Apocalypse Now'?",
+                "alternativas": {
+                    "A": "Stanley Kubrick",
+                    "B": "Francis Ford Coppola",
+                    "C": "Oliver Stone",
+                    "D": "Ridley Scott"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual filme ganhou o Oscar de Melhor Filme em 1994?",
+                "alternativas": {
+                    "A": "Pulp Fiction",
+                    "B": "Forrest Gump",
+                    "C": "Os Condenados de Shawshank",
+                    "D": "Quiz Show"
+                },
+                "resposta_certa": "B"
+            },
+            {
+                "pergunta": "Qual atriz interpretou Clarice Starling em 'O Silêncio dos Inocentes'?",
+                "alternativas": {
+                    "A": "Jodie Foster",
+                    "B": "Sigourney Weaver",
+                    "C": "Julianne Moore",
+                    "D": "Charlize Theron"
+                },
+                "resposta_certa": "A"
+            },
+            {
+                "pergunta": "Qual foi o último filme dirigido por Stanley Kubrick?",
+                "alternativas": {
+                    "A": "O Iluminado",
+                    "B": "Laranja Mecânica",
+                    "C": "De Olhos Bem Fechados",
+                    "D": "Barry Lyndon"
+                },
+                "resposta_certa": "C"
+            },
+            {
+                "pergunta": "Quem escreveu e dirigiu 'Parasita'?",
+                "alternativas": {
+                    "A": "Bong Joon-ho",
+                    "B": "Park Chan-wook",
+                    "C": "Lee Chang-dong",
+                    "D": "Kim Ki-duk"
+                },
+                "resposta_certa": "A"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "KUBRICK",
+                "dica": "Diretor de 2001 e Laranja Mecânica"
+            },
+            {
+                "palavra": "HITCHCOCK",
+                "dica": "Conhecido como o Mestre do Suspense"
+            },
+            {
+                "palavra": "ROSEBUD",
+                "dica": "Palavra enigmática em Cidadão Kane"
+            },
+            {
+                "palavra": "BLADE",
+                "dica": "Caçador de vampiros ou replicantes"
+            },
+            {
+                "palavra": "CHEFÃO",
+                "dica": "Tradução popular de The Godfather"
+            },
+            {
+                "palavra": "HAL9000",
+                "dica": "IA de 2001: Uma Odisseia no Espaço"
+            },
+            {
+                "palavra": "COPO",
+                "dica": "Objeto simbólico em Indiana Jones e o Santo Graal"
+            },
+            {
+                "palavra": "TYRELL",
+                "dica": "Corporação que criou os replicantes"
+            },
+            {
+                "palavra": "FORREST",
+                "dica": "Protagonista de um clássico de 1994"
+            },
+            {
+                "palavra": "ZIMMER",
+                "dica": "Compositor de trilhas como Interestelar"
+            },
+            {
+                "palavra": "PARASITA",
+                "dica": "Filme sul-coreano vencedor do Oscar"
+            },
+            {
+                "palavra": "CINÉFILO",
+                "dica": "Pessoa apaixonada por cinema"
+            },
+            {
+                "palavra": "TERROR",
+                "dica": "Gênero de filmes que causa medo"
+            },
+            {
+                "palavra": "CANNES",
+                "dica": "Festival de cinema francês renomado"
+            },
+            {
+                "palavra": "OSCARS",
+                "dica": "Premiação mais famosa do cinema"
+            },
+            {
+                "palavra": "KANE",
+                "dica": "Protagonista do filme de Orson Welles"
+            },
+            {
+                "palavra": "MATRIX",
+                "dica": "Filme de ficção sobre simulação digital"
+            },
+            {
+                "palavra": "NOLAN",
+                "dica": "Diretor de A Origem e Interestelar"
+            },
+            {
+                "palavra": "MYERS",
+                "dica": "Assassino mascarado de Halloween"
+            },
+            {
+                "palavra": "COPPOLA",
+                "dica": "Diretor de O Poderoso Chefão e Apocalypse Now"
+            }
+        ]
+    }
+}

@@ -6,14 +6,52 @@ import Selecionar_Tema from './inicio-quiz/selecionar_tema/selecionar_tema'
 import Dificuldade_Quiz from './inicio-quiz/dificuldade/dificuldade'
 import { useRef } from 'react'
 //Types
-import { type InfoOpcaoType, type InfoOpcaoTypeDificuldade, type InfoOpcaoTypeTema } from '../../types/RefTypes'
+import {
+    type InfoOpcaoType,
+    type InfoOpcaoTypeDificuldade,
+    type InfoOpcaoTypeTema,
+    type ReturnBackendQuizNormal,
+    type ReturnBackendQuizMath
+} from '../../types/RefTypes'
 //utils ts
 import { ScrollTarget } from '../../utils/utils'
 //Notifica
 import { Notifica } from '../notificacao/notificar'
+import ObjetivaQuiz from './Jogar/objetiva'
+import Handler_Quiz from './Jogar/handler'
 
 function Quiz_Main() {
-    function Start() {
+    async function GetQuizBackEnd(dados: InfoOpcaoType) {
+        try {
+            const request = await fetch('http://localhost:5239/Quiz/Pegar', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(dados)
+            })
+            //Aqui teremos dois tipo de retorno. |
+            //Quiz normal                        |
+            //Quiz Math                          | 
+            /////////////////////////////////////| 
+            // Se o tema for matematica, fisica e quimica
+            if (dados.tema == 'Fisica' || dados.tema == 'Matemática' || dados.tema == 'Quimica') {
+                console.log('matematica')
+                const resposta: ReturnBackendQuizMath = await request.json()
+                return resposta
+            }
+            //Se o tema for os tema normais:
+            else {
+                const resposta: ReturnBackendQuizNormal = await request.json()
+                return resposta
+            }   
+        }
+        catch (error) {
+            console.log(error)
+        }
+    }
+
+    async function Start() {
         if (
             !RefInfoOpcao.current ||
             !RefConteinerDificuldade.current ||
@@ -32,7 +70,7 @@ function Quiz_Main() {
             ScrollTarget(RefConteinerDificuldade.current)
         }
         else {
-            console.log('fds')
+            GetQuizBackEnd(RefInfoOpcao.current)
         }
     }
 
@@ -46,15 +84,19 @@ function Quiz_Main() {
     const RefConteinerDificuldade = useRef < HTMLDivElement | null>(null)
     return (
         <div className="conteiner-quiz-main">
-            <Main_Info_Entrar />
+            <Handler_Quiz/>
+        </div>
+    )
+}
+
+/*
+<Main_Info_Entrar />
             <Head_Quiz_Inicio/>
             <Selecionar_Tema RefGetInfo={RefInfoOpcao} RefConteiner={RefConteinerTema} />
             <Dificuldade_Quiz RefGetInfo={RefInfoOpcao} RefConteiner={RefConteinerDificuldade}/>
             <div className="conteiner-botao-comeca-quiz-main">
                 <button className='Botao-Comeca-quiz-main' onClick={Start}>Começa</button>
             </div>
-        </div>
-    )
-}
+*/
 
 export default Quiz_Main

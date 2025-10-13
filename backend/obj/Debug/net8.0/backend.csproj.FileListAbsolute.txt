@@ -38,3 +38,15 @@ C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\o
 C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\obj\Debug\net8.0\ref\backend.dll
 C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\obj\Debug\net8.0\backend.sourcelink.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Cinema.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Ciências.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Cultura pop.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Fisica.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Geografia.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\História.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Literatura.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Logica.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Matemática.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Quimica.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\date quiz\Tecnologia.json
+C:\Users\apolo\OneDrive\Documentos\Programação\GitHub\quiz com react\backend\bin\Debug\net8.0\NCalc.dll

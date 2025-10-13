@@ -6,4 +6,11 @@ namespace BackEnd.Type.FrontInBack
         public string senha { get; set; } = "";
         public bool lembrar_login { get; set; } = false;
     }
+
+
+    class ParamGetTemaAndDificuldade
+    {
+        public string Tema { set; get; } = "";
+        public string Dificuldade { get; set; } = "";
+    }
 }

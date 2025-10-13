@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import './dificuldade.scss'
 //type
-import { type InfoOpcaoType, type InfoOpcaoTypeDificuldade, type TypeGetRefTemaEDificuldade } from '../../../../types/RefTypes'
+import {type InfoOpcaoTypeDificuldade, type TypeGetRefTemaEDificuldade } from '../../../../types/RefTypes'
 
 function Dificuldade_Quiz({ RefGetInfo, RefConteiner } : TypeGetRefTemaEDificuldade) {
     function EscolheDificuldade(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) { 
@@ -13,18 +13,26 @@ function Dificuldade_Quiz({ RefGetInfo, RefConteiner } : TypeGetRefTemaEDificuld
                 el.classList.remove("selecionado-botao-dificuldade-e-tema")
             }
         }
-
-        if (!e) {return}
         const el: HTMLButtonElement = e.currentTarget
-        //desativando todos.
-        RetirarClassSlcAll()
-        //add a class que deixa o botao ativado
-        el!.classList.add('selecionado-botao-dificuldade-e-tema')
-        //Pegando a opcao selecionado.
-        const dataset: DOMStringMap = el.dataset
-        if (!dataset || !dataset.target) {return}
-        const opcao = dataset.target as InfoOpcaoTypeDificuldade
-        RefGetInfo.current.dificuldade = opcao
+        if (!el) { return }
+        ///se ele encontrar a class seleciona, no elemento que ele clicou. Vamos retirar a class. e retirar a dificuldade do ref responsavel por guardara essa informacao.
+        if ([...el.classList].includes('selecionado-botao-dificuldade-e-tema')) {
+            //retirando a class.
+            el.classList.remove('selecionado-botao-dificuldade-e-tema')
+            //retirando do ref
+            RefGetInfo.current.dificuldade = ''
+        }
+        else {
+            //desativando todos.
+            RetirarClassSlcAll()
+            //add a class que deixa o botao ativado
+            el.classList.add('selecionado-botao-dificuldade-e-tema')
+            //Pegando a opcao selecionado.
+            const dataset: DOMStringMap = el.dataset
+            if (!dataset || !dataset.target) {return}
+            const opcao = dataset.target as InfoOpcaoTypeDificuldade
+            RefGetInfo.current.dificuldade = opcao
+        }
     }
 
     const RefConteinerBotao = useRef<HTMLDivElement | null>(null)

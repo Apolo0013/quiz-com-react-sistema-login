@@ -1,0 +1,497 @@
+{
+    "facil": {
+        "objetiva": [{
+                "tipo": "Velocidade Media",
+                "pergunta": "Em um movimento simples, qual é a velocidade média de um corpo que percorre uma distância {D}m em um tempo {T}s?",
+                "formula": "{D} / {T}",
+                "assunto": "Cinemática"
+            },
+            {
+                "tipo": "Forca",
+                "pergunta": "Se um corpo de massa {M}kg sofre uma aceleração {A}m/s², qual é a força resultante?",
+                "formula": "{M} * {A}",
+                "assunto": "Leis de Newton"
+            },
+            {
+                "tipo": "Trabalho",
+                "pergunta": "Qual é o trabalho realizado por uma força {F}N que desloca um corpo por uma distância {D}m?",
+                "formula": "{F} * {D}",
+                "assunto": "Trabalho e Energia"
+            },
+            {
+                "tipo": "Peso",
+                "pergunta": "Qual é o peso de um corpo de massa {M}kg na Terra (gravidade {g}m/s²)?",
+                "formula": "{M} * {g}",
+                "assunto": "Gravitação"
+            },
+            {
+                "tipo": "Energia Cinetica",
+                "pergunta": "Qual é a energia cinética de um corpo de massa {M}kg com velocidade {V}m/s?",
+                "formula": "({M} * {V}^2) / 2",
+                "assunto": "Energia"
+            },
+            {
+                "tipo": "Densidade",
+                "pergunta": "Qual é a densidade de um corpo de massa {M}kg e volume {V}m³?",
+                "formula": "{M} / {V}",
+                "assunto": "Propriedades da Matéria"
+            },
+            {
+                "tipo": "Pressao",
+                "pergunta": "Qual é a pressão exercida por uma força {F}N sobre uma área {A}m²?",
+                "formula": "{F} / {A}",
+                "assunto": "Hidrostática"
+            },
+            {
+                "tipo": "Potencia",
+                "pergunta": "Qual é a potência desenvolvida por um trabalho {W}J realizado em um tempo {T}s?",
+                "formula": "{W} / {T}",
+                "assunto": "Trabalho e Energia"
+            },
+            {
+                "tipo": "Temperatura Celsius para Kelvin",
+                "pergunta": "Qual é a temperatura em Kelvin correspondente a {T}°C?",
+                "formula": "{T} + 273",
+                "assunto": "Termodinâmica"
+            },
+            {
+                "tipo": "Lei de Ohm",
+                "pergunta": "Em um circuito elétrico, qual é a resistência de um condutor com tensão {V}V e corrente {I}A?",
+                "formula": "{V} / {I}",
+                "assunto": "Eletricidade"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "FORCA",
+                "dica": "Grandeza que causa variação no movimento de um corpo"
+            },
+            {
+                "palavra": "ENERGIA",
+                "dica": "Capacidade de realizar trabalho"
+            },
+            {
+                "palavra": "VELOCIDADE",
+                "dica": "Relação entre espaço e tempo"
+            },
+            {
+                "palavra": "MASSA",
+                "dica": "Quantidade de matéria em um corpo"
+            },
+            {
+                "palavra": "PESO",
+                "dica": "Força gravitacional sobre um corpo"
+            },
+            {
+                "palavra": "GRAVIDADE",
+                "dica": "Força que atrai corpos para o centro da Terra"
+            },
+            {
+                "palavra": "PRESSAO",
+                "dica": "Força aplicada sobre uma área"
+            },
+            {
+                "palavra": "DENSIDADE",
+                "dica": "Relação entre massa e volume"
+            },
+            {
+                "palavra": "POTENCIA",
+                "dica": "Trabalho realizado por unidade de tempo"
+            },
+            {
+                "palavra": "ELETRICIDADE",
+                "dica": "Movimento ordenado de cargas elétricas"
+            },
+            {
+                "palavra": "RESISTENCIA",
+                "dica": "Oposição à passagem da corrente elétrica"
+            },
+            {
+                "palavra": "CALOR",
+                "dica": "Energia térmica em trânsito"
+            },
+            {
+                "palavra": "TRABALHO",
+                "dica": "Produto da força pelo deslocamento"
+            },
+            {
+                "palavra": "TEMPERATURA",
+                "dica": "Medida do grau de agitação das partículas"
+            },
+            {
+                "palavra": "CIRCUITO",
+                "dica": "Caminho fechado por onde circula corrente elétrica"
+            },
+            {
+                "palavra": "VOLTAGEM",
+                "dica": "Diferença de potencial elétrico entre dois pontos"
+            },
+            {
+                "palavra": "AMPERE",
+                "dica": "Unidade de medida da corrente elétrica"
+            },
+            {
+                "palavra": "JOULE",
+                "dica": "Unidade de medida de energia"
+            },
+            {
+                "palavra": "WATT",
+                "dica": "Unidade de medida de potência"
+            },
+            {
+                "palavra": "TERMOMETRO",
+                "dica": "Instrumento usado para medir temperatura"
+            }
+        ]
+    },
+    "medio": {
+        "objetiva": [{
+                "tipo": "MRU",
+                "pergunta": "Em um movimento retilíneo uniforme, qual é o espaço percorrido após tempo {T}s, sabendo que a velocidade é {V}m/s?",
+                "formula": "{V} * {T}",
+                "assunto": "Cinemática"
+            },
+            {
+                "tipo": "MRUV",
+                "pergunta": "Em um movimento uniformemente variado, qual é a velocidade final após tempo {T}s, partindo de velocidade inicial {V0}m/s e aceleração {A}m/s²?",
+                "formula": "{V0} + {A} * {T}",
+                "assunto": "Cinemática"
+            },
+            {
+                "tipo": "Energia Potencial Gravitacional",
+                "pergunta": "Qual é a energia potencial gravitacional de um corpo de massa {M}kg a uma altura {H}m, considerando a aceleração da gravidade {g}m/s²?",
+                "formula": "{M} * {g} * {H}",
+                "assunto": "Energia"
+            },
+            {
+                "tipo": "Energia Mecanica Total",
+                "pergunta": "Qual é a energia mecânica total de um corpo, sabendo sua energia cinética {Ec}J e potencial {Ep}J?",
+                "formula": "{Ec} + {Ep}",
+                "assunto": "Energia"
+            },
+            {
+                "tipo": "Trabalho pela Força Constante",
+                "pergunta": "Qual é o trabalho realizado por uma força constante de {F}N ao deslocar um corpo por {d}m em uma direção com ângulo de {θ}° em relação ao deslocamento?",
+                "formula": "{F} * {d} * Cos({θ} * Pi / 180)",
+                "assunto": "Trabalho e Energia"
+            }
+                ,
+            {
+                "tipo": "Pressão Hidrostática",
+                "pergunta": "Qual é a pressão exercida por um fluido de densidade {ρ}kg/m³ a uma profundidade de {h}m, considerando a gravidade {g}m/s²?",
+                "formula": "{ρ} * {g} * {h}",
+                "assunto": "Hidrostática"
+            },
+            {
+                "tipo": "Lei de Hooke",
+                "pergunta": "Qual é a força elástica exercida por uma mola de constante {k}N/m deformada em {x}m?",
+                "formula": "{k} * {x}",
+                "assunto": "Elasticidade"
+            },
+            {
+                "tipo": "Potencia Eletrica",
+                "pergunta": "Qual é a potência elétrica dissipada em um resistor de resistência {R}Ω, com corrente {I}A?",
+                "formula": "{I}^2 * {R}",
+                "assunto": "Eletricidade"
+            },
+            {
+                "tipo": "Resistencia Equivalente Serie",
+                "pergunta": "Qual é a resistência equivalente de três resistores {R1}Ω, {R2}Ω e {R3}Ω ligados em série?",
+                "formula": "{R1} + {R2} + {R3}",
+                "assunto": "Eletricidade"
+            },
+            {
+                "tipo": "Resistencia Equivalente Paralelo",
+                "pergunta": "Qual é a resistência equivalente de três resistores {R1}Ω, {R2}Ω e {R3}Ω ligados em paralelo?",
+                "formula": "1 / ((1/{R1}) + (1/{R2}) + (1/{R3}))",
+                "assunto": "Eletricidade"
+            }
+        ],
+        "descobrir_palavra": [{
+                "palavra": "ACELERACAO",
+                "dica": "Variação da velocidade em função do tempo"
+            },
+            {
+                "palavra": "FORCA",
+                "dica": "Grandeza que pode alterar o estado de movimento de um corpo"
+            },
+            {
+                "palavra": "ENERGIA",
+                "dica": "Capacidade de realizar trabalho"
+            },
+            {
+                "palavra": "POTENCIAL",
+                "dica": "Energia associada à posição de um corpo"
+            },
+            {
+                "palavra": "CINETICA",
+                "dica": "Energia associada ao movimento"
+            },
+            {
+                "palavra": "GRAVIDADE",
+                "dica": "Aceleração causada pela atração da Terra"
+            },
+            {
+                "palavra": "PRESSAO",
+                "dica": "Força aplicada sobre uma área"
+            },
+            {
+                "palavra": "FLUIDO",
+                "dica": "Substância que pode escoar, como líquido ou gás"
+            },
+            {
+                "palavra": "DENSIDADE",
+                "dica": "Relação entre massa e volume"
+            },
+            {
+                "palavra": "ELASTICIDADE",
+                "dica": "Capacidade de um corpo retornar à forma original após deformação"
+            },
+            {
+                "palavra": "MOLA",
+                "dica": "Objeto elástico usado para armazenar energia"
+            },
+            {
+                "palavra": "RESISTENCIA",
+                "dica": "Oposição à passagem de corrente elétrica"
+            },
+            {
+                "palavra": "CORRENTE",
+                "dica": "Fluxo de cargas elétricas"
+            },
+            {
+                "palavra": "TENSÃO",
+                "dica": "Diferença de potencial elétrico"
+            },
+            {
+                "palavra": "CIRCUITO",
+                "dica": "Caminho fechado por onde passa corrente elétrica"
+            },
+            {
+                "palavra": "ONDAS",
+                "dica": "Perturbações que se propagam transportando energia"
+            },
+            {
+                "palavra": "LUMINOSIDADE",
+                "dica": "Quantidade de luz emitida por uma fonte"
+            },
+            {
+                "palavra": "REFLEXAO",
+                "dica": "Retorno da luz ao encontrar uma superfície"
+            },
+            {
+                "palavra": "REFRACAO",
+                "dica": "Mudança de direção da luz ao passar de um meio para outro"
+            },
+            {
+                "palavra": "TERMODINAMICA",
+                "dica": "Estudo da energia e calor em sistemas físicos"
+            }
+        ]
+    },
+    "dificil": {
+        "objetiva": [
+            {
+                "tipo": "Lei da Gravitação Universal",
+                "pergunta": "Qual é a força de atração gravitacional entre dois corpos de massas {M1}kg e {M2}kg separados por uma distância {R}m, considerando a gravidade {G}?",
+                "formula": "({G} * {M1} * {M2}) / ({R}^2)",
+                "assunto": "Gravitação Universal"
+            },
+            {
+                "tipo": "Trabalho de uma Forca Variavel",
+                "pergunta": "Qual é o trabalho realizado por uma força que varia com a posição {x}m, representada por {Fx}N?",
+                "formula": "{Fx} * {x}", 
+                "assunto": "Trabalho e Energia"
+            },
+            {
+                "tipo": "Lei de Coulomb",
+                "pergunta": "Qual é a força elétrica entre duas cargas {Q1}C e {Q2}C separadas por uma distância {R}m, considerando a constante {k}?",
+                "formula": "({k} * {Q1} * {Q2}) / ({R}^2)",
+                "assunto": "Eletrostática"
+            },
+            {
+                "tipo": "Campo Eletrico",
+                "pergunta": "Qual é o campo elétrico gerado por uma carga {Q}C a uma distância {R}m, considerando a constante {k}?",
+                "formula": "({k} * {Q}) / ({R}^2)",
+                "assunto": "Eletrostática"
+            },
+            {
+                "tipo": "Lei de Gauss",
+                "pergunta": "Qual é o fluxo elétrico através de uma superfície fechada, sabendo a carga total interna {Q}C e a permissividade {eps0}?",
+                "formula": "{Q} / {eps0}",
+                "assunto": "Eletrostática"
+            },
+            {
+                "tipo": "Campo Magnetico de um Fio Retilíneo",
+                "pergunta": "Qual é o campo magnético a uma distância {R}m de um fio percorrido por corrente {I}A, considerando {mu0}?",
+                "formula": "({mu0} * {I}) / (2 * {R})",
+                "assunto": "Magnetismo"
+            },
+            {
+                "tipo": "Forca Magnetica",
+                "pergunta": "Qual é a força magnética sobre uma carga {q}C movendo-se com velocidade {v}m/s em um campo magnético {B}T com ângulo {theta}°?",
+                "formula": "{q} * {v} * {B} * Cos({theta} * Pi / 180)",
+                "assunto": "Eletromagnetismo"
+            },
+            {
+                "tipo": "Lei de Faraday",
+                "pergunta": "Qual é a força eletromotriz induzida em um circuito com variação de fluxo magnético {DeltaPhi}Wb em tempo {DeltaT}s?",
+                "formula": "-{DeltaPhi} / {DeltaT}",
+                "assunto": "Eletromagnetismo"
+            },
+            {
+                "tipo": "Lei dos Gases Ideais",
+                "pergunta": "Qual é a relação entre pressão {P}Pa, volume {V}m³, número de mols {n} e temperatura {T}K, considerando a constante {R}?",
+                "formula": "{P} * {V} = {n} * {R} * {T}",
+                "assunto": "Termodinâmica"
+            },
+            {
+                "tipo": "Primeira Lei da Termodinamica",
+                "pergunta": "Qual é a variação da energia interna de um sistema sabendo o calor {Q}J e o trabalho {W}J?",
+                "formula": "{DeltaU} = {Q} - {W}",
+                "assunto": "Termodinâmica"
+            },
+            {
+                "tipo": "Eficiência Termodinâmica",
+                "pergunta": "Qual é a eficiência de uma máquina térmica com temperaturas {Tq}K e {Tf}K?",
+                "formula": "1 - ({Tf} / {Tq})",
+                "assunto": "Termodinâmica"
+            },
+            {
+                "tipo": "Equação da Onda",
+                "pergunta": "Qual é a relação entre velocidade {v}m/s, comprimento de onda {lambda}m e frequência {f}Hz?",
+                "formula": "{v} = {lambda} * {f}",
+                "assunto": "Ondulatória"
+            },
+            {
+                "tipo": "Lei de Snell",
+                "pergunta": "Qual é a relação entre os ângulos de incidência {i}° e refração {r}° de uma luz que passa de um meio {n1} para outro {n2}?",
+                "formula": "{n1} * Cos({i} * Pi / 180) = {n2} * Cos({r} * Pi / 180)",
+                "assunto": "Óptica"
+            },
+            {
+                "tipo": "Equação dos Espelhos",
+                "pergunta": "Qual é a relação entre a distância focal {f}m, a distância do objeto {p}m e a distância da imagem {pPrime}m?",
+                "formula": "1/{f} = 1/{p} + 1/{pPrime}",
+                "assunto": "Óptica Geométrica"
+            },
+            {
+                "tipo": "Efeito Doppler",
+                "pergunta": "Qual é a frequência percebida {fPrime}Hz por um observador quando há movimento relativo entre a fonte {vf}m/s e o observador {vo}m/s, com velocidade do som {v}m/s?",
+                "formula": "{fPrime} = {f} * ({v} ± {vo}) / ({v} ∓ {vf})",
+                "assunto": "Ondulatória"
+            },
+            {
+                "tipo": "Momento Linear",
+                "pergunta": "Qual é o momento linear de um corpo de massa {m}kg e velocidade {v}m/s?",
+                "formula": "{m} * {v}",
+                "assunto": "Dinâmica"
+            },
+            {
+                "tipo": "Impulso",
+                "pergunta": "Qual é o impulso exercido por uma força {F}N durante um intervalo de tempo {DeltaT}s?",
+                "formula": "{F} * {DeltaT}",
+                "assunto": "Dinâmica"
+            },
+            {
+                "tipo": "Quantidade de Calor",
+                "pergunta": "Qual é a quantidade de calor necessária para variar a temperatura de um corpo de massa {m}kg e calor específico {c}J/kg°C em {DeltaT}°C?",
+                "formula": "{m} * {c} * {DeltaT}",
+                "assunto": "Calorimetria"
+            },
+            {
+                "tipo": "Carga Eletrica Total",
+                "pergunta": "Qual é a carga total transportada por uma corrente elétrica {I}A durante um intervalo de tempo {t}s?",
+                "formula": "{I} * {t}",
+                "assunto": "Eletrodinâmica"
+            },
+            {
+                "tipo": "Lei de Kepler",
+                "pergunta": "Qual é a relação entre o quadrado do período {T}s e o cubo do raio médio {R}m da órbita de um planeta?",
+                "formula": "{T}^2 = {R}^3",
+                "assunto": "Gravitação"
+            }
+        ],
+
+        "descobrir_palavra": [{
+                "palavra": "GRAVITACAO",
+                "dica": "Força de atração entre corpos com massa"
+            },
+            {
+                "palavra": "ELETROMAGNETISMO",
+                "dica": "Interação entre campos elétricos e magnéticos"
+            },
+            {
+                "palavra": "INDUCAO",
+                "dica": "Geração de corrente elétrica por variação de fluxo magnético"
+            },
+            {
+                "palavra": "CAMPO",
+                "dica": "Região onde uma força é exercida sobre partículas"
+            },
+            {
+                "palavra": "MAGNETISMO",
+                "dica": "Fenômeno associado à atração de certos materiais"
+            },
+            {
+                "palavra": "FLUXO",
+                "dica": "Quantidade de campo que atravessa uma superfície"
+            },
+            {
+                "palavra": "TERMODINAMICA",
+                "dica": "Estudo das trocas de energia e calor"
+            },
+            {
+                "palavra": "EFICIENCIA",
+                "dica": "Medida do aproveitamento energético de uma máquina"
+            },
+            {
+                "palavra": "ONDULATORIA",
+                "dica": "Ramo que estuda o comportamento das ondas"
+            },
+            {
+                "palavra": "DOPPLER",
+                "dica": "Efeito que altera a frequência percebida de uma onda"
+            },
+            {
+                "palavra": "REFRACAO",
+                "dica": "Desvio da luz ao mudar de meio"
+            },
+            {
+                "palavra": "REFLEXAO",
+                "dica": "Retorno da luz ao atingir uma superfície"
+            },
+            {
+                "palavra": "CALORIMETRIA",
+                "dica": "Estudo das trocas de calor"
+            },
+            {
+                "palavra": "CARGA",
+                "dica": "Propriedade das partículas que causa interações elétricas"
+            },
+            {
+                "palavra": "POTENCIAL",
+                "dica": "Energia por unidade de carga elétrica"
+            },
+            {
+                "palavra": "CORRENTE",
+                "dica": "Fluxo de elétrons em um condutor"
+            },
+            {
+                "palavra": "IMPULSO",
+                "dica": "Produto da força pelo intervalo de tempo em que ela atua"
+            },
+            {
+                "palavra": "MOMENTO",
+                "dica": "Produto da massa pela velocidade"
+            },
+            {
+                "palavra": "KEPLER",
+                "dica": "Cientista que formulou leis sobre o movimento planetário"
+            },
+            {
+                "palavra": "INTEGRAL",
+                "dica": "Operação usada para calcular áreas e trabalhos variáveis"
+            }
+        ]
+    }
+}
