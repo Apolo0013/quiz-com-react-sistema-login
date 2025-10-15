@@ -225,4 +225,3 @@ app.MapPost("Quiz/Pegar", (ParamGetTemaAndDificuldade dados) =>
 });
 
 app.Run();
-

@@ -35,7 +35,7 @@ namespace BackEnd.Utils {
 
         public static void Main()
         {
-            Console.WriteLine(GetReplaceNumero(new List<int>() { 1 }, "g = {"));
+            Console.WriteLine(GetReplaceNumero(new List<int>() { 1,2 }, "Em uma subtração, qual é o resultado de {X} - {Y}?"));
         }
 
         public static int GetCountChaves(string pergunta)
@@ -98,7 +98,14 @@ namespace BackEnd.Utils {
                         //Perguntas 
                         //"Mas se ele é o final, nao devemos add +1 no indicao"
                         //Resposta: Nao. o for ja faz esse servico.
-                        if (letraindex == "}") { break; }
+                        if (letraindex == "}") 
+                        {
+                            //Subtituir
+                            TextFinal += Numeros[indexnumeros];
+                            //Add +1 no indexnumeros, para o proximo numero da lista.
+                            indexnumeros += 1;
+                            break; 
+                        }
                         //senao vamos add mais um indices
                         else
                         {
@@ -109,10 +116,7 @@ namespace BackEnd.Utils {
                             }
                             index++;
                         }
-                        //Subtituir
-                        TextFinal += Numeros[indexnumeros];
-                        //Add +1 no indexnumeros, para o proximo numero da lista.
-                        indexnumeros += 1;
+                        
                     }
                 }
                 //Caso ao contrario. Apenas add a letra que estava antes.

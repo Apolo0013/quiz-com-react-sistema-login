@@ -1,49 +1,51 @@
 {
     "facil": {
-        "objetiva": [{
+        "objetiva":[
+            {
                 "tipo": "Adicao",
-                "pergunta": "Em uma adição, qual é o resultado de ",
-                "formula": "x + y",
+                "pergunta": "Em uma adição, qual é o resultado de {X} + {Y}?",
+                "formula": "{X} + {Y}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Subtracao",
-                "pergunta": "Em uma subtração, qual é o resultado de ",
-                "formula": "x - y",
+                "pergunta": "Em uma subtração, qual é o resultado de {X} - {Y}?",
+                "formula": "{X} - {Y}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Multiplicacao",
-                "pergunta": "Em uma multiplicação, quanto é ",
-                "formula": "x * y",
+                "pergunta": "Em uma multiplicação, quanto é {X} × {Y}?",
+                "formula": "{X} * {Y}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Divisao",
-                "pergunta": "Em uma divisão, quanto é ",
-                "formula": "x / y",
+                "pergunta": "Em uma divisão, quanto é {X} ÷ {Y}?",
+                "formula": "{X} / {Y}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Dobro",
-                "pergunta": "Qual é o dobro de ",
-                "formula": "2 * x",
+                "pergunta": "Qual é o dobro de {X}?",
+                "formula": "2 * {X}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Triplo",
-                "pergunta": "Qual é o triplo de ",
-                "formula": "3 * x",
+                "pergunta": "Qual é o triplo de {X}?",
+                "formula": "3 * {X}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Metade",
-                "pergunta": "Qual é a metade de ",
-                "formula": "x / 2",
+                "pergunta": "Qual é a metade de {X}?",
+                "formula": "{X} / 2",
                 "assunto": "Operação básica"
             }
         ],
-        "descobrir_palavra": [{
+        "descobrir_palavra": [
+            {
                 "palavra": "SOMA",
                 "dica": "Operação que adiciona valores"
             },
@@ -126,38 +128,70 @@
         ]
     },
     "medio": {
-        "objetiva": [{
-                "tipo": "Porcentagem",
-                "pergunta": "Em uma situação de porcentagem, quanto é P% de X?",
-                "formula": "(P / 100) * X",
-                "assunto": "Porcentagem"
-            },
-            {
-                "tipo": "Fracao",
-                "pergunta": "Em uma operação com frações, qual é o resultado de X/Y + A/B?",
-                "formula": "X/Y + A/B",
-                "assunto": "Frações"
-            },
-            {
-                "tipo": "Decimal Adicao",
-                "pergunta": "Em uma adição de números decimais, quanto é X + Y?",
-                "formula": "X + Y",
-                "assunto": "Decimal"
-            },
-            {
-                "tipo": "Decimal Subtracao",
-                "pergunta": "Em uma subtração de números decimais, quanto é X - Y?",
-                "formula": "X - Y",
-                "assunto": "Decimal"
-            },
-            {
-                "tipo": "Decimal Multiplicacao",
-                "pergunta": "Em uma multiplicação de números decimais, quanto é X x Y?",
-                "formula": "X * Y",
-                "assunto": "Decimal"
-            }
+        "objetiva": [
+                {
+                    "tipo": "Fracao",
+                    "pergunta": "Em uma operação com frações, qual é o resultado de {X}/{Y} + {A}/{B}?",
+                    "formula": "({X}/{Y}) + ({A}/{B})",
+                    "assunto": "Frações"
+                },
+                {
+                    "tipo": "Potencia",
+                    "pergunta": "Qual é o valor de {X} elevado a {Y}?",
+                    "formula": "{X} ^ {Y}",
+                    "assunto": "Potenciação"
+                },
+                {
+                    "tipo": "Raiz N-ésima",
+                    "pergunta": "Qual é a raiz {N}-ésima de {X}?",
+                    "formula": "Pow({X}, 1 / {N})",
+                    "assunto": "Radiciação"
+                },
+                {
+                    "tipo": "Media Aritmetica",
+                    "pergunta": "Qual é a média aritmética dos valores {A}, {B} e {C}?",
+                    "formula": "({A} + {B} + {C}) / 3",
+                    "assunto": "Estatística"
+                },
+                {
+                    "tipo": "Media Ponderada",
+                    "pergunta": "Qual é a média ponderada dos valores {A}, {B} e {C} com pesos {P1}, {P2} e {P3}?",
+                    "formula": "(({A} * {P1}) + ({B} * {P2}) + ({C} * {P3})) / ({P1} + {P2} + {P3})",
+                    "assunto": "Estatística"
+                },
+                {
+                    "tipo": "Regra de Tres Simples",
+                    "pergunta": "Em uma regra de três simples, se {A} está para {B} assim como {C} está para X, qual é o valor de X?",
+                    "formula": "({B} * {C}) / {A}",
+                    "assunto": "Proporcionalidade"
+                },
+                {
+                    "tipo": "Regra de Tres Inversa",
+                    "pergunta": "Em uma regra de três inversa, se {A} está para {B} inversamente como {C} está para X, qual é o valor de X?",
+                    "formula": "({A} * {B}) / {C}",
+                    "assunto": "Proporcionalidade"
+                },
+                {
+                    "tipo": "Regra de Tres Composta",
+                    "pergunta": "Em uma regra de três composta com duas grandezas diretas e uma inversa, se {A1}, {A2}, {A3} estão para {B1}, {B2}, {B3}, qual é o valor de X?",
+                    "formula": "({B1} * {B2}) / ({A1} * {A2}) * {A3}",
+                    "assunto": "Proporcionalidade"
+                },
+                {
+                    "tipo": "Porcentagem Aumentada",
+                    "pergunta": "Um valor de {X} é aumentado em {P}%. Qual é o novo valor?",
+                    "formula": "{X} * (1 + {P} / 100)",
+                    "assunto": "Porcentagem"
+                },
+                {
+                    "tipo": "Porcentagem Descontada",
+                    "pergunta": "Um valor de {X} sofre um desconto de {P}%. Qual é o novo valor?",
+                    "formula": "{X} * (1 - {P} / 100)",
+                    "assunto": "Porcentagem"
+                }
         ],
-        "descobrir_palavra": [{
+        "descobrir_palavra": [
+            {
                 "palavra": "PORCENTAGEM",
                 "dica": "Representa uma parte de 100"
             },
@@ -240,126 +274,109 @@
         ]
     },
     "dificil": {
-        "objetiva": [{
-                "tipo": "Equacao Linear",
-                "pergunta": "Em uma equação linear, resolva 3x + 5 = Y. Qual é o valor de x?",
-                "formula": "(Y - 5) / 3",
-                "assunto": "Álgebra"
-            },
-            {
-                "tipo": "Equacao Quadratica",
-                "pergunta": "Em uma equação quadrática, resolva x² + 5x + 6 = 0. Qual é o valor de x?",
-                "formula": "(-5 ± sqrt(5² - 4*1*6)) / (2*1)",
-                "assunto": "Álgebra"
-            },
-            {
-                "tipo": "Soma de Frações",
-                "pergunta": "Em uma operação com frações, qual é o resultado de X/Y + A/B?",
-                "formula": "X/Y + A/B",
-                "assunto": "Frações"
-            },
-            {
-                "tipo": "Multiplicacao Decimais",
-                "pergunta": "Em uma multiplicação de números decimais, quanto é X x Y?",
-                "formula": "X * Y",
-                "assunto": "Decimal"
-            },
-            {
-                "tipo": "Perimetro",
-                "pergunta": "Qual é o perímetro de um retângulo com lados X e Y?",
-                "formula": "2 * (X + Y)",
-                "assunto": "Geometria"
-            },
-            {
-                "tipo": "Area Triangulo",
-                "pergunta": "Qual é a área de um triângulo com base X e altura Y?",
-                "formula": "(X * Y) / 2",
-                "assunto": "Geometria"
-            },
-            {
-                "tipo": "Volume Cubo",
-                "pergunta": "Qual é o volume de um cubo com aresta X?",
-                "formula": "X^3",
-                "assunto": "Geometria"
-            },
-            {
-                "tipo": "Teorema de Pitagoras",
-                "pergunta": "Em um triângulo retângulo com catetos X e Y, qual é a hipotenusa?",
-                "formula": "sqrt(X^2 + Y^2)",
-                "assunto": "Geometria"
-            },
-            {
-                "tipo": "Seno",
-                "pergunta": "Qual é o valor de sen(X°)?",
-                "formula": "sin(X)",
-                "assunto": "Trigonometria"
-            },
-            {
-                "tipo": "Cosseno",
-                "pergunta": "Qual é o valor de cos(X°)?",
-                "formula": "cos(X)",
-                "assunto": "Trigonometria"
-            },
-            {
-                "tipo": "Tangente",
-                "pergunta": "Qual é o valor de tan(X°)?",
-                "formula": "tan(X)",
-                "assunto": "Trigonometria"
-            },
-            {
-                "tipo": "Media Aritmetica",
-                "pergunta": "Qual é a média aritmética de X, Y e Z?",
-                "formula": "(X + Y + Z) / 3",
-                "assunto": "Raciocínio Matemático"
-            },
-            {
-                "tipo": "Porcentagem Avançada",
-                "pergunta": "Se um valor X aumenta P%, qual é o novo valor?",
-                "formula": "X * (1 + P/100)",
-                "assunto": "Porcentagem"
-            },
-            {
-                "tipo": "Raiz Quadrada",
-                "pergunta": "Qual é a raiz quadrada de X?",
-                "formula": "sqrt(X)",
-                "assunto": "Raciocínio Matemático"
-            },
-            {
-                "tipo": "Potencia",
-                "pergunta": "Qual é o valor de X elevado a Y?",
-                "formula": "X^Y",
-                "assunto": "Raciocínio Matemático"
-            },
-            {
-                "tipo": "Subtracao Decimais",
-                "pergunta": "Em uma subtração de números decimais, quanto é X - Y?",
-                "formula": "X - Y",
-                "assunto": "Decimal"
-            },
-            {
-                "tipo": "Divisao Decimais",
-                "pergunta": "Em uma divisão de números decimais, quanto é X ÷ Y?",
-                "formula": "X / Y",
-                "assunto": "Decimal"
-            },
-            {
-                "tipo": "Equacao Sistema 2x2",
-                "pergunta": "Resolva o sistema: aX + bY = M e cX + dY = N. Qual é X?",
-                "formula": "(M*d - b*N)/(a*d - b*c)",
-                "assunto": "Álgebra"
-            },
-            {
-                "tipo": "Equacao Sistema 2x2",
-                "pergunta": "Resolva o sistema: aX + bY = M e cX + dY = N. Qual é Y?",
-                "formula": "(a*N - M*c)/(a*d - b*c)",
-                "assunto": "Álgebra"
-            },
-            {
-                "tipo": "Fracao Multiplicacao",
-                "pergunta": "Em uma multiplicação de frações, quanto é X/Y x A/B?",
-                "formula": "(X* A)/(Y * B)",
-                "assunto": "Frações"
-            }
+        "objetiva": [
+                {
+                    "tipo": "Equacao Linear",
+                    "pergunta": "Em uma equação linear, resolva 3x + 5 = {Y}. Qual é o valor de x?",
+                    "formula": "({Y} - 5) / 3",
+                    "assunto": "Álgebra"
+                },
+                {
+                    "tipo": "Equacao Quadratica",
+                    "pergunta": "Em uma equação quadrática, resolva x² + 5x + 6 = 0. Qual é o valor de x?",
+                    "formula": "(-5 + sqrt(5^2 - 4*1*6)) / (2*1)",
+                    "assunto": "Álgebra"
+                },
+                {
+                    "tipo": "Soma de Fracoes",
+                    "pergunta": "Em uma operação com frações, qual é o resultado de {X}/{Y} + {A}/{B}?",
+                    "formula": "({X}/{Y}) + ({A}/{B})",
+                    "assunto": "Frações"
+                },
+                {
+                    "tipo": "Perimetro Retangulo",
+                    "pergunta": "Qual é o perímetro de um retângulo com lados {X} e {Y}?",
+                    "formula": "2 * ({X} + {Y})",
+                    "assunto": "Geometria"
+                },
+                {
+                    "tipo": "Area Triangulo",
+                    "pergunta": "Qual é a área de um triângulo com base {X} e altura {Y}?",
+                    "formula": "({X} * {Y}) / 2",
+                    "assunto": "Geometria"
+                },
+                {
+                    "tipo": "Volume Cubo",
+                    "pergunta": "Qual é o volume de um cubo com aresta {X}?",
+                    "formula": "{X} ^ 3",
+                    "assunto": "Geometria"
+                },
+                {
+                    "tipo": "Teorema de Pitagoras",
+                    "pergunta": "Em um triângulo retângulo com catetos {X} e {Y}, qual é a hipotenusa?",
+                    "formula": "sqrt({X} ^ 2 + {Y} ^ 2)",
+                    "assunto": "Geometria"
+                },
+                {
+                    "tipo": "Seno",
+                    "pergunta": "Qual é o valor de sen({X}°)?",
+                    "formula": "Sin({X} * Pi / 180)",
+                    "assunto": "Trigonometria"
+                },
+                {
+                    "tipo": "Cosseno",
+                    "pergunta": "Qual é o valor de cos({X}°)?",
+                    "formula": "Cos({X} * Pi / 180)",
+                    "assunto": "Trigonometria"
+                },
+                {
+                    "tipo": "Tangente",
+                    "pergunta": "Qual é o valor de tan({X}°)?",
+                    "formula": "Tan({X} * Pi / 180)",
+                    "assunto": "Trigonometria"
+                },
+                {
+                    "tipo": "Media Aritmetica",
+                    "pergunta": "Qual é a média aritmética de {X}, {Y} e {Z}?",
+                    "formula": "({X} + {Y} + {Z}) / 3",
+                    "assunto": "Raciocínio Matemático"
+                },
+                {
+                    "tipo": "Porcentagem Avancada",
+                    "pergunta": "Se um valor {X} aumenta {P}%, qual é o novo valor?",
+                    "formula": "{X} * (1 + {P} / 100)",
+                    "assunto": "Porcentagem"
+                },
+                {
+                    "tipo": "Raiz Quadrada",
+                    "pergunta": "Qual é a raiz quadrada de {X}?",
+                    "formula": "Sqrt({X})",
+                    "assunto": "Raciocínio Matemático"
+                },
+                {
+                    "tipo": "Potencia",
+                    "pergunta": "Qual é o valor de {X} elevado a {Y}?",
+                    "formula": "{X} ^ {Y}",
+                    "assunto": "Raciocínio Matemático"
+                },
+                {
+                    "tipo": "Equacao Sistema 2x2 X",
+                    "pergunta": "Resolva o sistema: {a}X + {b}Y = {M} e {c}X + {d}Y = {N}. Qual é o valor de X?",
+                    "formula": "({M} * {d} - {b} * {N}) / ({a} * {d} - {b} * {c})",
+                    "assunto": "Álgebra"
+                },
+                {
+                    "tipo": "Equacao Sistema 2x2 Y",
+                    "pergunta": "Resolva o sistema: {a}X + {b}Y = {M} e {c}X + {d}Y = {N}. Qual é o valor de Y?",
+                    "formula": "({a} * {N} - {M} * {c}) / ({a} * {d} - {b} * {c})",
+                    "assunto": "Álgebra"
+                },
+                {
+                    "tipo": "Fracao Multiplicacao",
+                    "pergunta": "Em uma multiplicação de frações, quanto é {X}/{Y} × {A}/{B}?",
+                    "formula": "({X} * {A}) / ({Y} * {B})",
+                    "assunto": "Frações"
+                }
         ],
         "descobrir_palavra": [{
                 "palavra": "DERIVADA",

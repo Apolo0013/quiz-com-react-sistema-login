@@ -4,7 +4,7 @@ import Main_Info_Entrar from '../entrar_conta/info_entrar_main/info_entrar_main'
 import Head_Quiz_Inicio from './inicio-quiz/header-quiz-inicio/head_quiz-inicio'
 import Selecionar_Tema from './inicio-quiz/selecionar_tema/selecionar_tema'
 import Dificuldade_Quiz from './inicio-quiz/dificuldade/dificuldade'
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 //Types
 import {
     type InfoOpcaoType,
@@ -38,6 +38,7 @@ function Quiz_Main() {
             if (dados.tema == 'Fisica' || dados.tema == 'Matemática' || dados.tema == 'Quimica') {
                 console.log('matematica')
                 const resposta: ReturnBackendQuizMath = await request.json()
+                console.log(resposta)
                 return resposta
             }
             //Se o tema for os tema normais:
@@ -76,12 +77,16 @@ function Quiz_Main() {
 
     //Ref que vai guardar as informacoes das opcao como dificuldade e Tema
     const RefInfoOpcao = useRef<InfoOpcaoType>({
-        tema: '',
-        dificuldade: ''
+        tema: 'Matemática',
+        dificuldade: 'facil'
     })
     //Ref Conteines | Seleciona tema | Dificuldade |
     const RefConteinerTema = useRef<HTMLDivElement | null>(null)
-    const RefConteinerDificuldade = useRef < HTMLDivElement | null>(null)
+    const RefConteinerDificuldade = useRef<HTMLDivElement | null>(null)
+    //
+    useEffect(async () => {
+        console.log( await GetQuizBackEnd(RefInfoOpcao.current))
+    }, [])
     return (
         <div className="conteiner-quiz-main">
             <Handler_Quiz/>

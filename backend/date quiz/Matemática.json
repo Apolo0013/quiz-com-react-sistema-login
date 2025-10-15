@@ -1,46 +1,46 @@
 {
     "facil": {
-        "objetiva": [
+        "objetiva":[
             {
                 "tipo": "Adicao",
-                "pergunta": "Em uma adição, qual é o resultado de ",
-                "formula": "x + y",
+                "pergunta": "Em uma adição, qual é o resultado de {X} + {Y}?",
+                "formula": "{X} + {Y}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Subtracao",
-                "pergunta": "Em uma subtração, qual é o resultado de ",
-                "formula": "x - y",
+                "pergunta": "Em uma subtração, qual é o resultado de {X} - {Y}?",
+                "formula": "{X} - {Y}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Multiplicacao",
-                "pergunta": "Em uma multiplicação, quanto é ",
-                "formula": "x * y",
+                "pergunta": "Em uma multiplicação, quanto é {X} × {Y}?",
+                "formula": "{X} * {Y}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Divisao",
-                "pergunta": "Em uma divisão, quanto é ",
-                "formula": "x / y",
+                "pergunta": "Em uma divisão, quanto é {X} ÷ {Y}?",
+                "formula": "{X} / {Y}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Dobro",
-                "pergunta": "Qual é o dobro de ",
-                "formula": "2 * x",
+                "pergunta": "Qual é o dobro de {X}?",
+                "formula": "2 * {X}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Triplo",
-                "pergunta": "Qual é o triplo de ",
-                "formula": "3 * x",
+                "pergunta": "Qual é o triplo de {X}?",
+                "formula": "3 * {X}",
                 "assunto": "Operação básica"
             },
             {
                 "tipo": "Metade",
-                "pergunta": "Qual é a metade de ",
-                "formula": "x / 2",
+                "pergunta": "Qual é a metade de {X}?",
+                "formula": "{X} / 2",
                 "assunto": "Operação básica"
             }
         ],

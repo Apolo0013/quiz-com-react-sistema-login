@@ -3,12 +3,25 @@ import './handler.scss'
 //componentes
 import ObjetivaQuiz from './objetiva'
 //Type
-import { type ReturnBackendQuizNormal, type ObjetivaQuizNormal, type Descubrar_PalavrasQuiz } from '../../../types/RefTypes'
+import {
+    type ReturnBackendQuizNormal,
+    type ObjetivaQuizNormal,
+    type ObjetivaQuizMath,
+    type Descubrar_PalavrasQuiz,
+    type InfoOpcaoTypeTema,
+    type ReturnBackendQuizMath
+} from '../../../types/RefTypes'
 import { useEffect, useRef, useState, type JSX } from 'react'
 //Utils
 import { randint } from '../../../utils/utils'
+//type props
+type PropsHandlerQuiz = {
+    Tema: InfoOpcaoTypeTema
+    Tipo: 'normal' | 'math'
+}
 
-function Handler_Quiz() {
+
+function Handler_Quiz({Tema, Tipo}: PropsHandlerQuiz) {
     //Desativar e Ativar conteiner handler.
     //Essa funcao sera usada pra simular uma troca de conteiner. 
     const desativarconteiner = () => RefConteinerHandler.current!.classList.add('conteiner-disabled') 
@@ -18,36 +31,61 @@ function Handler_Quiz() {
         //Essa funcao é a Responsavel por troca de quiz. quantos quiz objetiva e descubrar_palavra
         //Sorteando uma
         const target = ['objetiva', 'descubrar_palavra'][randint(0, 0)] as 'objetiva' | 'descubrar_palavra'
+        desativarconteiner()
+        //Esperando um minuto pra troca.
+        //Porque: O tempo que conteiner da quiz objetiva, sobe pra cima, e nois troca la memo.
+        setTimeout(() => {
+            //ativando conteiner
+            ativarconteiner()
+            if (target == 'objetiva') {
+                //Aqui temos dois caminhos, quiz normal ou math
+                if (Tipo == 'math') {
+                    const info: ObjetivaQuizMath = RefInfo.current.objetiva[RefIndexObjetiva.current]
+                    SetQuiz(<ObjetivaQuiz
+                        pergunta={info.pergunta} //Pegunta do quiz
+                        alternativas={info.alternativas} // Alternativas
+                        assunto={info.assunto} // Assunto: x + y (adicao)
+                        formula={info.formula} // Formula pro usuario usar
+                        StartQuiz={StartQuiz} // CallBack
+                    />)
+                }
+                else if (Tipo == 'normal') {    
+                    //Pegando as informacoes
+                    const info: ObjetivaQuizNormal = RefInfo.current.objetiva[RefIndexObjetiva.current]
+                    //Passando para o componente.
+                    SetQuiz(
+                        <ObjetivaQuiz
+                        pergunta={info.pergunta} //Pergunta
+                        alternativas={info.alternativas} // Alternativas
+                        StartQuiz={StartQuiz} // CallBack
+                    />)
+                }
+                //Add +1 nom index
+                RefIndexObjetiva.current++
+                //Se refIndexObjetiva chegou ao final do lista.
+                if (RefInfo.current.objetiva.length == RefIndexObjetiva.current) {
+                    //Estrapolou pare, para ai barao.
+                    RefIndexObjetivaEnd.current = true
+                }
+            }
+            else if (target == 'descubrar_palavra') {
+                //
+                //const info: Descubrar_PalavrasQuiz = RefInfo.current.descubrar_Palavras[RefIndexObjetiva.current]
+                //
+                //SetQuiz(</>)
+                //Se RefIndexDescubrar_Palavra estrapolou a quantidade de indices.
+                RefIndexDescubrarPalavra.current++
+                if (RefInfo.current.descubrar_palavra.length == RefIndexDescubrarPalavra.current) {
+                    //true: olha estrapolou acabou o
+                    RefIndexDescubrarPalavraEnd.current = true
+                }
+            }
+        }, 1000)
         //
-        if (target == 'objetiva') {
-            //Pegando as informacoes
-            const info: ObjetivaQuizNormal = RefInfo.current.objetiva[RefIndexObjetiva.current]
-            //
-            
-            //Passando para o componente.
-            SetQuiz(<ObjetivaQuiz pergunta={info.pergunta} alternativas={info.alternativas} StartQuiz={StartQuiz} />)
-            //
-            RefIndexObjetiva.current++
-            //Se refIndexObjetiva chegou ao final do lista.
-            if (RefInfo.current.objetiva.length == RefIndexObjetiva.current) {
-                //Estrapolou pare, para ai barao.
-                RefIndexObjetivaEnd.current = true
-            }
-        }
-        else if (target == 'descubrar_palavra') {
-            //
-            //const info: Descubrar_PalavrasQuiz = RefInfo.current.descubrar_Palavras[RefIndexObjetiva.current]
-            //
-            //SetQuiz(</>)
-            //Se RefIndexDescubrar_Palavra estrapolou a quantidade de indices.
-            RefIndexDescubrarPalavra.current++
-            if (RefInfo.current.descubrar_Palavras.length == RefIndexDescubrarPalavra.current) {
-                //true: olha estrapolou acabou o
-                RefIndexDescubrarPalavraEnd.current = true
-            }
-        }
+        
     }
 
+    /*
     const RefInfo = useRef<ReturnBackendQuizNormal>({
         "objetiva": [
             {
@@ -196,6 +234,78 @@ function Handler_Quiz() {
             }
         ]
     })
+    */
+
+    const RefInfo = useRef<ReturnBackendQuizMath>({
+    "objetiva": [
+        {
+            "pergunta": "Em uma multiplicação, quanto é 17 × 12?",
+            "alternativas": {
+                "a": "206",
+                "b": "209",
+                "c": "212",
+                "d": "204"
+            },
+            "resposta_certa": "D",
+            "formula": "X * Y",
+            "assunto": "Operação básica"
+        },
+        {
+            "pergunta": "Qual é o triplo de 18?",
+            "alternativas": {
+                "a": "63",
+                "b": "59",
+                "c": "55",
+                "d": "54"
+            },
+            "resposta_certa": "D",
+            "formula": "3 * X",
+            "assunto": "Operação básica"
+        },
+        {
+            "pergunta": "Qual é o dobro de 17?",
+            "alternativas": {
+                "a": "34",
+                "b": "35",
+                "c": "39",
+                "d": "43"
+            },
+            "resposta_certa": "A",
+            "formula": "2 * X",
+            "assunto": "Operação básica"
+        }
+    ],
+    "descubrar_palavra": [
+        {
+            "palavra": "TRIPLO",
+            "dica": "Resultado de multiplicar por três"
+        },
+        {
+            "palavra": "OPERACAO",
+            "dica": "Ação matemática como somar ou dividir"
+        },
+        {
+            "palavra": "UNIDADE",
+            "dica": "Representa uma quantidade individual"
+        },
+        {
+            "palavra": "CONTA",
+            "dica": "Outro nome dado a uma operação matemática"
+        },
+        {
+            "palavra": "CALCULO",
+            "dica": "Processo de resolver uma operação"
+        },
+        {
+            "palavra": "PAR",
+            "dica": "Número divisível por 2"
+        },
+        {
+            "palavra": "NUMERO",
+            "dica": "Símbolo usado para representar quantidade"
+        }
+    ]
+})
 
     const [StateQuiz, SetQuiz] = useState<JSX.Element | null>(null)
     //Index Quiz, os indices das perguntas, nois saber que pergunta esta sendo usada.
@@ -206,8 +316,8 @@ function Handler_Quiz() {
     const RefIndexDescubrarPalavraEnd = useRef<boolean>(false)
     //Ref Conteiner Handler
     const RefConteinerHandler = useRef<HTMLDivElement | null>(null)
-    //Conteiner Objetiva Quiz
     useEffect(() => {
+        Tipo = 'math'
         StartQuiz()
     }, [])
     return (

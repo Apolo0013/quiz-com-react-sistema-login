@@ -44,7 +44,7 @@ export type ObjetivaQuizNormal = {
     resposta_certa: string
 }
 //Type objetiva quiz math
-type ObjetivaQuizMath = {
+export type ObjetivaQuizMath = {
     pergunta: string,
     alternativas: QuizAlternativas,
     resposta_certa: string,
@@ -67,5 +67,5 @@ export type ReturnBackendQuizNormal = {
 
 export type ReturnBackendQuizMath = {
     objetiva: ObjetivaQuizMath[],
-    descubrar_PalavrasL: Descubrar_PalavrasQuiz[]
+    descubrar_palavra: Descubrar_PalavrasQuiz[]
 }
