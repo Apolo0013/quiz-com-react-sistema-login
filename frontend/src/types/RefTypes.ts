@@ -2,7 +2,7 @@
 // -: Usado para se referir so HTMLInputElement
 // -> frontend\src\componentes\entrar_conta\logar.tsx
 
-import type { RefObject } from "react"
+import { type Dispatch, type RefObject } from "react"
 
 // -> frontend\src\componentes\entrar_conta\cadastrar.tsx
 export type elinput = HTMLInputElement
@@ -23,7 +23,7 @@ export type InfoOpcaoTypeDificuldade = "facil" | "medio" | "dificil" | ''
 
 
 export type TypeGetRefTemaEDificuldade = {
-    RefGetInfo: RefObject<InfoOpcaoType>,
+    GetInfo: Dispatch<React.SetStateAction<InfoOpcaoType>>,
     RefConteiner: RefObject<HTMLDivElement | null>
 }
 

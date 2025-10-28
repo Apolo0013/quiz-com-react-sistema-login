@@ -1,4 +1,4 @@
-@use "../../../utils/utils.scss" as *;
+@use "../../../../utils/utils.scss" as *;
 
 
 .conteiner-alternativas {
@@ -46,5 +46,37 @@
             overflow-x: auto;
             width: fit-content;
         }
+    }
+
+    @keyframes Alternativa-Errada-KeyFrame {
+        from {
+            background: rgb(228, 23, 23);
+            border: rem(2) solid rgb(106, 0, 0);
+        }
+        to {
+            border-width: rem(0);
+        }
+    }
+
+    .Alternativa-Errada {
+        animation: Alternativa-Errada-KeyFrame 0.5s ease-in-out 4 forwards;
+    }
+
+    @keyframes Alternativa-Certa-KeyFrame {
+        from {
+            background: rgb(13, 228, 88);
+            border: rem(2) solid rgb(6, 120, 46);
+        }
+        to {
+            border-width: rem(0);
+        }
+    }
+
+    .Alternativa-Certa {
+        animation: Alternativa-Certa-KeyFrame 0.5s ease-in-out 4 forwards;
+    }
+
+    .disabled-alternativas {
+        pointer-events: none;
     }
 }

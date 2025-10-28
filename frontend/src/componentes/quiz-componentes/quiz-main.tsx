@@ -1,10 +1,10 @@
 import './quiz-main.scss'
 //componentes
 import Main_Info_Entrar from '../entrar_conta/info_entrar_main/info_entrar_main'
-import Head_Quiz_Inicio from './inicio-quiz/header-quiz-inicio/head_quiz-inicio'
-import Selecionar_Tema from './inicio-quiz/selecionar_tema/selecionar_tema'
-import Dificuldade_Quiz from './inicio-quiz/dificuldade/dificuldade'
-import { useEffect, useRef } from 'react'
+import EscolharTemaEDificuldade from './escolhar'
+import Handler_Quiz from './Jogar/handler'
+//
+import { useEffect, useRef, useState, type JSX } from 'react'
 //Types
 import {
     type InfoOpcaoType,
@@ -17,11 +17,12 @@ import {
 import { ScrollTarget } from '../../utils/utils'
 //Notifica
 import { Notifica } from '../notificacao/notificar'
-import ObjetivaQuiz from './Jogar/objetiva'
-import Handler_Quiz from './Jogar/handler'
+import { useLocation } from 'react-router-dom'
 
 function Quiz_Main() {
-    async function GetQuizBackEnd(dados: InfoOpcaoType) {
+    async function GetQuizBackEnd(): Promise<ReturnBackendQuizMath | ReturnBackendQuizNormal | null> {
+        //Dados
+        const dados = RefInfoOpcao.current
         try {
             const request = await fetch('http://localhost:5239/Quiz/Pegar', {
                 method: "POST",
@@ -37,18 +38,18 @@ function Quiz_Main() {
             // Se o tema for matematica, fisica e quimica
             if (dados.tema == 'Fisica' || dados.tema == 'Matemática' || dados.tema == 'Quimica') {
                 console.log('matematica')
-                const resposta: ReturnBackendQuizMath = await request.json()
-                console.log(resposta)
+                const resposta = await request.json() as ReturnBackendQuizMath
                 return resposta
             }
             //Se o tema for os tema normais:
             else {
-                const resposta: ReturnBackendQuizNormal = await request.json()
+                const resposta = await request.json() as ReturnBackendQuizNormal
                 return resposta
             }   
         }
         catch (error) {
             console.log(error)
+            return null
         }
     }
 
@@ -58,50 +59,76 @@ function Quiz_Main() {
             !RefConteinerDificuldade.current ||
             !RefConteinerTema.current
         ) { return }
-        //Info das opcao
+        //Tema e Dificuldade selecionado
         const tema: InfoOpcaoTypeTema = RefInfoOpcao.current.tema
         const dificuldade: InfoOpcaoTypeDificuldade = RefInfoOpcao.current.dificuldade
-        console.log(RefInfoOpcao.current)
+        //Se tema estive vazio, ou seja nao foi selecionado
         if (tema == '') {
             Notifica.error({text: "Escolha um Tema..."})
             ScrollTarget(RefConteinerTema.current)
         }
+        //Se a dificuldade estive vazio, ou seja nao foi selecionado
         else if (dificuldade == '') {
             Notifica.error({text: "Escolha uma Dificuldade"})
             ScrollTarget(RefConteinerDificuldade.current)
         }
         else {
-            GetQuizBackEnd(RefInfoOpcao.current)
+            //Se o tema for matematica, fisica ou quimica
+            if (tema == 'Fisica' || tema == 'Quimica' || tema == 'Matemática') {
+                //Pegando o quiz do backend
+                const Conteudo = await GetQuizBackEnd() as ReturnBackendQuizMath
+                //Caso tenha dado error, ele vai retorna nada :)
+                if (!Conteudo) return 
+                SetConteiner(<Handler_Quiz
+                    Tema={tema}
+                    Tipo="math"
+                    DateQuizMath={Conteudo}
+                />)
+            }
+            else {
+                const Conteudo = await GetQuizBackEnd() as ReturnBackendQuizNormal
+                if (!Conteudo) return
+                SetConteiner(
+                    <Handler_Quiz
+                        Tema={tema}
+                        Tipo='normal'
+                        DateQuizNormal={Conteudo}
+                    />
+                )
+            }
         }
     }
 
     //Ref que vai guardar as informacoes das opcao como dificuldade e Tema
     const RefInfoOpcao = useRef<InfoOpcaoType>({
-        tema: 'Matemática',
-        dificuldade: 'facil'
+        tema: '',
+        dificuldade: ''
     })
     //Ref Conteines | Seleciona tema | Dificuldade |
     const RefConteinerTema = useRef<HTMLDivElement | null>(null)
     const RefConteinerDificuldade = useRef<HTMLDivElement | null>(null)
-    //
-    useEffect(async () => {
-        console.log( await GetQuizBackEnd(RefInfoOpcao.current))
+    //State ondem vai ele vai controlar os conteiner dentro do conteiner-quiz-main
+    const [StateConteiners, SetConteiner] = useState<JSX.Element  | null>(null)
+    //location(rota)
+    const location = useLocation()
+    useEffect(() => {
+        SetConteiner(<EscolharTemaEDificuldade
+            RefInfoOpcaoGet={RefInfoOpcao}
+            RefConteinerTema={RefConteinerTema}
+            RefConteinerDificuldade={RefConteinerDificuldade}
+            Start={Start}
+        />)        
     }, [])
     return (
-        <div className="conteiner-quiz-main">
-            <Handler_Quiz/>
+        <div className="conteiner-quiz-main" key={location.key}>
+            <Main_Info_Entrar/>
+            {StateConteiners}
         </div>
     )
 }
 
 /*
-<Main_Info_Entrar />
-            <Head_Quiz_Inicio/>
-            <Selecionar_Tema RefGetInfo={RefInfoOpcao} RefConteiner={RefConteinerTema} />
-            <Dificuldade_Quiz RefGetInfo={RefInfoOpcao} RefConteiner={RefConteinerDificuldade}/>
-            <div className="conteiner-botao-comeca-quiz-main">
-                <button className='Botao-Comeca-quiz-main' onClick={Start}>Começa</button>
-            </div>
+
 */
 
 export default Quiz_Main

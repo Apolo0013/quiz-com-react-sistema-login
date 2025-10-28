@@ -14,6 +14,7 @@ import { InfoContext } from '../../../context'
 import { Notifica } from '../../notificacao/notificar'
 //componentes
 import Carregando_Tela_Entrar from '../carregando-tela'
+import type { typeContextGlobal } from '../../../types/ContextLogin'
 
 
 function Login() {
@@ -27,6 +28,7 @@ function Login() {
                 body: JSON.stringify(dados),
                 credentials: 'include'
             })
+            //Esparando para converte em json
             const resposta: typeReturnErrorBackendLogar = await request.json()
             if (resposta.error === 'user_nao_registrado') {
                 // add error na div  error.
@@ -38,11 +40,28 @@ function Login() {
                 Notifica.error({ text: 'Não registrado.', duracao: 2 })
                 return
             }
+            else if (resposta.error == "date_error") {
+                // add error na div  error.
+                AddError({ text: "Algo deu errado com banco de dados.", ElError: RefError.current })
+                // add error nos input nome e senha
+                AddErrorInput(RefInputNome.current)
+                AddErrorInput(RefInputSenha.current)
+                //aviso rapidao
+                Notifica.error({ text: 'falha em entrar contato com banco de dados.', duracao: 2 })
+                return
+            }
             else if (resposta.error === 'nenhum') {
                 Notifica.sucesso({ text: 'Logado com sucesso.' })
                 //Deu tudo certo, o usuario entrou na conta.
                 //agora o valor global Logado sera true
-                
+                //info nao esta sendo Mandado backendp
+                SetInfoContext({
+                    Logado: true,
+                    Nome: resposta.info.nome,
+                    Pontos: resposta.info.pontos
+                })
+                //Direcionando o mesmo para o quiz
+                nv("/home/quiz/jogar")
                 return
             }
         }
@@ -55,7 +74,7 @@ function Login() {
     }
 
     function Entrar() {
-        EntrarResquest({nome: 'apolo', senha: 'fs', lembrar_login: false})
+        EntrarResquest({nome: 'nao sei', senha: '123', lembrar_login: false})
         return 
         // verificando se nenhum, ref é null
         if (!RefError.current || !RefInputNome.current || !RefInputSenha.current || !RefCheckBoxLembrarLogin.current) { return }
@@ -93,12 +112,12 @@ function Login() {
     const RefCheckBoxLembrarLogin = useRef<elinput | null>(null)
     //Context
     //pegando o valor Logado.
-    const Logado = useContext(InfoContext)
+    const {info_entrar, SetInfoContext} = useContext<typeContextGlobal | null>(InfoContext)!
     //Estamos chamando um effect com valor "Logado", ele quando trocamos de rota, esse valor sera atualizando para o valor.
     // EX: chamar o context denovo, por padrao InfoLogin temo "Logado" false, mas ele vai atualizando depois de um tempo. 
     useEffect(() => {
-        if (Logado?.info_entrar.Logado) {nv('/home')}
-    }, [Logado])
+        if (info_entrar.Logado) {nv('/home')}
+    }, [info_entrar.Logado])
     
     useEffect(() => {
         //Esta em processo de requisicao.

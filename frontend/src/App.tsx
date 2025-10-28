@@ -1,18 +1,15 @@
 //////////////////////////////////////////////////////////////////
 // React Versao 18
 //////////////////////////////////////////////////////////////////
-
-
 import "./App.scss"
 //Rotas
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 //Componentes
 import Cadastrar from "./componentes/entrar_conta/cadastrar/cadastrar"
 import Logar from "./componentes/entrar_conta/logar/logar"
 import Home from "./componentes/home"
-import Info_Entrar_Main from "./componentes/entrar_conta/info_entrar_main/info_entrar_main"
+//import Info_Entrar_Main from "./componentes/entrar_conta/info_entrar_main/info_entrar_main"
 import Quiz_Main from "./componentes/quiz-componentes/quiz-main"
-
 //Notificacao
 import Notificacao from "./componentes/notificacao/notificacaoProvider"
 //Context
@@ -31,17 +28,18 @@ function AppMain() {
             })
             type typeReturnUserLogadoCookie = {
                 userName: string,
+                Pontos: number,
                 error: boolean,
                 info: string
             }
             // error for false que dizer que nao ouve error.
             // ou seja tem um token do usuario la, que quer dizer que ele fez login anteriomente.
             const resposta: typeReturnUserLogadoCookie = await request.json()
-            console.log(resposta)
             if (!resposta.error) {
                 SetInfoEntrar({
                     Logado: true,
-                    Nome: resposta.userName
+                    Nome: resposta.userName,
+                    Pontos: resposta.Pontos
                 })
                 console.log('valor add')
             }
@@ -49,7 +47,8 @@ function AppMain() {
                 // Por padrao ele sera assim, mas vamos garanti que ele estara quando o usuario nao estive o login automatico.  
                 SetInfoEntrar({
                     Logado: false,
-                    Nome: ''
+                    Nome: '',
+                    Pontos: 0
                 })
             }
         }
@@ -59,7 +58,8 @@ function AppMain() {
             //se deu algo errado manteremos o valor padrao
             SetInfoEntrar({
                 Logado: false,
-                Nome: ''
+                Nome: '',
+                Pontos: 0
             })
         }
     }
@@ -83,8 +83,11 @@ function AppMain() {
 
     const [StateInfoEntrar, SetInfoEntrar] = useState<typeInfoEntrar>({
             Logado: true,
-            Nome: 'Bucetinha.com.br.chupa.cu'
-        }) 
+            Nome: 'teu cu gld',
+            Pontos: 0
+    }) 
+    
+    const location = useLocation()
 
     useEffect(() => {
         //UserLogadoCookie()
@@ -93,6 +96,7 @@ function AppMain() {
     useEffect(() => {
         console.log(StateInfoEntrar)
     }, [StateInfoEntrar])
+
     return (
         <InfoContext.Provider value={{
             info_entrar: StateInfoEntrar,
@@ -102,7 +106,7 @@ function AppMain() {
                 {/*Componentes global*/}
                 <Notificacao/>
                 {/*Rotas*/}
-                <Routes>
+                <Routes location={location} key={location.pathname}>
                     <Route path='*' element={<Navigate to='/home' replace />}></Route>
                     <Route path='/home' element={<Home />}></Route>
                     <Route path='/home/entrar/login' element={<Logar />}></Route>

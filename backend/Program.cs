@@ -42,6 +42,7 @@ app.MapPost("/Entrar/Logar", (HttpContext ctx ,ParamDadosEntrar dados) =>
 {
     //verificando se o usuario ja esta registrado
     bool UserRegistrado = DateJson.UserEstaRegistrado(dados.nome, dados.senha);
+    Console.WriteLine(UserRegistrado);
     //if (UserRegistrado || true)
     if (UserRegistrado)
     {
@@ -73,14 +74,26 @@ app.MapPost("/Entrar/Logar", (HttpContext ctx ,ParamDadosEntrar dados) =>
                 SameSite = SameSiteMode.Strict
             });
         }
+        //Pegar a informacoes do banco de dados
+        TypeDateJson dateplayer = DateJson.PegarDados()!.FirstOrDefault(x => x.Nome == dados.nome)!;
+        //Caso ele nao encotre algo de errado nao esta certo
+        if (dateplayer is null) Results.Ok(new RespostaResultado()
+        {
+            Sucesso = false,
+            Error = "date_error"
+        });
+        //Pegando o Nome e os pontos
+        TypeInfoPlayer infoplayer = new TypeInfoPlayer() { Nome = dateplayer!.Nome, Pontos = dateplayer!.Pontos };
         //retornando que deu tudo certo
-        return Results.Json(new RespostaResultado { Sucesso = true, Error = "nenhum" });
+        Console.WriteLine("retornando Info");
+        return Results.Json(new RespostaResultado { Sucesso = true, Error = "nenhum", Info = infoplayer});
     }
     //senao, que dizer que nao existi usuario registrado com essas informacoes
     else
     {
+        Console.WriteLine("retornando Info nao__");
         Console.WriteLine("Nao tem nenhum usuario registrado com essa informacoes.");
-        return Results.Json(new RespostaResultado { Sucesso = false, Error = "user_nao_registrado" });
+        return Results.Json(new RespostaResultado { Sucesso = false, Error = "user_nao_registrado"});
     }
 });
 
@@ -91,15 +104,22 @@ app.MapGet("/AutoLogin", (HttpContext ctx) =>
     // se nao tive nada, é pq o usuario nunca se registrou pae.
     if (!ctx.Request.Cookies.TryGetValue("token", out var token))
     {
-        return Results.Json(new {UserName = "", Error = true, info = "usuario nao logado ou sem token"});
+        return Results.Json(new { UserName = "", Error = true, info = "usuario nao logado ou sem token" });
     }
 
     //Acessando o Token e retornando o nome paizao
     var handler = new JwtSecurityTokenHandler();
     var jwtToken = handler.ReadJwtToken(token);
     var nome = jwtToken.Claims.First(c => c.Type == "username").Value;
+    //-------
+    //Pegando o index do usuario no json
+    string JsonString = File.ReadAllText(@"backend\dados.json");
+    List<TypeDateJson> dados_json = JsonSerializer.Deserialize<List<TypeDateJson>>(JsonString)!;
+    //Pegando o index dele e pontos
+    int? pontos = dados_json.Find(x => x.Nome == nome).Pontos;
+    if (pontos is not null) return Results.Ok(new RespostaResultado() {Sucesso = false, Error = "not_found_user"});
     //Testa isso ai, e entenda essa porra
-    return Results.Ok(new {UserName = nome, Error = false , info = "usuario logado, token existente"});
+    return Results.Ok(new {UserName = nome, Pontos = pontos, Error = false , info = "usuario logado, token existente"});
 });
 
 //Deleta o cookiee, e sair da conta praticamente pae
@@ -123,7 +143,7 @@ app.MapPost("/Entrar/RegistrarUser", (ParamDadosEntrar dados) =>
     }
     else
     {
-        bool sucessoRegistrarUser = DateJson.RegistrarUser(dados.nome, dados.senha);
+        bool sucessoRegistrarUser = DateJson.RegistrarUser(dados.nome, dados.senha, 0);
         if (sucessoRegistrarUser)
         {
             //deu tudo certo ao registrar

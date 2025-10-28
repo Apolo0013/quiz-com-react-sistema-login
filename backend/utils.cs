@@ -131,14 +131,25 @@ namespace BackEnd.Utils {
         //Essa funcao vai retorna O sorte em quiz objetiva e descubrar palavras
         public static List<string> SortQuizType()
         {
-            //Objetiva e descubra_Palavra
             List<string> ListQuizSort = new List<string>();
-            for (int i = 0; i < 10; i++)
+            while (true)
             {
-                ListQuizSort.Add(new List<string>() { OBJETIVA, DESCUBRAR_PALAVRA }[random.Next(0, 2)]);
+                //Objetiva e descubra_Palavra
+                for (int i = 0; i < 10; i++)
+                {
+                    ListQuizSort.Add(new List<string>() { OBJETIVA, DESCUBRAR_PALAVRA }[random.Next(0, 2)]);
+                }
+                //Se os indices tive OBJETIVA/DESCUBRAR_PALAVRA em todas os indices vamos sortea novamente.
+                if (!ListQuizSort.All(x => x == OBJETIVA) || !ListQuizSort.All(x => x == DESCUBRAR_PALAVRA))
+                {
+                    return ListQuizSort;
+                }
+                else
+                {
+                    ListQuizSort.Clear();
+                    //Continuar.
+                }
             }
-
-            return ListQuizSort;
         }
     }
 }

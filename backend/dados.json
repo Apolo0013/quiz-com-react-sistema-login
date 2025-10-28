@@ -1,27 +1,34 @@
 ﻿[
-  {
-    "nome": "nao sei",
-    "senha": "123",
-    "pontos": 0
-  },
-  {
-    "nome": "Zé",
-    "senha": "fds"
-  },
-  {
-    "nome": "apolo",
-    "senha": "fds"
-  },
-  {
-    "nome": "Zé",
-    "senha": "fds"
-  },
-  {
-    "nome": "Zés",
-    "senha": "fds"
-  },
-  {
-    "nome": "fds",
-    "senha": "fsd"
-  }
+    {
+        "nome": "nao sei",
+        "senha": "123",
+        "pontos": 300
+    },
+    {
+        "nome": "Zé",
+        "senha": "fds",
+        "pontos": 50
+    },
+    {
+        "nome": "moral",
+        "senha": "fds",
+        "pontos": 200
+    },
+    {
+        "nome": "apologostoos",
+        "senha": "fds",
+        "pontos": 12300
+    }
+    ,
+    {
+        "nome": "Hitler",
+        "senha": "fds",
+        "pontos": 12200
+    }
+    ,
+    {
+        "nome": "Simas Turbo",
+        "senha": "fds",
+        "pontos": 100
+    }
 ]

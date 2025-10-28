@@ -1,0 +1,52 @@
+@use '../../../../utils/utils.scss' as *;
+
+.conteiner-card-letra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: rem(8);
+    border: rem(2) solid rgb(98, 0, 255);
+    height: rem(100);
+    aspect-ratio: 3 / 4;
+    background: radial-gradient(circle at left top, 
+        rgb(98, 0, 255),
+        rgb(73, 0, 191),
+        rgb(98, 0, 150),
+        rgb(98, 0, 100),
+        rgb(98, 0, 50),
+        );
+    background-size: 200% 200%;
+    transition: 0.3s ease-in-out;
+    z-index: 10;
+    animation: troca-de-cor 10s alternate infinite forwards;
+
+    h2 {
+        font-size: rem(50);
+        color: white;
+    }
+
+    @keyframes troca-de-cor {
+        25% {background-position: 100% 0%;}
+        50% {background-position: 100% 100%;}
+        75% {background-position: 0% 100%;}
+        to {background-position: 0% 0%;}
+    }
+}
+
+.card-vazio {
+    background: rgba(0, 0, 0, 0.834);
+    border: rem(4) solid rgb(35, 35, 35);
+}
+
+.card-error {
+    animation: card-vazio-keyframe 0.2s ease-out 4;
+}
+
+@keyframes card-vazio-keyframe {
+    from {background: rgb(165, 18, 18);}
+    to {background: rgb(232, 40, 40);}
+}
+
+.clicavel {
+    cursor: pointer;
+}

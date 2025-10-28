@@ -1,9 +1,9 @@
 import { useRef } from 'react'
 import './dificuldade.scss'
 //type
-import {type InfoOpcaoTypeDificuldade, type TypeGetRefTemaEDificuldade } from '../../../../types/RefTypes'
+import {type InfoOpcaoType, type InfoOpcaoTypeDificuldade, type TypeGetRefTemaEDificuldade } from '../../../../types/RefTypes'
 
-function Dificuldade_Quiz({ RefGetInfo, RefConteiner } : TypeGetRefTemaEDificuldade) {
+function Dificuldade_Quiz({ GetInfo, RefConteiner } : TypeGetRefTemaEDificuldade) {
     function EscolheDificuldade(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) { 
         //retirar a selecionado-botao-dificuldade de todos
         function RetirarClassSlcAll() {
@@ -13,6 +13,7 @@ function Dificuldade_Quiz({ RefGetInfo, RefConteiner } : TypeGetRefTemaEDificuld
                 el.classList.remove("selecionado-botao-dificuldade-e-tema")
             }
         }
+        //
         const el: HTMLButtonElement = e.currentTarget
         if (!el) { return }
         ///se ele encontrar a class seleciona, no elemento que ele clicou. Vamos retirar a class. e retirar a dificuldade do ref responsavel por guardara essa informacao.
@@ -20,7 +21,7 @@ function Dificuldade_Quiz({ RefGetInfo, RefConteiner } : TypeGetRefTemaEDificuld
             //retirando a class.
             el.classList.remove('selecionado-botao-dificuldade-e-tema')
             //retirando do ref
-            RefGetInfo.current.dificuldade = ''
+            GetInfo((prev: InfoOpcaoType) => ({tema: prev.tema, dificuldade: ''}))
         }
         else {
             //desativando todos.
@@ -31,7 +32,8 @@ function Dificuldade_Quiz({ RefGetInfo, RefConteiner } : TypeGetRefTemaEDificuld
             const dataset: DOMStringMap = el.dataset
             if (!dataset || !dataset.target) {return}
             const opcao = dataset.target as InfoOpcaoTypeDificuldade
-            RefGetInfo.current.dificuldade = opcao
+            //add
+            GetInfo((prev: InfoOpcaoType) => ({tema: prev.tema, dificuldade: opcao}))
         }
     }
 

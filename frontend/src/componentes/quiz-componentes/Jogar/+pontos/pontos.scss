@@ -1,0 +1,47 @@
+@use '../../../../utils/utils.scss' as *;
+
+.conteinter-pontos-quiz {
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(4);
+    border-radius: rem(4);
+    border: rem(2) solid rgb(72, 106, 2) ;
+    background: rgb(196, 252, 84);
+    animation: up-ponto 2s ease-in-out 1 forwards;
+    position: absolute;
+    z-index: 10000;
+    left: 5%;
+
+    h3 {
+        //margin-left: 50%;
+        width: fit-content;
+        min-width: rem(10);
+        height: 100%;
+    }
+}
+
+@keyframes up-ponto {
+    20% {
+        color: green;
+    }
+    40% {
+        color: black;
+    }
+    60% {
+        color: green;
+    }
+    80% {
+        color: black;
+    }
+    90% {
+        color: green;
+    }
+    to {
+        color: black;
+        transform: scale(1.2) translateY(rem(-100));
+        opacity: 0;
+    }
+}

@@ -1,6 +1,9 @@
 //type usado em:
 // ---> O parametro que o backend receber pae
 // -> frontend\src\componentes\entrar_conta\cadastrar.tsx
+
+import type { typeInfoEntrar, typeinforplayer } from "./ContextLogin"
+
 // -> frontend\src\componentes\entrar_conta\logar.tsx
 export type typeNomeESenha = { nome: string, senha: string }
 
@@ -10,7 +13,8 @@ export type typeNomeESenha = { nome: string, senha: string }
 //usando na resposta cadastra
 export type typeReturnErrorBackend = {
     sucesso: boolean
-    error: 'nome_em_uso' | 'nenhum' | 'error_ao_registrar'
+    error: 'nome_em_uso' | 'nenhum' | 'error_ao_registrar',
+    info: typeInfoEntrar
 }
 
 //type usado em:
@@ -19,7 +23,8 @@ export type typeReturnErrorBackend = {
 //usando na resposta cadastra
 export type typeReturnErrorBackendLogar = {
     sucesso: boolean,
-    error: "user_nao_registrado" | 'nenhum'
+    error: "user_nao_registrado" | "date_error" | 'nenhum',
+    info: typeinforplayer
 }
 
 

@@ -2,10 +2,22 @@
 
 import './carregando-tela.scss'
 
-function Carregando_Tela_Entrar() {
+function Carregando_Tela_Entrar({diametro ,text}: {diametro?: number,text?: string}) {
     return (
         <div className="conteiner-carregando-tela-entrar">
-            <span></span>
+            <span
+                style={
+                {
+                    height: diametro ? diametro + "%" : "20%"   
+                }}
+            ></span>
+            <h1 className='Texto-Carregando'
+                //se o texto for null, vamos ocultar h1(ou seja sem messagem...)
+                style={
+                    {
+                        display: !text ? "none" : 'block',
+                    }
+                }>{text}</h1>
         </div>
     )
 }

@@ -1,0 +1,56 @@
+@use '../../utils/utils.scss' as *;
+
+.conteiner-main-escolhar{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .conteiner-botao-comeca-quiz-main {
+        width: 50%;
+        height: rem(120);
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $cor-head-quiz-main;
+        clip-path: polygon(
+            0% 100%,
+            25% 0,
+            75% 0,
+            100%100%
+        );
+        transition: 0.4s ease;
+        transition-delay: 0.5s;
+
+        &:has(.Botao-Comeca-quiz-main:hover) {
+            background: darken($cor-head-quiz-main, 20%);
+            width: 65%;
+        }
+
+        .Botao-Comeca-quiz-main {
+            transition: 0.2s;
+            //centralizar o lixo do texto
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //
+            padding: rem(10);
+            outline: 0;
+            border: 0;
+            background: $cor-quiz-main-botao-comeca;
+            color: white;
+            height: rem(70);
+            border-radius: rem(5);
+            font-size: rem(50);
+            font-weight: bold;
+            cursor: pointer;
+            
+            &:hover {
+                transform: scale(1.05) translateY(rem(-10));
+            }
+        }
+    }   
+}

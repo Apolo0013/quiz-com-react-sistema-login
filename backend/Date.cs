@@ -3,47 +3,48 @@ using System.Text.Json;
 //type
 //using BackEnd.Type.BackInFront;
 using BackEnd.Type.FrontInBack;
+using BackEnd.Type.BackInFront;
+using System.Text.Unicode;
 
 namespace BackEnd.Date.Manipular
 {
     class DateJson
     {
-        public static List<ParamDadosEntrar> PegarDados()
+        public static JsonSerializerOptions opcao = new JsonSerializerOptions
+                {
+                    WriteIndented = true,
+                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(UnicodeRanges.All)
+                };
+
+        public static List<TypeDateJson>? PegarDados()
         {
             try
             {
-                var jsonstr = File.ReadAllText("dados.json");
-                var json = JsonSerializer.Deserialize<List<ParamDadosEntrar>>(jsonstr);
-                if (json == null) return new List<ParamDadosEntrar>();
+                string jsonstr = File.ReadAllText("dados.json");
+                List<TypeDateJson> json = JsonSerializer.Deserialize<List<TypeDateJson>>(jsonstr, opcao)!;
+                if (json == null) return null;
                 return json;
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error :" + ex.Message);
                 //retornando um lista vazio afalando que deu error pae
-                return new List<ParamDadosEntrar>();
+                return null;
             }
         }
 
-        public static bool RegistrarUser(string nome, string senha)
+        public static bool RegistrarUser(string nome, string senha, int pontos)
         {
             // dados anterior
-            List<ParamDadosEntrar> dadosafter = PegarDados();
-            if (dadosafter.Count == 0) return false;
-            dadosafter.Add(new ParamDadosEntrar { nome = nome, senha = senha });
+            List<TypeDateJson> dadosafter = PegarDados()!;
+            if (dadosafter is not null) return false;
+            dadosafter!.Add(new TypeDateJson() { Nome = nome, Senha = senha, Pontos = pontos});
             try
             {
-                //indentando o json
-                //opcao
-                //opcao json
-                var opcao = new JsonSerializerOptions
-                {
-                    WriteIndented = true,
-                    Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-                };
-
-                var jsonnew = JsonSerializer.Serialize(dadosafter, opcao);
+                //Serializando == tranformando em string
+                string jsonnew = JsonSerializer.Serialize(dadosafter, opcao);
                 //add   
+                //Escrevedno
                 File.WriteAllText("dados.json", jsonnew, Encoding.UTF8);
                 return true;
             }
@@ -58,35 +59,20 @@ namespace BackEnd.Date.Manipular
         public static bool ProcurarUserPeloNome(string nome)
         {
             // dados vindo do json
-            List<ParamDadosEntrar> dados = PegarDados();
+            List<TypeDateJson> dados = PegarDados()!;
             // se a lista retorna uma lista vazio retorne
-            if (dados.Count == 0) return false;
-            foreach (var valor in dados)
-            {
-                if (valor.nome == nome)
-                {
-                    return true;
-                }
-            }
-            return false;
+            if (dados is not null) return false;
+            //ele ele encontrar um com nome igual ao parametro nome, pq encontrou, retorna true, senao false
+            return dados!.Any(x => x.Nome == nome);
         }
 
 
         public static bool UserEstaRegistrado(string nome, string senha)
         {
-            List<ParamDadosEntrar> dados = PegarDados();
+            List<TypeDateJson> dados = PegarDados()!;
             //se vinhe uma lista vazia, retorne.
-            if (dados.Count == 0) return false;
-            foreach (ParamDadosEntrar info in dados)
-            {
-                // nome e senha recebido dos paramemtros, for igual a nome e senha de algum usuario dedntro do banco de dados. é pq essa usuario ja esta registrado.
-                // e o usuario pode logar.
-                if (info.nome == nome && info.senha == senha)
-                {
-                    return true;
-                }
-            }
-            return false;
+            if (dados is null) return false;
+            return dados!.Any(x => x.Nome == nome && x.Senha == senha);
         }
     }
 

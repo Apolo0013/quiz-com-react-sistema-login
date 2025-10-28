@@ -15,10 +15,10 @@ import ImgLogica from '../../../../assets/imagens/quiz-main-tema/logica.svg'
 //
 import { useEffect, useRef, useState, type MouseEvent} from 'react'
 //
-import { type TypeGetRefTemaEDificuldade, type InfoOpcaoTypeTema } from '../../../../types/RefTypes'
+import { type TypeGetRefTemaEDificuldade, type InfoOpcaoTypeTema, type InfoOpcaoType } from '../../../../types/RefTypes'
 
 
-function Selecionar_Tema({ RefGetInfo, RefConteiner}: TypeGetRefTemaEDificuldade) {
+function Selecionar_Tema({ GetInfo, RefConteiner}: TypeGetRefTemaEDificuldade) {
     function Seleciona(e: MouseEvent<Element>) {
         if (!RefTemaOpcao.current) return
         const el: Element = e.currentTarget
@@ -45,7 +45,7 @@ function Selecionar_Tema({ RefGetInfo, RefConteiner}: TypeGetRefTemaEDificuldade
     const RefTemaOpcao = useRef<HTMLDivElement | null>(null)
 
     useEffect(() => {
-        RefGetInfo.current.tema = Tema
+        GetInfo((prev: InfoOpcaoType) => ({ tema: Tema, dificuldade: prev.dificuldade }))
     }, [Tema])
     return (
         <div className="opcao-tema-quiz-main" ref={RefConteiner}>
