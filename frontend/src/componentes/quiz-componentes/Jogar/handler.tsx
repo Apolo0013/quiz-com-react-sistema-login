@@ -65,6 +65,7 @@ function Handler_Quiz({Tipo, DateQuizMath, DateQuizNormal}: PropsHandlerQuiz) {
                         assunto={info.assunto} // Assunto: x + y (adicao)
                         formula={info.formula} // Formula pro usuario usar
                         StartQuiz={StartQuiz} // CallBack
+                        SetSomarPontos={SetSomarPontos}
                     />)
                     //Verificando o indice atual do objetiva
                     RefIndexObjetiva.current++ //add +1 indice(proximo quiz)
@@ -82,10 +83,12 @@ function Handler_Quiz({Tipo, DateQuizMath, DateQuizNormal}: PropsHandlerQuiz) {
                     //Passando para o componente.
                     SetQuiz(
                         <ObjetivaQuiz
-                        key={RefKey.current}
-                        pergunta={info.pergunta} //Pergunta
+                            key={RefKey.current}
+                            pergunta={info.pergunta} //Pergunta
                             alternativas={info.alternativas} // Alternativas
-                        resposta_certa={info.resposta_certa}                        StartQuiz={StartQuiz} // CallBack
+                            resposta_certa={info.resposta_certa} StartQuiz={StartQuiz} // CallBack
+                            SetSomarPontos={SetSomarPontos}
+                            
                         />)
                     //Agora vamos Verificar se passou do indices
                     RefIndexObjetiva.current++
@@ -106,7 +109,12 @@ function Handler_Quiz({Tipo, DateQuizMath, DateQuizNormal}: PropsHandlerQuiz) {
                 //Pegando o quiz em si.
                 const {dica, palavra}: Descubrar_PalavrasQuiz = info[RefIndexDescubrarPalavra.current]
                 //Chamando o componente...
-                SetQuiz(<Descubrar_PalavraQuiz dica={dica} palavra={palavra} StartQuiz={StartQuiz}  key={RefKey.current}/>)
+                SetQuiz(<Descubrar_PalavraQuiz
+                    dica={dica}
+                    palavra={palavra}
+                    StartQuiz={StartQuiz}
+                    SetSomarPontos={SetSomarPontos}
+                    key={RefKey.current} />)
                 //Se RefIndexDescubrar_Palavra estrapolou a quantidade de indices.
                 console.log(info)
                 RefIndexDescubrarPalavra.current++
@@ -121,8 +129,8 @@ function Handler_Quiz({Tipo, DateQuizMath, DateQuizNormal}: PropsHandlerQuiz) {
                 desativarconteiner() // desativando tudo, pra evitar outra chamadas dee funcoes
                 SetQuiz(<Carregando_Tela_Entrar diametro={30} text="Fim de Jogo. Aguarde" />)
                 setTimeout(() => {
-                    nv('/quiz/jogar', {replace: true})
-                }, 1000)
+                    nv('/quiz/jogar?carregador=' + Date.now(), {replace: true})
+                }, 3000)
             }
             //Add +1 na key
             RefKey.current++
@@ -142,6 +150,8 @@ function Handler_Quiz({Tipo, DateQuizMath, DateQuizNormal}: PropsHandlerQuiz) {
     const RefConteinerHandler = useRef<HTMLDivElement | null>(null)
     //Navigate pae
     const nv: NavigateFunction = useNavigate()
+    //Ref que vai aguardar somar de pontos no total
+    const [StateSomarPontos, SetSomarPontos] = useState<number>(0)
     //Key para os componetes 
     const RefKey = useRef<number>(0)
     useEffect(() => {

@@ -24,7 +24,7 @@ function Home() {
                             nv('/home/entrar/login')
                         }
                         else {
-                            nv('/quiz/jogar')
+                            nv('/quiz/jogar?carregador=' + Date.now())
                         }
                     }}>Inciar</button>
             </div>

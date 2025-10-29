@@ -81,6 +81,22 @@ function AppMain() {
         }
     }
 
+    //Funcao que add pontos pae.
+    async function AddPontos() {
+        try {
+            const resposta = await fetch("http://localhost:5239/Quiz/User/Pontos", {
+                method: "POST",
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({Pontos: 1000, Nome: "moral"}),
+                credentials: 'include'
+            })
+            console.log(await resposta.json())
+        }
+        catch {
+            console.log()
+        }
+    }
+
     const [StateInfoEntrar, SetInfoEntrar] = useState<typeInfoEntrar>({
             Logado: true,
             Nome: 'teu cu gld',
@@ -90,6 +106,7 @@ function AppMain() {
     const location = useLocation()
 
     useEffect(() => {
+        AddPontos()
         //UserLogadoCookie()
     }, [])
 
@@ -106,12 +123,12 @@ function AppMain() {
                 {/*Componentes global*/}
                 <Notificacao/>
                 {/*Rotas*/}
-                <Routes location={location} key={location.pathname}>
+                <Routes location={location} key={location.search}>
                     <Route path='*' element={<Navigate to='/home' replace />}></Route>
                     <Route path='/home' element={<Home />}></Route>
                     <Route path='/home/entrar/login' element={<Logar />}></Route>
                     <Route path='/home/entrar/cadastrar' element={<Cadastrar />}></Route>
-                    <Route path='/quiz/jogar' element={<Quiz_Main/>}></Route>
+                    <Route path={"quiz/jogar"} element={<Quiz_Main/>}></Route>
                 </Routes>
             </div>
         </InfoContext.Provider>

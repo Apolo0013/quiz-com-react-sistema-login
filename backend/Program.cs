@@ -112,9 +112,8 @@ app.MapGet("/AutoLogin", (HttpContext ctx) =>
     var jwtToken = handler.ReadJwtToken(token);
     var nome = jwtToken.Claims.First(c => c.Type == "username").Value;
     //-------
-    //Pegando o index do usuario no json
-    string JsonString = File.ReadAllText(@"backend\dados.json");
-    List<TypeDateJson> dados_json = JsonSerializer.Deserialize<List<TypeDateJson>>(JsonString)!;
+    //Pegando o index do usuario no jso
+    List<TypeDateJson> dados_json = DateJson.PegarDados()!;
     //Pegando o index dele e pontos
     int? pontos = dados_json.Find(x => x.Nome == nome).Pontos;
     if (pontos is not null) return Results.Ok(new RespostaResultado() {Sucesso = false, Error = "not_found_user"});
@@ -242,6 +241,41 @@ app.MapPost("Quiz/Pegar", (ParamGetTemaAndDificuldade dados) =>
         QuizType DateQuiz = Date_Quiz.GetQuiz(Tema, Dificuldade);
         return Results.Json(DateQuiz);
     }
+});
+
+
+app.MapPost("/Quiz/User/Pontos", (DadosPontosAcrecentar dados) =>
+{
+    //pegando os dados do json atual.
+    List<TypeDateJson>? date = DateJson.PegarDados();
+    //Se retorna nula pq algo deu errado
+    if (date is null) Results.Ok(new RespostaResultado()
+    {
+        Sucesso = false,
+        //Algo deu errado com a leitura do json
+        Error = "date_error"
+    });
+    //Blz nao é nula.
+    TypeDateJson? Info_User = date!.Find(x => x.Nome == dados.Nome);
+    if (Info_User is null) Results.Ok(new RespostaResultado()
+    {
+        Sucesso = false,
+        Error = "date_error"
+    });
+    //Ja que pontos foi encontrado vamos apenas adicionar 
+    //Acrecentando
+    Info_User!.Pontos += dados.Pontos;
+    bool sucesso = DateJson.SubtituirDados(Info_User);
+    if (sucesso) Results.Ok(new RespostaResultado()
+    {
+        Sucesso = true,
+        Error = "nada"
+    });
+    else Results.Ok(new RespostaResultado()
+    {
+        Sucesso = false,
+        Error = "date-error"
+    });
 });
 
 app.Run();

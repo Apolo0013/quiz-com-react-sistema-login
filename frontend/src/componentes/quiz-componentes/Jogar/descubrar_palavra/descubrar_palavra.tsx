@@ -1,7 +1,7 @@
 import './descubrar_palavra.scss'
 //componentes
 import Card_Letra from './card-letra'
-import { useContext, useEffect, useRef, useState, type JSX, type MouseEvent} from 'react'
+import { useContext, useEffect, useRef, useState, type Dispatch, type JSX, type MouseEvent, type RefObject, type SetStateAction} from 'react'
 //Utils
 import { alfabeto, embaralhar, randint } from '../../../../utils/utils'
 import { InfoContext } from '../../../../context'
@@ -12,12 +12,15 @@ type PropsDescubrar_Palavra = {
     palavra: string,
     dica: string
     StartQuiz: () => void
+    SetSomarPontos: Dispatch<SetStateAction<number>>
 }
 
-function Descubrar_PalavraQuiz({ palavra, dica, StartQuiz }: PropsDescubrar_Palavra) {
+function Descubrar_PalavraQuiz({ palavra, dica, StartQuiz, SetSomarPontos}: PropsDescubrar_Palavra) {
     function CallBackStartQuiz(addpontos: number) {
         //==
         if (!RefConteinerMain.current) return
+        //Somando no state que mostrar o pontos acumulados
+        SetSomarPontos(prev => prev + addpontos)
         //Antes vamos add os pontos fornecido pelo parametro
         SetInfoContext(prev => ({
             Logado: prev.Logado,

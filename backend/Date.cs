@@ -74,6 +74,29 @@ namespace BackEnd.Date.Manipular
             if (dados is null) return false;
             return dados!.Any(x => x.Nome == nome && x.Senha == senha);
         }
-    }
 
+        public static bool SubtituirDados(TypeDateJson dados)
+        //Essa funcao tem como responsabilidade de subtituir dados,
+        //ele receber os dados ja alterado de um usuario e troca.
+        //Lembrando que sao os mesmo usuario, dados, possivel de troca é a senha e o pontos, geral so pontos.
+        {
+            List<TypeDateJson>? date = PegarDados()!;
+            //Caso for null
+            if (date is null) return false;
+            //Pegando o index
+            int indexuser = date.FindIndex(x => x.Nome == dados.Nome);
+            //Alterando.
+            date[indexuser] = dados;
+            try
+            {
+                //Escrevendo no dados.json
+                string jsonstring = JsonSerializer.Serialize(date, opcao);
+                File.WriteAllText("dados.json", jsonstring, Encoding.UTF8);
+                //Deu tudo certo pae
+                return true;
+            }
+            //algo deu errado pae.
+            catch { return false; }
+        }
+    }
 }

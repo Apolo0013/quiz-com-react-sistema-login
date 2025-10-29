@@ -1,10 +1,12 @@
 import './objetiva.scss'
-import { useEffect, useRef, useState, type JSX } from 'react'
+import { useContext, useEffect, useRef, useState, type JSX } from 'react'
 //componentes
 import Alternativas_Objetivas from './alternativas-objetiva'
 //Types
 import { type QuizAlternativas } from '../../../../types/RefTypes'
 import Pontos_Quiz from '../+pontos/pontos'
+import { InfoContext } from '../../../../context'
+import type { typeContextGlobal } from '../../../../types/ContextLogin'
 
 //Type Props
 type PropsObjetivaQuiz = {
@@ -24,6 +26,8 @@ function ObjetivaQuiz({ pergunta, alternativas, resposta_certa, formula, assunto
     const RefConteiner = useRef<HTMLDivElement | null>(null)
     //State para os pontos
     const [StateAnimacaoPontos, SetAnimacaoPontos] = useState<JSX.Element | null>(null)
+    //Contexto
+    const {SetInfoContext} = useContext<typeContextGlobal | null>(InfoContext)!
     useEffect(() => {
     }, [])
     return (
@@ -59,6 +63,12 @@ function ObjetivaQuiz({ pergunta, alternativas, resposta_certa, formula, assunto
                         //Alem dessa funcao vamos add mais
                         // essa funcao é chamado quando o usuario escolhe um alternativas gld.
                         // ele faz ele subir pra cima e sumi
+                        //Add ponto
+                        SetInfoContext(prev => ({
+                            Logado: prev.Logado,
+                            Nome: prev.Nome,
+                            Pontos: prev.Pontos + addpontos
+                        }))
                         //Antes vamos add animacao de pontuacao
                         SetAnimacaoPontos(<Pontos_Quiz
                             pontos={addpontos}
