@@ -158,7 +158,7 @@ namespace BackEnd.Utils {
             }
         }
 
-        public static ResultadoFuncaoSortAlternativas SortNumAlternativas(object numbase)
+        public static ResultadoFuncaoSortAlternativas? SortNumAlternativas(object numbase)
         //numbase, é ondem nois vai ter um base de sortea os numero
         {
             //Essa funcao vai sortea os numeros
@@ -212,7 +212,7 @@ namespace BackEnd.Utils {
                     for (int i = 0; i < 3; i++)
                     {
                         //Sorteando
-                        ListDoubleTempo.Add(Convert.ToDouble(SortNum(numbasedouble)));
+                        ListDoubleTempo.Add(Math.Round(Convert.ToDouble(SortNum(numbasedouble))));
                     }
                     //Saber se nao tem repetidos
                     bool repeat = ListDoubleTempo.Any(x => ListDoubleTempo.Count(n => n == x) > 1);
@@ -220,6 +220,7 @@ namespace BackEnd.Utils {
                     else ListDoubleTempo.Clear(); //Limpar e va sortea novamente
                 }
             }
+            else return null;
         }
     }
 }
