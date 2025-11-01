@@ -16,11 +16,11 @@ namespace BackEnd.Date.Manipular
                     Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(UnicodeRanges.All)
                 };
 
-        public static List<TypeDateJson>? PegarDados()
+        public static async Task<List<TypeDateJson>?> PegarDados()
         {
             try
             {
-                string jsonstr = File.ReadAllText("dados.json");
+                string jsonstr = await File.ReadAllTextAsync("dados.json");
                 List<TypeDateJson> json = JsonSerializer.Deserialize<List<TypeDateJson>>(jsonstr, opcao)!;
                 if (json == null) return null;
                 return json;
@@ -33,10 +33,10 @@ namespace BackEnd.Date.Manipular
             }
         }
 
-        public static bool RegistrarUser(string nome, string senha, int pontos)
+        public static async Task<bool> RegistrarUser(string nome, string senha, int pontos)
         {
             // dados anterior
-            List<TypeDateJson> dadosafter = PegarDados()!;
+            List<TypeDateJson>? dadosafter = await PegarDados()!;
             if (dadosafter is not null) return false;
             dadosafter!.Add(new TypeDateJson() { Nome = nome, Senha = senha, Pontos = pontos});
             try
@@ -45,7 +45,7 @@ namespace BackEnd.Date.Manipular
                 string jsonnew = JsonSerializer.Serialize(dadosafter, opcao);
                 //add   
                 //Escrevedno
-                File.WriteAllText("dados.json", jsonnew, Encoding.UTF8);
+                await File.WriteAllTextAsync("dados.json", jsonnew, Encoding.UTF8);
                 return true;
             }
             catch (Exception ex)
@@ -56,10 +56,10 @@ namespace BackEnd.Date.Manipular
         }
 
 
-        public static bool ProcurarUserPeloNome(string nome)
+        public static async Task<bool> ProcurarUserPeloNome(string nome)
         {
             // dados vindo do json
-            List<TypeDateJson> dados = PegarDados()!;
+            List<TypeDateJson>? dados = await PegarDados()!;
             // se a lista retorna uma lista vazio retorne
             if (dados is not null) return false;
             //ele ele encontrar um com nome igual ao parametro nome, pq encontrou, retorna true, senao false
@@ -67,20 +67,20 @@ namespace BackEnd.Date.Manipular
         }
 
 
-        public static bool UserEstaRegistrado(string nome, string senha)
+        public static async Task<bool> UserEstaRegistrado(string nome, string senha)
         {
-            List<TypeDateJson> dados = PegarDados()!;
+            List<TypeDateJson>? dados = await PegarDados()!;
             //se vinhe uma lista vazia, retorne.
             if (dados is null) return false;
             return dados!.Any(x => x.Nome == nome && x.Senha == senha);
         }
 
-        public static bool SubtituirDados(TypeDateJson dados)
+        public static async Task<bool> SubtituirDados(TypeDateJson dados)
         //Essa funcao tem como responsabilidade de subtituir dados,
         //ele receber os dados ja alterado de um usuario e troca.
         //Lembrando que sao os mesmo usuario, dados, possivel de troca é a senha e o pontos, geral so pontos.
         {
-            List<TypeDateJson>? date = PegarDados()!;
+            List<TypeDateJson>? date = await PegarDados()!;
             //Caso for null
             if (date is null) return false;
             //Pegando o index

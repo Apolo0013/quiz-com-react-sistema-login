@@ -1,11 +1,9 @@
 import './descubrar_palavra.scss'
 //componentes
 import Card_Letra from './card-letra'
-import { useContext, useEffect, useRef, useState, type Dispatch, type JSX, type MouseEvent, type RefObject, type SetStateAction} from 'react'
+import { useEffect, useRef, useState, type Dispatch, type JSX, type MouseEvent, type RefObject, type SetStateAction} from 'react'
 //Utils
 import { alfabeto, embaralhar, randint } from '../../../../utils/utils'
-import { InfoContext } from '../../../../context'
-import type { typeContextGlobal } from '../../../../types/ContextLogin'
 import Pontos_Quiz from '../+pontos/pontos'
 //Types
 type PropsDescubrar_Palavra = {
@@ -13,20 +11,21 @@ type PropsDescubrar_Palavra = {
     dica: string
     StartQuiz: () => void
     SetSomarPontos: Dispatch<SetStateAction<number>>
+    RefSomarPontos: RefObject<number>
 }
 
-function Descubrar_PalavraQuiz({ palavra, dica, StartQuiz, SetSomarPontos}: PropsDescubrar_Palavra) {
+function Descubrar_PalavraQuiz({ palavra, dica, StartQuiz, SetSomarPontos, RefSomarPontos}: PropsDescubrar_Palavra) {
     function CallBackStartQuiz(addpontos: number) {
         //==
         if (!RefConteinerMain.current) return
         //Somando no state que mostrar o pontos acumulados
-        SetSomarPontos(prev => prev + addpontos)
-        //Antes vamos add os pontos fornecido pelo parametro
-        SetInfoContext(prev => ({
-            Logado: prev.Logado,
-            Nome: prev.Nome,
-            Pontos: prev.Pontos + addpontos
-        }))
+        //se for maior que zero
+        if (addpontos > 0) {
+            //Add no state, para mostrar pro usuario pae.
+            SetSomarPontos(prev => prev + addpontos)
+            //Ref para nao reniciar
+            RefSomarPontos.current += addpontos
+        }
         //Animacao de +pontos
         SetAnimacaoPontos(<Pontos_Quiz
             pontos={addpontos}
@@ -43,13 +42,11 @@ function Descubrar_PalavraQuiz({ palavra, dica, StartQuiz, SetSomarPontos}: Prop
             setTimeout(() => {
                 //Voltando
                 RefConteinerMain.current!.classList.add("DesShow-Quiz")
-                RefConteinerMain.current!.addEventListener('animationend', () => {
-                    RefConteinerMain.current?.classList.remove('DesShow-Quiz')
-                })
                 //Finalmente Chama.
                 //CallBack
                 //trocando de quiz.
                 StartQuiz()
+                RefConteinerGame.current?.classList.remove('disabled-all')
             }, 1000)
         }, 2100)
         
@@ -361,9 +358,6 @@ function Descubrar_PalavraQuiz({ palavra, dica, StartQuiz, SetSomarPontos}: Prop
     const RefFuncErrorCardList = useRef<((state: boolean) => void)[]>([])
     //State para guardar a animacao de +pontos
     const [StateAnimacaoPontos, SetAnimacaoPontos] = useState < JSX.Element | null>(null)
-    //
-    //Context
-    const { SetInfoContext } = useContext<typeContextGlobal | null>(InfoContext)!
 
     //UseEffect para verificar a quantidade de chance
     useEffect(() => {
@@ -408,7 +402,11 @@ function Descubrar_PalavraQuiz({ palavra, dica, StartQuiz, SetSomarPontos}: Prop
     }, [StatePalavraCompletar, StatePalavraJogar])
 
     return (
-        <div className="conteiner-descubrar-palavra-main Show-Quiz" ref={RefConteinerMain}>
+        <div className="conteiner-descubrar-palavra-main Show-Quiz" ref={RefConteinerMain}
+            onAnimationEnd={() => {
+                RefConteinerMain.current?.classList.remove('DesShow-Quiz')
+            }}
+        >
             <div className="conteiner-descubrar-palavra">
                 <div className="conteiner-pergunta-descubrar-palavra-quiz">
                     <h2 className='title-descubrar-palavra'>DESCUBRA A PALAVRA. . .</h2>

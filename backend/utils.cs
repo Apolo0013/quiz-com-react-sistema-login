@@ -1,9 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text.Json;
+using BackEnd.Type.BackInFront;
 
 namespace BackEnd.Utils {
-    
+
+    class ResultadoFuncaoSortAlternativas
+    {
+        public List<int> ListInt { set; get; } = new List<int>();
+        public List<double> ListDouble { set; get; } = new List<double>();
+    }    
 
     //BY: ChatGPT    
     public static class ListExtensions
@@ -140,7 +146,7 @@ namespace BackEnd.Utils {
                     ListQuizSort.Add(new List<string>() { OBJETIVA, DESCUBRAR_PALAVRA }[random.Next(0, 2)]);
                 }
                 //Se os indices tive OBJETIVA/DESCUBRAR_PALAVRA em todas os indices vamos sortea novamente.
-                if (!ListQuizSort.All(x => x == OBJETIVA) || !ListQuizSort.All(x => x == DESCUBRAR_PALAVRA))
+                if (!ListQuizSort.All(x => x == OBJETIVA) && !ListQuizSort.All(x => x == DESCUBRAR_PALAVRA))
                 {
                     return ListQuizSort;
                 }
@@ -148,6 +154,70 @@ namespace BackEnd.Utils {
                 {
                     ListQuizSort.Clear();
                     //Continuar.
+                }
+            }
+        }
+
+        public static ResultadoFuncaoSortAlternativas SortNumAlternativas(object numbase)
+        //numbase, é ondem nois vai ter um base de sortea os numero
+        {
+            //Essa funcao vai sortea os numeros
+            object? SortNum<T>(T num) where T : IConvertible
+            {
+                if (num is int n)
+                {
+                    return random.Next(0, 2) == 1 ?
+                    random.Next(n - random.Next(1, 5), n) : //Aqui seria um numero abaixo ou igual ao numero base.
+                    // aqui seria um numero maior ou igual ao numero da base
+                    random.Next(n, n + random.Next(1, 5));
+                }
+                //para o double que fazer de outra forma pq por se double
+                else if (num is double nb)
+                {
+                    double delta = random.NextDouble() * random.Next(1, 5);
+                    return random.Next(0, 2) == 1
+                        ? nb - delta
+                        : nb + delta;
+                }
+                return null;
+            }
+
+            //Se for int
+            if (numbase is int numbaseint)
+            {
+                //List temp ondem ele vai guardar os numeros
+                List<int> ListIntTemp = new List<int>();
+                //Vamos coloca em um loop
+                while (true)
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        //Sorteando
+                        ListIntTemp.Add(Convert.ToInt32(SortNum(numbaseint)));
+                    }
+                    //procurar numero repetido.
+                    bool repeat = ListIntTemp.Any(num => ListIntTemp.Count(numv => numv == num) > 1);
+                    //caso nao tenha numero repetido retorne a lista
+                    if (!repeat) return new ResultadoFuncaoSortAlternativas() { ListInt = ListIntTemp };
+                    else ListIntTemp.Clear(); // caso ao contrario, tenha um numero repetido, limpe a lista e sortear novamente.
+                }
+            }
+            //Mesma coisa aqui no double, so troca o tipo
+            else if (numbase is double numbasedouble)
+            {
+                while (true)
+                {
+                    //Criando lista tempo
+                    List<double> ListDoubleTempo = new List<double>();
+                    for (int i = 0; i < 3; i++)
+                    {
+                        //Sorteando
+                        ListDoubleTempo.Add(Convert.ToDouble(SortNum(numbasedouble)));
+                    }
+                    //Saber se nao tem repetidos
+                    bool repeat = ListDoubleTempo.Any(x => ListDoubleTempo.Count(n => n == x) > 1);
+                    if (!repeat) return new ResultadoFuncaoSortAlternativas() { ListDouble = ListDoubleTempo };
+                    else ListDoubleTempo.Clear(); //Limpar e va sortea novamente
                 }
             }
         }

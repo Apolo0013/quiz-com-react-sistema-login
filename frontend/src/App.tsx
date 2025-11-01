@@ -28,20 +28,20 @@ function AppMain() {
             })
             type typeReturnUserLogadoCookie = {
                 userName: string,
-                Pontos: number,
+                pontos: number,
                 error: boolean,
                 info: string
             }
             // error for false que dizer que nao ouve error.
             // ou seja tem um token do usuario la, que quer dizer que ele fez login anteriomente.
             const resposta: typeReturnUserLogadoCookie = await request.json()
+            console.log(resposta)
             if (!resposta.error) {
                 SetInfoEntrar({
                     Logado: true,
                     Nome: resposta.userName,
-                    Pontos: resposta.Pontos
+                    Pontos: resposta.pontos
                 })
-                console.log('valor add')
             }
             else {
                 // Por padrao ele sera assim, mas vamos garanti que ele estara quando o usuario nao estive o login automatico.  
@@ -81,33 +81,18 @@ function AppMain() {
         }
     }
 
-    //Funcao que add pontos pae.
-    async function AddPontos() {
-        try {
-            const resposta = await fetch("http://localhost:5239/Quiz/User/Pontos", {
-                method: "POST",
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({Pontos: 1000, Nome: "moral"}),
-                credentials: 'include'
-            })
-            console.log(await resposta.json())
-        }
-        catch {
-            console.log()
-        }
-    }
+    
 
     const [StateInfoEntrar, SetInfoEntrar] = useState<typeInfoEntrar>({
-            Logado: true,
-            Nome: 'teu cu gld',
+            Logado: false,
+            Nome: '',
             Pontos: 0
     }) 
     
     const location = useLocation()
 
     useEffect(() => {
-        AddPontos()
-        //UserLogadoCookie()
+        UserLogadoCookie()
     }, [])
 
     useEffect(() => {

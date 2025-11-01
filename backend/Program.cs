@@ -38,10 +38,10 @@ string key = "852wROKVwQgj64E8c7MOkZ1tyTQvySYtmdRb3SL7YDg";
 //aplicao o CORS
 app.UseCors("AllowAll");
 
-app.MapPost("/Entrar/Logar", (HttpContext ctx ,ParamDadosEntrar dados) =>
+app.MapPost("/Entrar/Logar", async (HttpContext ctx ,ParamDadosEntrar dados) =>
 {
     //verificando se o usuario ja esta registrado
-    bool UserRegistrado = DateJson.UserEstaRegistrado(dados.nome, dados.senha);
+    bool UserRegistrado = await DateJson.UserEstaRegistrado(dados.nome, dados.senha);
     Console.WriteLine(UserRegistrado);
     //if (UserRegistrado || true)
     if (UserRegistrado)
@@ -75,30 +75,30 @@ app.MapPost("/Entrar/Logar", (HttpContext ctx ,ParamDadosEntrar dados) =>
             });
         }
         //Pegar a informacoes do banco de dados
-        TypeDateJson dateplayer = DateJson.PegarDados()!.FirstOrDefault(x => x.Nome == dados.nome)!;
+        List<TypeDateJson>? dateplayer = await DateJson.PegarDados()!;
+        //player
+        TypeDateJson? player = dateplayer!.FirstOrDefault(x => x.Nome == dados.nome);
         //Caso ele nao encotre algo de errado nao esta certo
-        if (dateplayer is null) Results.Ok(new RespostaResultado()
+        if ( player is null) Results.Ok(new RespostaResultado()
         {
             Sucesso = false,
             Error = "date_error"
         });
         //Pegando o Nome e os pontos
-        TypeInfoPlayer infoplayer = new TypeInfoPlayer() { Nome = dateplayer!.Nome, Pontos = dateplayer!.Pontos };
+        TypeInfoPlayer infoplayer = new TypeInfoPlayer() { Nome = player!.Nome, Pontos = player!.Pontos };
         //retornando que deu tudo certo
-        Console.WriteLine("retornando Info");
         return Results.Json(new RespostaResultado { Sucesso = true, Error = "nenhum", Info = infoplayer});
     }
     //senao, que dizer que nao existi usuario registrado com essas informacoes
     else
     {
-        Console.WriteLine("retornando Info nao__");
         Console.WriteLine("Nao tem nenhum usuario registrado com essa informacoes.");
         return Results.Json(new RespostaResultado { Sucesso = false, Error = "user_nao_registrado"});
     }
 });
 
 //Rota protejida
-app.MapGet("/AutoLogin", (HttpContext ctx) =>
+app.MapGet("/AutoLogin", async (HttpContext ctx) =>
 {
     // tenta pegar o token, ondem contem o nome do usuario
     // se nao tive nada, é pq o usuario nunca se registrou pae.
@@ -113,12 +113,24 @@ app.MapGet("/AutoLogin", (HttpContext ctx) =>
     var nome = jwtToken.Claims.First(c => c.Type == "username").Value;
     //-------
     //Pegando o index do usuario no jso
-    List<TypeDateJson> dados_json = DateJson.PegarDados()!;
+    List<TypeDateJson>? dados_json = await DateJson.PegarDados()!;
     //Pegando o index dele e pontos
-    int? pontos = dados_json.Find(x => x.Nome == nome).Pontos;
-    if (pontos is not null) return Results.Ok(new RespostaResultado() {Sucesso = false, Error = "not_found_user"});
-    //Testa isso ai, e entenda essa porra
-    return Results.Ok(new {UserName = nome, Pontos = pontos, Error = false , info = "usuario logado, token existente"});
+    TypeDateJson? playerinfo = dados_json!.Find(x => x.Nome == nome);
+    Console.WriteLine(JsonSerializer.Serialize(playerinfo));
+    //Senao encontrar o ususario/player.
+    if (playerinfo is null) return Results.Ok(new RespostaResultado()
+    {
+        Sucesso = false,
+        Error = "not_found_user"
+    });
+    //se encontrou:
+    return Results.Ok(new
+    {
+        UserName = nome,
+        Pontos = playerinfo!.Pontos,
+        Error = false,
+        info = "usuario logado, token existente"
+    });
 });
 
 //Deleta o cookiee, e sair da conta praticamente pae
@@ -129,12 +141,12 @@ app.MapGet("/SairConta", (HttpContext ctx) =>
 });
 
 //rota para registrar o usuario
-app.MapPost("/Entrar/RegistrarUser", (ParamDadosEntrar dados) =>
+app.MapPost("/Entrar/RegistrarUser", async (ParamDadosEntrar dados) =>
 {
     //procurando o nome do usuario.
     // -> se encontrar entao o nome ja esta em uso.
     // -> se nao vamos registrar o mesmo
-    bool NameRegistrer = DateJson.ProcurarUserPeloNome(dados.nome);
+    bool NameRegistrer = await DateJson.ProcurarUserPeloNome(dados.nome);
     Console.WriteLine(NameRegistrer);
     if (NameRegistrer)
     {
@@ -142,7 +154,7 @@ app.MapPost("/Entrar/RegistrarUser", (ParamDadosEntrar dados) =>
     }
     else
     {
-        bool sucessoRegistrarUser = DateJson.RegistrarUser(dados.nome, dados.senha, 0);
+        bool sucessoRegistrarUser = await DateJson.RegistrarUser(dados.nome, dados.senha, 0);
         if (sucessoRegistrarUser)
         {
             //deu tudo certo ao registrar
@@ -157,7 +169,7 @@ app.MapPost("/Entrar/RegistrarUser", (ParamDadosEntrar dados) =>
 });
 
 //Rotas do quiz gld.
-app.MapPost("Quiz/Pegar", (ParamGetTemaAndDificuldade dados) =>
+app.MapPost("Quiz/Pegar", async (ParamGetTemaAndDificuldade dados) =>
 {
     //Por Algum motivo, Dificuldade e Tema for igual "" vamos return tentativas falha ou null
     if (dados.Tema == "" || dados.Dificuldade == "") return Results.Problem();
@@ -233,49 +245,54 @@ app.MapPost("Quiz/Pegar", (ParamGetTemaAndDificuldade dados) =>
 
     if (Tema == Fisica || Tema == Matematica || Tema == Quimica)
     {
+        //Nunca vao retorna null, confiar se retorno fudeu
         QuizTypeMath DateQuizMath = Date_Quiz.GetQuizMath(Tema, Dificuldade);
+        //caso se ja null
+        if (DateQuizMath is null) return Results.Ok(new RespostaResultado() { Sucesso = false, Error = "date_error" });
         return Results.Json(DateQuizMath);
     }
     else
     {
         QuizType DateQuiz = Date_Quiz.GetQuiz(Tema, Dificuldade);
+        //caso seja null
+        if (DateQuiz is null) return Results.Ok(new RespostaResultado() { Sucesso = false, Error = "date_error" });
+        Console.WriteLine(JsonSerializer.Serialize(DateQuiz));
         return Results.Json(DateQuiz);
     }
 });
 
-
-app.MapPost("/Quiz/User/Pontos", (DadosPontosAcrecentar dados) =>
+//Rota que receber valor do  dados.
+//Nome: ondem nois vai indentificar os mesmo
+//Pontos: que vao sao acrecentrados.
+app.MapPost("/Quiz/User/Pontos", async (DadosPontosAcrecentar dados) =>
 {
-    //pegando os dados do json atual.
-    List<TypeDateJson>? date = DateJson.PegarDados();
-    //Se retorna nula pq algo deu errado
-    if (date is null) Results.Ok(new RespostaResultado()
+    //10 tentantivas...
+    for (int i = 0; i < 10; i++)
     {
-        Sucesso = false,
-        //Algo deu errado com a leitura do json
-        Error = "date_error"
-    });
-    //Blz nao é nula.
-    TypeDateJson? Info_User = date!.Find(x => x.Nome == dados.Nome);
-    if (Info_User is null) Results.Ok(new RespostaResultado()
-    {
-        Sucesso = false,
-        Error = "date_error"
-    });
-    //Ja que pontos foi encontrado vamos apenas adicionar 
-    //Acrecentando
-    Info_User!.Pontos += dados.Pontos;
-    bool sucesso = DateJson.SubtituirDados(Info_User);
-    if (sucesso) Results.Ok(new RespostaResultado()
-    {
-        Sucesso = true,
-        Error = "nada"
-    });
-    else Results.Ok(new RespostaResultado()
-    {
-        Sucesso = false,
-        Error = "date-error"
-    });
+        //pegando os dados do json atual.
+        List<TypeDateJson>? date = await DateJson.PegarDados();
+        //Se retorna nula pq algo deu errado
+        if (date is null) continue;
+        //Blz nao é nula.
+        TypeDateJson? Info_User = date!.Find(x => x.Nome == dados.Nome);
+        if (Info_User is null) continue;
+        //Ja que pontos foi encontrado vamos apenas adicionar 
+        //Acrecentando
+        Info_User!.Pontos += dados.Pontos;
+        //Vamos add...
+        bool sucesso = await DateJson.SubtituirDados(Info_User);
+        //Deu certo, entao vamos retorna que deu certo
+        if (sucesso) return Results.Ok(new
+        {
+            Sucesso = true,
+            Error = "nada"
+        });
+        //vixi barao, deu errado o, vai mais uma vez
+        //quebrar, tenta denovo
+        else continue;
+    }
+    //Se passou das 10 tentativas, de tenta add e algo deu errado...
+    return Results.Ok(new RespostaResultado {Sucesso = false, Error="10 tentativas"});
 });
 
 app.Run();

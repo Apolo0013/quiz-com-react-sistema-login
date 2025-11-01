@@ -74,7 +74,7 @@ function Login() {
     }
 
     function Entrar() {
-        EntrarResquest({nome: 'nao sei', senha: '123', lembrar_login: false})
+        EntrarResquest({nome: 'nao sei', senha: '123', lembrar_login: true})
         return 
         // verificando se nenhum, ref é null
         if (!RefError.current || !RefInputNome.current || !RefInputSenha.current || !RefCheckBoxLembrarLogin.current) { return }

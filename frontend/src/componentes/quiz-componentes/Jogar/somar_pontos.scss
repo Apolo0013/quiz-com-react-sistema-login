@@ -1,0 +1,39 @@
+@use "../../../utils/utils.scss" as *;
+
+.Conteiner-Acumalacao-pontos {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: rem(5);
+    border-radius: rem(5);
+    border: rem(1) solid rgb(3, 95, 0);
+    background: rgb(59, 247, 52);
+    color: white;
+    z-index: 1000;
+    cursor: grab;
+
+    &:active {cursor: grabbing;}
+
+    p {
+        width: fit-content;
+        text-wrap: wrap;
+        text-align: justify;
+        hyphens: auto;
+    }
+
+    p:nth-of-type(1) {
+        font-size: rem(20);
+        font-weight: bolder;
+    }
+
+    p:nth-of-type(2) {
+        padding: rem(3);
+        border-radius: rem(5);
+        font-size: rem(20);
+        font-weight: bold;
+        background: rgba(3, 95, 0, 0.377);
+    }
+}

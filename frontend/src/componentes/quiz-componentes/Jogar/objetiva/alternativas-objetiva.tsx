@@ -59,7 +59,6 @@ function Alternativas_Objetivas({alternativas, resposta_certa,StartQuiz}: PropsA
             //Depois disso tudo, vamos remover as class responsavel por da o efeito de correto e errado
             ABCDDIV.map((div) => (
                 div.classList.remove('Alternativa-Certa', 'Alternativa-Errada')
-                
             ))
         }, 2500)
     }

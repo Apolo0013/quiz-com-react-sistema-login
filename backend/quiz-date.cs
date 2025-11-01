@@ -90,6 +90,7 @@ namespace BackEnd.Date.Quiz
             if (Perguntas == null) return null;
             //Sorteando Lista
             List<string> ListQuizSort = FuncUtils.SortQuizType();
+            Console.WriteLine(JsonSerializer.Serialize(ListQuizSort));
             //Lista ondem vao contem os quizes seperados
             //A mais tarde ela serar subituida pelo (ListFinalObjetiva)
             List<ObjetivaQuizMathJson> ListaQuizObjetiva = new List<ObjetivaQuizMathJson>();
@@ -149,7 +150,6 @@ namespace BackEnd.Date.Quiz
             List<string> ABCD = new List<string>() { "A", "B", "C", "D" };
             foreach (ObjetivaQuizMathJson info in ListaQuizObjetiva)
             {
-                Console.WriteLine(info.pergunta);
                 //Preparando pergunta
                 //NumeroVar: vai guardar  os numero sorteado da continha.
                 List<int> NumerosVar = new List<int>();
@@ -181,13 +181,14 @@ namespace BackEnd.Date.Quiz
                 //Se ele for um numero int
                 if (valor % 1 == 0)
                 {
+                    //Convertendo object para int
                     int result_int = Convert.ToInt32(result);
                     //Dando valores as alternativas
                     //List com as alternativas
                     List<int> AlternativasTemp = new List<int>()
                     {
                         result_int,
-                        result_int + FuncUtils.random.Next(5, 7),
+                        result_int + 10,
                         result_int + FuncUtils.random.Next(1, 3),
                         result_int + FuncUtils.random.Next(8, 10)
                     };

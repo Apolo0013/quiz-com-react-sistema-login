@@ -4,7 +4,7 @@ import Main_Info_Entrar from '../entrar_conta/info_entrar_main/info_entrar_main'
 import EscolharTemaEDificuldade from './escolhar'
 import Handler_Quiz from './Jogar/handler'
 //
-import { useEffect, useRef, useState, type JSX } from 'react'
+import { useContext, useEffect, useRef, useState, type JSX } from 'react'
 //Types
 import {
     type InfoOpcaoType,
@@ -17,7 +17,9 @@ import {
 import { ScrollTarget } from '../../utils/utils'
 //Notifica
 import { Notifica } from '../notificacao/notificar'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { InfoContext } from '../../context'
+import type { typeContextGlobal } from '../../types/ContextLogin'
 
 function Quiz_Main() {
     async function GetQuizBackEnd(): Promise<ReturnBackendQuizMath | ReturnBackendQuizNormal | null> {
@@ -77,19 +79,25 @@ function Quiz_Main() {
             if (tema == 'Fisica' || tema == 'Quimica' || tema == 'Matemática') {
                 //Pegando o quiz do backend
                 const Conteudo = await GetQuizBackEnd() as ReturnBackendQuizMath
+                console.log(Conteudo)
                 //Caso tenha dado error, ele vai retorna nada :)
                 if (!Conteudo) return 
                 SetConteiner(<Handler_Quiz
+                    key={Date.now()}
                     Tema={tema}
                     Tipo="math"
-                    DateQuizMath={Conteudo}
+                    DateQuizMath={
+                        Conteudo
+                    }
                 />)
             }
             else {
                 const Conteudo = await GetQuizBackEnd() as ReturnBackendQuizNormal
                 if (!Conteudo) return
+                console.log(Conteudo)
                 SetConteiner(
                     <Handler_Quiz
+                        key={Date.now()}
                         Tema={tema}
                         Tipo='normal'
                         DateQuizNormal={Conteudo}
@@ -108,10 +116,19 @@ function Quiz_Main() {
     const RefConteinerTema = useRef<HTMLDivElement | null>(null)
     const RefConteinerDificuldade = useRef<HTMLDivElement | null>(null)
     //State ondem vai ele vai controlar os conteiner dentro do conteiner-quiz-main
-    const [StateConteiners, SetConteiner] = useState<JSX.Element  | null>(null)
+    const [StateConteiners, SetConteiner] = useState<JSX.Element | null>(null)
     //location(rota)
     const location = useLocation()
+    //Navegador
+    const nv = useNavigate()
+    //Contexto
+    const { info_entrar } = useContext<typeContextGlobal | null>(InfoContext)!
     useEffect(() => {
+        //se ele estive logado...
+        if (!info_entrar.Logado) {
+            nv('/home')
+            return
+        }
         SetConteiner(<EscolharTemaEDificuldade
             RefInfoOpcaoGet={RefInfoOpcao}
             RefConteinerTema={RefConteinerTema}

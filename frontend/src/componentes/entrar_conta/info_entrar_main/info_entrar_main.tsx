@@ -10,6 +10,7 @@ import { InfoContext } from '../../../context'
 import { type typeInfoEntrar } from '../../../types/ContextLogin'
 //imagens
 import ImgLeftArrow from '../../../assets/imagens/info_entrar/left-arrow.svg'
+import Carregando_Tela_Entrar from '../carregando-tela'
 
 function Main_Info_Entrar() {
     function ClickShowOrHide() {
@@ -52,17 +53,22 @@ function Main_Info_Entrar() {
     //context
     const info = useContext(InfoContext)
     useEffect(() => {
-        ClickShowOrHide()
-        //
+        //pegando as informacoes da conta
         const info_entrar: typeInfoEntrar = info!.info_entrar
-        console.log(info)
-        if (info_entrar.Logado) {
+        // colocando um tela de carregamento
+        SetComInfo(<Info_Conectado nome_user={info_entrar.Nome} />)
+        //Esperando 2s antes de coloca as informacoes real
+        setTimeout(() => {
+            //Se estive logado
+            if (info_entrar.Logado) {    
             SetComInfo(<Info_Conectado nome_user={info_entrar.Nome}/>)
-        }
-        else {
-            SetComInfo(<Info_DesConectado/>)
-        }
-    }, []) 
+            }
+            //senao estive logado
+            else {
+                SetComInfo(<Info_DesConectado/>)
+            }
+        }, 2000)
+    }, [info]) 
 
     return (
         <div className="wraper-conteiner-info-main" ref={RefConteinerWraperInfo}>

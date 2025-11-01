@@ -1,12 +1,10 @@
 import './objetiva.scss'
-import { useContext, useEffect, useRef, useState, type JSX } from 'react'
+import { useRef, useState, type Dispatch, type JSX, type RefObject, type SetStateAction } from 'react'
 //componentes
 import Alternativas_Objetivas from './alternativas-objetiva'
 //Types
 import { type QuizAlternativas } from '../../../../types/RefTypes'
 import Pontos_Quiz from '../+pontos/pontos'
-import { InfoContext } from '../../../../context'
-import type { typeContextGlobal } from '../../../../types/ContextLogin'
 
 //Type Props
 type PropsObjetivaQuiz = {
@@ -17,21 +15,21 @@ type PropsObjetivaQuiz = {
     formula?: string,
     assunto?: string
     //Pra passa pro alternativas-objetivas
-    StartQuiz: () => void
+    StartQuiz: () => void,
+    SetSomarPontos: Dispatch<SetStateAction<number>>,
+    RefSomarPontos: RefObject<number>
 }
 
 
-function ObjetivaQuiz({ pergunta, alternativas, resposta_certa, formula, assunto, StartQuiz }: PropsObjetivaQuiz) {
+function ObjetivaQuiz({ pergunta, alternativas, resposta_certa, formula, assunto, StartQuiz, SetSomarPontos, RefSomarPontos}: PropsObjetivaQuiz) {
     //Ref do conteiner Main
     const RefConteiner = useRef<HTMLDivElement | null>(null)
     //State para os pontos
     const [StateAnimacaoPontos, SetAnimacaoPontos] = useState<JSX.Element | null>(null)
-    //Contexto
-    const {SetInfoContext} = useContext<typeContextGlobal | null>(InfoContext)!
-    useEffect(() => {
-    }, [])
     return (
-        <div className='conteiner-objetiva-quiz-wraper Show-Quiz' ref={RefConteiner}
+        <div className='conteiner-objetiva-quiz-wraper Show-Quiz' ref={(el) => {
+            if (el) RefConteiner.current = el
+        }}
             onAnimationEnd={() =>
                 RefConteiner.current!.classList.remove('DesShow-Quiz')}>
             
@@ -59,16 +57,14 @@ function ObjetivaQuiz({ pergunta, alternativas, resposta_certa, formula, assunto
                     alternativas={alternativas}
                     resposta_certa={resposta_certa}
                     StartQuiz={(addpontos: number) => {
+                        if (!RefConteiner.current) return
                         StartQuiz()
                         //Alem dessa funcao vamos add mais
                         // essa funcao é chamado quando o usuario escolhe um alternativas gld.
                         // ele faz ele subir pra cima e sumi
-                        //Add ponto
-                        SetInfoContext(prev => ({
-                            Logado: prev.Logado,
-                            Nome: prev.Nome,
-                            Pontos: prev.Pontos + addpontos
-                        }))
+                        //Add o total de pontos acumulado
+                        SetSomarPontos(prev => prev + addpontos) // somando para mostrar
+                        RefSomarPontos.current += addpontos
                         //Antes vamos add animacao de pontuacao
                         SetAnimacaoPontos(<Pontos_Quiz
                             pontos={addpontos}
@@ -82,8 +78,8 @@ function ObjetivaQuiz({ pergunta, alternativas, resposta_certa, formula, assunto
                             //Add animacao
                             RefConteiner.current!.classList.add('DesShow-Quiz')
                         }, 2100)
-                        //Quando animacao dele removemos a class dele
-                        //?-La no elemento diretamente
+                        //Quando animacao dele removemos a class dele?
+                        //-La no elemento diretamente
                     }} />
             </div>
         </div>
