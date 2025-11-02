@@ -15,6 +15,7 @@
     color: $cor-opcao-tema-text-quiz-main;
 
     h1 {
+        font-size: rem(40);
         margin-top: rem(20);
     }
 
@@ -28,5 +29,35 @@
         grid-template-columns: repeat(5, minmax(rem(80), 1fr));
         grid-template-rows: repeat(2, minmax(rem(80), 1fr));
         gap: rem(10);
+    }
+}
+
+////////////////////////////////////////////////////////////////////
+//-Responsividade
+//PC
+@media (max-width: 1000px) {
+    .opcao-tema-quiz-main {
+        h1 {
+            font-size: rem(35);
+        }   
+
+        .opcao-tema {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .opcao-tema-quiz-main {
+        margin-top: rem(100);
+
+        h1 {font-size: rem(30);}
+
+        .opcao-tema {
+            width: 70%;
+            height: auto;
+            grid-template-columns: repeat(2, minmax(rem(100), 1fr));
+            grid-template-rows: repeat(5, minmax(rem(100), 1fr));
+        }
     }
 }

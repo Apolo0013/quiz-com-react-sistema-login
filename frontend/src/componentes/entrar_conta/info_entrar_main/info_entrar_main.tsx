@@ -10,10 +10,23 @@ import { InfoContext } from '../../../context'
 import { type typeInfoEntrar } from '../../../types/ContextLogin'
 //imagens
 import ImgLeftArrow from '../../../assets/imagens/info_entrar/left-arrow.svg'
-import Carregando_Tela_Entrar from '../carregando-tela'
 
 function Main_Info_Entrar() {
-    function ClickShowOrHide() {
+
+        
+    const SetLocalHideOrShow = (bool: boolean) => { localStorage.setItem('opcao_info_conta', JSON.stringify({hide: bool})) }
+    const GetLocalHideOrShow = (): boolean => {
+        const opcaostring: string | null = localStorage.getItem('opcao_info_conta')
+        console.log(opcaostring)
+        if (!opcaostring) return false
+        const opcao: { hide: boolean } = JSON.parse(opcaostring)
+        return opcao.hide
+    }
+
+
+    function ClickShowOrHide(save: boolean) {
+        console.log('chamado')
+        console.log(save ? "via onclick" : "via useEffect")
         //Garantido que os ref nao sao null.
         if (!RefConteinerWraperInfo.current || !RefImgShowWraper.current) { return }
         //
@@ -27,6 +40,7 @@ function Main_Info_Entrar() {
             //Mudando o valor do Ref que indentifica o estado atual do conteiner.
             //Para false: olha ele esta escondido
             RefClickShowEHide.current = false
+            if (save) SetLocalHideOrShow(true)
         }
         else {
             //
@@ -36,6 +50,7 @@ function Main_Info_Entrar() {
             //Mudando o valor ref que indedntifca o estado atual do conteiner.
             //Para true: ele esta a mostrar.
             RefClickShowEHide.current = true
+            if (save) SetLocalHideOrShow(false)
         }
     }
 
@@ -47,12 +62,14 @@ function Main_Info_Entrar() {
     //Ref variavels
     // False, ele esta escondido
     // True ele esta a mostrar.
-    const RefClickShowEHide = useRef<boolean>(false)
+    const RefClickShowEHide = useRef<boolean>(GetLocalHideOrShow())
     //
     const [StateComInfo, SetComInfo] = useState<JSX.Element>()
     //context
     const info = useContext(InfoContext)
     useEffect(() => {
+        //Movendo o componente para a ultima posicao
+        ClickShowOrHide(false)
         //pegando as informacoes da conta
         const info_entrar: typeInfoEntrar = info!.info_entrar
         // colocando um tela de carregamento
@@ -75,7 +92,7 @@ function Main_Info_Entrar() {
             <div className="conteiner-info-main">
                 {StateComInfo}
             </div>
-            <span className="show-conteiner-info-main" onClick={ClickShowOrHide}>
+            <span className="show-conteiner-info-main" onClick={() => ClickShowOrHide(true)}>
                 <img ref={RefImgShowWraper} src={ImgLeftArrow} alt="Left Arrow" />
             </span>
         </div>

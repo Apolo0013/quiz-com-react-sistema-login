@@ -13,6 +13,7 @@
     * { transition: 0.2s ease-in-out; }
 
     h1 {
+        font-size: rem(40);
         text-align: center;
         width: 100%;
         padding: rem(10);
@@ -83,4 +84,65 @@
         }
     }
     
+}
+
+/////////////////////////////////////////////////
+/// Responsividade
+//PC
+
+@media (max-width: 850px) {
+    .conteiner-dificuldade-quiz-main {
+        h1 {
+            font-size: rem(35);
+        }
+
+        .conteiner-dificuldade-botao {
+            gap: rem(20);
+
+            button {
+                font-size: rem(35);
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .conteiner-dificuldade-quiz-main > .conteiner-dificuldade-botao > button {width: 20%;}
+}
+
+@media (max-width: 600px) {
+    .conteiner-dificuldade-quiz-main  {
+        h1 {
+            font-size: rem(30);
+        }
+
+        .conteiner-dificuldade-botao {
+            flex-direction: column;
+            height: auto;
+            gap: rem(5);
+            padding: rem(10);
+            //deixa ele centralizadao gld
+            clip-path: polygon(
+                0% 25%,
+                25% 25%,
+                30% 0%,
+                70% 0%,
+                75% 25%,
+                100% 25%,
+
+                100% 75%,
+                75% 75%,
+                70% 100%,
+                30% 100%,
+                25% 75%,
+                0% 75%
+
+            );
+
+            button {
+                font-size: rem(30);
+                width: 30%;
+            }
+        }
+    }
 }

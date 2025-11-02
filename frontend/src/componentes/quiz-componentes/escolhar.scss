@@ -54,3 +54,24 @@
         }
     }   
 }
+
+////////////////////////////////////////////////////////////////////
+//-Responsividade
+
+@media (max-width: 800px) {
+    .conteiner-botao-comeca-quiz-main {
+        width: 65% !important;
+        &:has(.Botao-Comeca-quiz-main:hover) {
+            width: 80% !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .conteiner-botao-comeca-quiz-main {
+        width: 80% !important;
+        &:has(.Botao-Comeca-quiz-main:hover) {
+            width: 95% !important;
+        }
+    }
+}

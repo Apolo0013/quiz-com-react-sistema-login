@@ -1,6 +1,7 @@
 @use '../../../utils/utils.scss' as *;
 
 .wraper-conteiner-info-main {
+    transition: 0.2s ease;
     position: absolute;
     z-index: 1000;
     left: 0;
@@ -8,7 +9,6 @@
     min-width: rem(200);
     max-width: rem(300);
     height: rem(100);
-    transition: 0.2s ease;
 
     .conteiner-info-main {
         display: flex;
@@ -45,6 +45,7 @@
             0 100%);
         
         img {
+            transition: 0.3s;
             aspect-ratio: 1 / 1;
             object-fit: contain;
             width: 100%;

@@ -46,3 +46,36 @@
         font-size: rem(20);
     }
 }
+
+
+////////////////////////////////////////////////////////////////////
+//-Responsividade
+//PC
+@media (max-width: 800px) {
+    .head-quiz-main {
+        h1 {
+            font-size: rem(60);
+        }
+        p {
+            font-size: rem(15);
+        }
+        &::after, &::before {
+            height: rem(30);
+            width: rem(40);
+        }
+    }
+}
+
+
+@media (max-width: 550px) {
+    .head-quiz-main {
+        h1 {
+            font-size: rem(55);
+        }
+
+        &::after, &::before {
+            height: rem(25);
+            width: rem(35);
+        }
+    }
+}

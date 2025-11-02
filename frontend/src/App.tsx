@@ -17,6 +17,7 @@ import { InfoContext } from "./context"
 import { useEffect, useState } from "react"
 //type
 import { type typeInfoEntrar } from "./types/ContextLogin"
+import ProtejerRota from "./protejerrotas"
 
 
 function AppMain() {
@@ -81,10 +82,9 @@ function AppMain() {
         }
     }
 
-    
 
     const [StateInfoEntrar, SetInfoEntrar] = useState<typeInfoEntrar>({
-            Logado: false,
+            Logado: true,
             Nome: '',
             Pontos: 0
     }) 
@@ -92,12 +92,8 @@ function AppMain() {
     const location = useLocation()
 
     useEffect(() => {
-        UserLogadoCookie()
+        //UserLogadoCookie()
     }, [])
-
-    useEffect(() => {
-        console.log(StateInfoEntrar)
-    }, [StateInfoEntrar])
 
     return (
         <InfoContext.Provider value={{
@@ -113,7 +109,12 @@ function AppMain() {
                     <Route path='/home' element={<Home />}></Route>
                     <Route path='/home/entrar/login' element={<Logar />}></Route>
                     <Route path='/home/entrar/cadastrar' element={<Cadastrar />}></Route>
-                    <Route path={"quiz/jogar"} element={<Quiz_Main/>}></Route>
+                    <Route path={"quiz/jogar"} element=
+                        {
+                        <ProtejerRota>
+                            <Quiz_Main />
+                        </ProtejerRota>
+                    }></Route>
                 </Routes>
             </div>
         </InfoContext.Provider>
